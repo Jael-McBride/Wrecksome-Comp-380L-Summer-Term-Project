@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scCarStats",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scCarStats",
+  "parent":{
+    "name":"gameRoomStuff",
+    "path":"folders/gameRoomStuff.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

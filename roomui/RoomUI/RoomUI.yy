@@ -1,0 +1,36 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"The Car Game",
+    "path":"The Car Game.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[
+    {"$GMRUILayer":"v1","%Name":"workDammit","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_1","alignItems":2,"children":[
+            {"$GMRSpriteGraphic":"v1","%Name":"graphic_489BBCE2","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_489BBCE2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sYoureWinner","path":"sprites/sYoureWinner/sYoureWinner.yy",},"x":128.0,"y":64.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":128.0,},"justifyContent":1,"name":"FlexPanel_1","nodeColour":4291621448,"paddingBottom":{"unit":1,"value":8.0,},"paddingTop":{"unit":1,"value":52.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+        {"$GMRFlexPanel":"","%Name":"FlexPanel","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":128.0,},"justifyContent":1,"name":"FlexPanel","nodeColour":4282970805,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_3","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_606A51AB","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_606A51AB","objectId":{"name":"oButtonQuit","path":"objects/oButtonQuit/oButtonQuit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_3","nodeColour":4294068329,"paddingBottom":{"unit":1,"value":56.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_2","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_7C197B45","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7C197B45","objectId":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_2","nodeColour":4282948338,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"workDammit","nodeColour":4285592136,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+    {"$GMRUILayer":"v1","%Name":"Pause","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_5","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_B7290FC","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B7290FC","objectId":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_5","nodeColour":4282956274,"paddingBottom":{"unit":1,"value":77.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_4","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_340AD666","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_340AD666","objectId":{"name":"oButtonQuit","path":"objects/oButtonQuit/oButtonQuit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_4","nodeColour":4293653064,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Pause","nodeColour":4291250418,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "visible":true,
+}
