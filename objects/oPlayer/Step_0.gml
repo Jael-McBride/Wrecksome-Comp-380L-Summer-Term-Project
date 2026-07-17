@@ -1,51 +1,59 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
 var drive = keyboard_check(vk_up) || keyboard_check(ord("W"));
-var reverse = keyboard_check(vk_down) || keyboard_check(ord("S"));
+var reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_check(vk_space)
 
 //driftR is there to add or subtract from the turn radius upon drifting, if needed
 
-//enable or disable drift angle check for a different drifting experience
+//hspeed = hspd
+//vspeed = vspd
+speed = spd
+var lastdir = direction
 
+var extraR = 0
 
-if (left == 1 && abs(speed) > 0.05 /*&& driftAngle >= 0*/ ) { direction += (turnR + driftR); } 
-if (right == 1 && abs(speed) > 0.05 /*&& driftAngle <= 0*/ ) { direction -= (turnR + driftR); }
+//crucial mistake, driftR is always active!!!
 
-if (drive == 1 && speed <= topSpeed && abs(driftAngle) < 1) {
-	speed += accel;
+if (left == 1 && abs(spd) > 0.05 && (driftAngle >= 0 || driftCorrCheck == 1) ) { direction += (turnR + extraR); } 
+if (right == 1 && abs(spd) > 0.05 && (driftAngle <= 0 || driftCorrCheck == 1) ) { direction -= (turnR + extraR); }
+
+if (drive == 1 && spd <= topSpeed && abs(driftAngle) < 1) {
+	spd += accel;
 	}
-if (drive == 1 && speed <= (topSpeed - Slowdown) && abs(driftAngle) > 1) {
-	speed += (accel - (/*(Slowdown/10)*/ + 0.1)); //experimenting with natural drift slowdowns
+if (drive == 1 && spd <= (topSpeed - Slowdown) && abs(driftAngle) > 1) {
+	spd += (accel - (/*(Slowdown/10)*/ + 0.1)); //experimenting with natural drift slowdowns
 	}
 
-else if (speed > 0) {speed -= 0.1}
+else if (spd > 0) {spd -= 0.1}
 
 image_angle = direction + driftAngle
 
 //tiresmoke
 
-if (speed > 1){
+if (spd > 1){
 	var smoke = instance_create_layer(x, y, "Instances", oSmokeTest);
 }
 
 //ability to start the drift. 
-if (speed > driftStart){
+if (spd > driftStart){
 	if (right == 1 && reverse == 1 && driftAngle == 0) {
 		driftAngle = -entryAngle //entry angle and speed upon entry
-		speed += entrySpeed
+		spd += entrySpeed
 	}
 	if (left == 1 && reverse == 1 && driftAngle == 0) {
 		driftAngle = entryAngle
-		speed += entrySpeed
+		spd += entrySpeed
 	}
 } 
 //ability to recover and maintain the drift
 
-if (abs(driftAngle) > 3 && speed > 2) {
+if (abs(driftAngle) > 3 && spd > 2) {
+	extraR = driftR
 	if(right == 1 && driftAngle > -maxAngle){
 		driftAngle -= driftRecovery
 	}
@@ -57,15 +65,15 @@ Slowdown = driftSlowdown //how much the drift slows down the car
 else
 {
 	direction = image_angle
-	driftR = 0
+	extraR = 0
 	driftAngle = 0
 	Slowdown = 0
 }
 
-if (drive == 1 && speed < 6 && abs(driftAngle) > 0)
+if (drive == 1 && spd < 4 && abs(driftAngle) > 0)
 {
 	direction = image_angle
-	driftR = 0
+	extraR = 0
 	driftAngle = 0
 	Slowdown = 0
 }
@@ -78,16 +86,64 @@ else if (drive == 1 && right == 0 && left == 0 && driftAngle > 0){
 	driftAngle -= autoRecovery
 }
 
+angle = image_angle - driftAngle
 
 //going in reverse
 	
-if (reverse == 1 && drive == 0 && speed > -4.5) {speed -= brakes}
-else if (speed < 0) {speed += 0.1}
+if (reverse == 1 && drive == 0 && spd > -4.5) {spd -= brakes}
+else if (spd < 0) {spd += 0.1}
 
 //currently set to collide with only the test wall, change this once more walls are added
-if (place_meeting(x,y, oTestWall)){
-speed = -speed
+if (place_meeting(x,y,oTestWall)) {
+	var target = instance_place(x, y, oTestWall)
+	var angleToTarget = point_direction(x,y,target.x,target.y)
+	var diff = angle_difference(direction, angleToTarget)
+	if (diff > 45 && diff < 165 && speed > 4) {
+		direction += 60
+		image_angle = direction
+		x += lengthdir_x(speed, image_angle);
+		y += lengthdir_y(speed, image_angle);
+		speed = speed*0.7
+	}
+	else if (diff < -45 && diff > -165 && speed > 4){
+		direction -= 60
+		image_angle = direction
+		x += lengthdir_x(speed, image_angle);
+		y += lengthdir_y(speed, image_angle);
+		speed = speed*0.7
+	}
+	else if ((diff >= 165 || diff <= -165) && speed > 4)
+	{
+		direction = image_angle
+		speed = speed*0.7
+	}
+	else
+		speed = -speed*0.7
+	
 }
+
+//var angle = image_angle
+
+hspd = lengthdir_x(spd, angle);
+show_debug_message(extraR)
+
+if (place_meeting(x,y,oTestWall)){
+speed = -speed*0.8}
+
+
+//if(place_meeting(x + hspd, y, oTestWall)) // checking collision for next horizontal possition
+//{
+//    hspd=0; // since we can't move anymore set to 0
+	
+//}
+//if(place_meeting(x, y + vspd, oTestWall)) // checking collision for next horizontal possition
+//{
+//    vspd=0; // since we can't move anymore set to 0
+	
+//}
+
+//move_and_collide(hspd, vspd, oTestWall)
+
 
 // Prevent leaving the left and right room boundaries
 x = clamp(x, 0, room_width);
@@ -99,9 +155,11 @@ y = clamp(y, 0, room_height);
 
 //powerUps?
 if (place_meeting(x,y, oPowerUpSpeed)) {
-speed += 15
+var powerUp = instance_place(x, y, oPowerUpSpeed)
+spd += 15
 image_index = 1
 alarm[0] = 2*game_get_speed(gamespeed_fps)
+instance_destroy(powerUp)
 }
 
 if (place_meeting(x,y, oSmallPowerUp)) {
