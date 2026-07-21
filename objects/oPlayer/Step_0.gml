@@ -94,32 +94,22 @@ if (reverse == 1 && drive == 0 && spd > -4.5) {spd -= brakes}
 else if (spd < 0) {spd += 0.1}
 
 //currently set to collide with only the test wall, change this once more walls are added
-if (place_meeting(x,y,oTestWall)) {
-	var target = instance_place(x, y, oTestWall)
-	var angleToTarget = point_direction(x,y,target.x,target.y)
-	var diff = angle_difference(direction, angleToTarget)
-	if (diff > 45 && diff < 165 && speed > 4) {
-		direction += 60
-		image_angle = direction
-		x += lengthdir_x(speed, image_angle);
-		y += lengthdir_y(speed, image_angle);
-		speed = speed*0.7
-	}
-	else if (diff < -45 && diff > -165 && speed > 4){
-		direction -= 60
-		image_angle = direction
-		x += lengthdir_x(speed, image_angle);
-		y += lengthdir_y(speed, image_angle);
-		speed = speed*0.7
-	}
-	else if ((diff >= 165 || diff <= -165) && speed > 4)
-	{
-		direction = image_angle
-		speed = speed*0.7
-	}
-	else
-		speed = -speed*0.7
-	
+if (place_meeting(x + hspd, y, oTestWall)) {
+    for (var _s = 0; _s < abs(hspd) + 1; _s++) {
+        if (place_meeting(x + sign(hspd), y, oTestWall)) break;
+        x += sign(hspd);
+    }
+    hspd = 0;
+    spd *= 0.5;
+}
+
+if (place_meeting(x, y + vspd, oTestWall)) {
+    for (var _s = 0; _s < abs(vspd) + 1; _s++) {
+        if (place_meeting(x, y + sign(vspd), oTestWall)) break;
+        y += sign(vspd);
+    }
+    vspd = 0;
+    spd *= 0.5;
 }
 
 //var angle = image_angle

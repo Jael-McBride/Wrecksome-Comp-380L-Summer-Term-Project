@@ -129,8 +129,7 @@ hspd = lengthdir_x(spd, angle);
 vspd = lengthdir_y(spd, angle);
 show_debug_message(extraR)
 
-
-//move_and_collide(hspd, vspd, oTestWall)
+move_and_collide(hspd, vspd, oTestWall)
 
 
 // Prevent leaving the left and right room boundaries
