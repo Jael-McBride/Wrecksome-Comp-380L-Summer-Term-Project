@@ -94,6 +94,13 @@ if (reverse == 1 && drive == 0 && spd > -4.5) {spd -= brakes}
 else if (spd < 0) {spd += 0.1}
 
 //currently set to collide with only the test wall, change this once more walls are added
+
+/*
+ * 1. x += sign(hspd) and y += sign(vspd): moves one pixel in the direction you're moving without caring about magnitude
+ * 2. if (place_meeting(x + sign(hspd), y, oTestWall)) break: look one pixel ahead of player direction. If that pixel is 
+ *    inside the wall, you're flushed against it; break.                
+ */    d
+            
 if (place_meeting(x + hspd, y, oTestWall)) {
     for (var _s = 0; _s < abs(hspd) + 1; _s++) {
         if (place_meeting(x + sign(hspd), y, oTestWall)) break;
