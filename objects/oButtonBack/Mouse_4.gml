@@ -4,4 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
+global.lap = 1;
 room_goto(rMenuRoom);

@@ -2,3 +2,4 @@
 // You can write your code in this editor
 
 global.playerCar = oMiata
+room_goto(rTrackRoom);

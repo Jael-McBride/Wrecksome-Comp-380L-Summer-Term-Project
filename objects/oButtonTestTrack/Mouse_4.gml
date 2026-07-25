@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.playerCar = oOshKosh
-room_goto(rTrackRoom);
+// Inherit the parent event
+event_inherited();
+
+room_goto(rGameRoom);

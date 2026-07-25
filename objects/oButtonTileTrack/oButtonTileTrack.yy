@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oTrack",
+  "%Name":"oButtonTileTrack",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTrack",
+  "name":"oButtonTileTrack",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Select Track",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Unfinished TileTrack",},
   ],
   "parent":{
-    "name":"menuRoomStuff",
-    "path":"folders/menuRoomStuff.yy",
+    "name":"trackRoomStuff",
+    "path":"folders/trackRoomStuff.yy",
   },
   "parentObjectId":{
     "name":"oTheParentButton",

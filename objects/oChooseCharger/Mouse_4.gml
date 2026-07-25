@@ -2,3 +2,4 @@
 // You can write your code in this editor
 
 global.playerCar = oCharger
+room_goto(rTrackRoom);
