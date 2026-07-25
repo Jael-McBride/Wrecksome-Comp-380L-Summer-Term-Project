@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"carSprites",
+    "path":"folders/gameRoomStuff/carSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

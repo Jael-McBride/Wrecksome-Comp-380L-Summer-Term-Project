@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_3E300B20","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
     {"name":"inst_3F7B32FD","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
     {"name":"inst_7FA816D1","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
     {"name":"inst_148BB3A3","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
@@ -17,11 +16,11 @@
     {"name":"inst_3235ADFA","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
     {"name":"inst_E068352","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
     {"name":"inst_15383DE6","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
+    {"name":"inst_3F9E9FEF","path":"rooms/rPresentGameRoom/rPresentGameRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_3E300B20","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E300B20","objectId":{"name":"oSportsCar","path":"objects/oSportsCar/oSportsCar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2208.0,"y":992.0,},
         {"$GMRInstance":"v4","%Name":"inst_3F7B32FD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F7B32FD","objectId":{"name":"oPowerUpSpeed","path":"objects/oPowerUpSpeed/oPowerUpSpeed.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4064.0,"y":1088.0,},
         {"$GMRInstance":"v4","%Name":"inst_7FA816D1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FA816D1","objectId":{"name":"oPowerUpSpeed","path":"objects/oPowerUpSpeed/oPowerUpSpeed.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2784.0,"y":2176.0,},
         {"$GMRInstance":"v4","%Name":"inst_148BB3A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_148BB3A3","objectId":{"name":"oPowerUpSpeed","path":"objects/oPowerUpSpeed/oPowerUpSpeed.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":768.0,},
@@ -32,13 +31,14 @@
         {"$GMRInstance":"v4","%Name":"inst_3235ADFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3235ADFA","objectId":{"name":"oPausable","path":"objects/oPausable/oPausable.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4672.0,"y":1856.0,},
         {"$GMRInstance":"v4","%Name":"inst_E068352","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E068352","objectId":{"name":"oTestWall","path":"objects/oTestWall/oTestWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":2.0,"x":2736.0,"y":1504.0,},
         {"$GMRInstance":"v4","%Name":"inst_15383DE6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15383DE6","objectId":{"name":"oTestWall","path":"objects/oTestWall/oTestWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.5,"scaleY":2.0,"x":3072.0,"y":1504.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3F9E9FEF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F9E9FEF","objectId":{"name":"oSpawner","path":"objects/oSpawner/oSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":224.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rPresentGameRoom",
   "parent":{
-    "name":"The Car Game",
-    "path":"The Car Game.yyp",
+    "name":"Tracks",
+    "path":"folders/gameRoomStuff/Tracks.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -58,7 +58,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":500,"hport":1080,"hspeed":-1,"hview":720,"inherit":false,"objectId":{"name":"oSportsCar","path":"objects/oSportsCar/oSportsCar.yy",},"vborder":300,"visible":true,"vspeed":-1,"wport":1920,"wview":1280,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":600,"hport":1080,"hspeed":-1,"hview":720,"inherit":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"vborder":300,"visible":true,"vspeed":-1,"wport":1920,"wview":1280,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},

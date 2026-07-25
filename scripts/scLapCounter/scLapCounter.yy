@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scLapCounter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scLapCounter",
+  "parent":{
+    "name":"gameRoomStuff",
+    "path":"folders/gameRoomStuff.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

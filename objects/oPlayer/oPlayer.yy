@@ -12,8 +12,8 @@
   "name":"oPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"ParentAndStats",
+    "path":"folders/gameRoomStuff/carObjects/ParentAndStats.yy",
   },
   "parentObjectId":null,
   "persistent":false,

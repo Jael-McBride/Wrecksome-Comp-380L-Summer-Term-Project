@@ -1,1 +1,0 @@
-instance_create_layer(var_x, var_y, "Instances", oChecked_1);

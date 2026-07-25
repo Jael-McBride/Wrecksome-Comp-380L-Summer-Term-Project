@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scCarStats",
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"ParentAndStats",
+    "path":"folders/gameRoomStuff/carObjects/ParentAndStats.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

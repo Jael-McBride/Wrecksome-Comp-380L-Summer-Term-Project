@@ -9,8 +9,8 @@
   "name":"oTestMove",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"noLongerNeeded",
+    "path":"folders/gameRoomStuff/noLongerNeeded.yy",
   },
   "parentObjectId":null,
   "persistent":false,

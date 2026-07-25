@@ -42,8 +42,8 @@
   ],
   "name":"rGameRoom",
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"Tracks",
+    "path":"folders/gameRoomStuff/Tracks.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

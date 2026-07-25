@@ -17,7 +17,6 @@ var lastdir = direction
 
 var extraR = 0
 
-//crucial mistake, driftR is always active!!!
 
 if (left == 1 && abs(spd) > 0.05 && (driftAngle >= 0 || driftCorrCheck == 1) ) { direction += (turnR + extraR); } 
 if (right == 1 && abs(spd) > 0.05 && (driftAngle <= 0 || driftCorrCheck == 1) ) { direction -= (turnR + extraR); }
