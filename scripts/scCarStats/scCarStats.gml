@@ -40,7 +40,7 @@ function setCar(carName){
 	entryAngle = 4;
 	maxAngle = 60; 
 	entrySpeed = 5;
-	driftSlowdown = -2;
+	driftSlowdown = -3;
 	driftStart = 5;
 	
 	break;
