@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oBarbie",
+  "%Name":"oPinkPhantom",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBarbie",
+  "name":"oPinkPhantom",
   "overriddenProperties":[],
   "parent":{
     "name":"carObjects",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBarbie",
-    "path":"sprites/sBarbie/sBarbie.yy",
+    "name":"sPinkPhantom",
+    "path":"sprites/sPinkPhantom/sPinkPhantom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

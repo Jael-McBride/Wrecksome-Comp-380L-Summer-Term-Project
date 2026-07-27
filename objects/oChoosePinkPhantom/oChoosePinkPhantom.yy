@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oChooseBarbie",
+  "%Name":"oChoosePinkPhantom",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oChooseBarbie",
+  "name":"oChoosePinkPhantom",
   "overriddenProperties":[],
   "parent":{
     "name":"playerSelectionRoom",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBarbie",
-    "path":"sprites/sBarbie/sBarbie.yy",
+    "name":"sPinkPhantom",
+    "path":"sprites/sPinkPhantom/sPinkPhantom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

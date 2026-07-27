@@ -17,4 +17,4 @@ spd = 0
 hspd = 0
 vspd = 0
 
-setCar("none");
+setCar("PinkPhantom");

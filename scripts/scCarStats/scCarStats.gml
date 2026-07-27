@@ -63,21 +63,21 @@ function setCar(carName){
 	
 	break;
 	
-	case "barbie":
-	accel = 0.4;
-	turnR = 3;
-	topSpeed = 12;
-	brakes = 0.3;
+	case "PinkPhantom":
+	accel = 0.35;
+	turnR = 2.3;
+	topSpeed = 15;
+	brakes = 0.25;
 	
-	driftCorrCheck = 0
-	driftR = 12;
-	driftRecovery = 4;
+	driftCorrCheck = 1
+	driftR = 8;
+	driftRecovery = 3;
 	autoRecovery = 2; 
-	entryAngle = 4;
-	maxAngle = 60; 
-	entrySpeed = 5;
-	driftSlowdown = -2;
-	driftStart = 5;
+	entryAngle = 8;
+	maxAngle = 55; 
+	entrySpeed = 3;
+	driftSlowdown = 1.5;
+	driftStart = 7;
 	
 	break;
 	
