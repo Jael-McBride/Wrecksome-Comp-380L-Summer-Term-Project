@@ -34,7 +34,8 @@
   "resources":[
     {"id":{"name":"fGeneralFont","path":"fonts/fGeneralFont/fGeneralFont.yy",},},
     {"id":{"name":"fSelectionFont","path":"fonts/fSelectionFont/fSelectionFont.yy",},},
-    {"id":{"name":"Vipnagorgialla","path":"fonts/Vipnagorgialla/Vipnagorgialla.yy",},},
+    {"id":{"name":"Vipnagorgialla_Bold","path":"fonts/Vipnagorgialla_Bold/Vipnagorgialla_Bold.yy",},},
+    {"id":{"name":"Vipnagorgialla_Regular","path":"fonts/Vipnagorgialla_Regular/Vipnagorgialla_Regular.yy",},},
     {"id":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},},
     {"id":{"name":"oButtonHelp","path":"objects/oButtonHelp/oButtonHelp.yy",},},
     {"id":{"name":"oButtonPlay","path":"objects/oButtonPlay/oButtonPlay.yy",},},

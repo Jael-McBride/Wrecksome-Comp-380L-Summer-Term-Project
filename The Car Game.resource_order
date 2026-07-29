@@ -13,6 +13,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fSelectionFont","order":16,"path":"fonts/fSelectionFont/fSelectionFont.yy",},
+    {"name":"Vipnagorgialla_Bold","order":1,"path":"fonts/Vipnagorgialla_Bold/Vipnagorgialla_Bold.yy",},
     {"name":"oButtonBack","order":7,"path":"objects/oButtonBack/oButtonBack.yy",},
     {"name":"oButtonHelp","order":5,"path":"objects/oButtonHelp/oButtonHelp.yy",},
     {"name":"oButtonPlay","order":2,"path":"objects/oButtonPlay/oButtonPlay.yy",},
