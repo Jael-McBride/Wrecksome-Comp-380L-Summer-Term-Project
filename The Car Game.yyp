@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"gameRoomStuff","folderPath":"folders/gameRoomStuff.yy","name":"gameRoomStuff","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"carObjects","folderPath":"folders/gameRoomStuff/carObjects.yy","name":"carObjects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"ParentAndStats","folderPath":"folders/gameRoomStuff/carObjects/ParentAndStats.yy","name":"ParentAndStats","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -33,6 +34,7 @@
   "resources":[
     {"id":{"name":"fGeneralFont","path":"fonts/fGeneralFont/fGeneralFont.yy",},},
     {"id":{"name":"fSelectionFont","path":"fonts/fSelectionFont/fSelectionFont.yy",},},
+    {"id":{"name":"Vipnagorgialla","path":"fonts/Vipnagorgialla/Vipnagorgialla.yy",},},
     {"id":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},},
     {"id":{"name":"oButtonHelp","path":"objects/oButtonHelp/oButtonHelp.yy",},},
     {"id":{"name":"oButtonPlay","path":"objects/oButtonPlay/oButtonPlay.yy",},},

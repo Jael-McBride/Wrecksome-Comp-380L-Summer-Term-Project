@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"fonts","order":9,"path":"folders/fonts.yy",},
     {"name":"carObjects","order":25,"path":"folders/gameRoomStuff/carObjects.yy",},
     {"name":"carSprites","order":24,"path":"folders/gameRoomStuff/carSprites.yy",},
     {"name":"noLongerNeeded","order":23,"path":"folders/gameRoomStuff/noLongerNeeded.yy",},
