@@ -62,6 +62,7 @@
     {"id":{"name":"oMiata","path":"objects/oMiata/oMiata.yy",},},
     {"id":{"name":"oOshKosh","path":"objects/oOshKosh/oOshKosh.yy",},},
     {"id":{"name":"oPauseManager","path":"objects/oPauseManager/oPauseManager.yy",},},
+    {"id":{"name":"oPausable","path":"objects/oPausable/oPausable.yy",},},
     {"id":{"name":"oPinkPhantom","path":"objects/oPinkPhantom/oPinkPhantom.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPlayerTest","path":"objects/oPlayerTest/oPlayerTest.yy",},},
