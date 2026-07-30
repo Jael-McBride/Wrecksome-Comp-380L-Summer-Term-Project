@@ -10,8 +10,8 @@
   "name":"oButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"componentObjects",
+    "path":"folders/uiAssets/componentObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"rMenuButtonBlue",
-    "path":"sprites/rMenuButtonBlue/rMenuButtonBlue.yy",
+    "name":"sButtonBlue",
+    "path":"sprites/sButtonBlue/sButtonBlue.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"menuRoomStuff",
-    "path":"folders/menuRoomStuff.yy",
+    "name":"componentSprites",
+    "path":"folders/uiAssets/componentSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

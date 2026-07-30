@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"rMenuButtonRed",
+  "%Name":"sButtonRed",
   "bboxMode":0,
   "bbox_bottom":59,
   "bbox_left":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"9d8bb4b4-1654-47d7-a086-2c395248c522","blendMode":0,"displayName":"default","isLocked":false,"name":"9d8bb4b4-1654-47d7-a086-2c395248c522","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"rMenuButtonRed",
+  "name":"sButtonRed",
   "nineSlice":{
     "$GMNineSliceData":"",
     "bottom":0,
@@ -44,15 +44,15 @@
   },
   "origin":0,
   "parent":{
-    "name":"menuRoomStuff",
-    "path":"folders/menuRoomStuff.yy",
+    "name":"componentSprites",
+    "path":"folders/uiAssets/componentSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"rMenuButtonRed",
+    "%Name":"sButtonRed",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -76,7 +76,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"rMenuButtonRed",
+    "name":"sButtonRed",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -88,7 +88,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b923e8ba-8715-4dd9-88f9-9ee6cabca754","path":"sprites/rMenuButtonRed/rMenuButtonRed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b923e8ba-8715-4dd9-88f9-9ee6cabca754","path":"sprites/sButtonRed/sButtonRed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"239a2b8f-f0bf-49e2-bb9e-0f16b95316aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
