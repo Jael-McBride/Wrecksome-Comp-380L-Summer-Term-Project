@@ -1,0 +1,25 @@
+switch (button_id) {
+    case 0: // Singleplayer
+        layer_set_visible("MenuLayer", false);
+        room_goto(rGameRoom);
+        break;
+    case 1: // How to Play
+        layer_set_visible("MenuLayer", false);
+        room_goto(helpRoom);
+        break;
+    case 2: // Settings
+        break;
+    case 3: // Quit
+        game_end();
+        break;
+    case 4: // Menu
+        layer_set_visible("MenuLayer", true);
+        layer_set_visible("PauseLayer", false);
+        room_goto(rMenuRoom);
+        break;
+    case 5: // Resume
+        oPauseManager.paused = false;
+        oPauseManager.update_pause();
+        break;
+}
+
