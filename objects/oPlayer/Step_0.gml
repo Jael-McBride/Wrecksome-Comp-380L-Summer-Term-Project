@@ -99,8 +99,11 @@ else if (spd < 0) {spd += 0.1}
  * 2. if (place_meeting(x + sign(hspd), y, oTestWall)) break: look one pixel ahead of player direction. If that pixel is 
  *    inside the wall, you're flushed against it; break.                
  */
+ hspd = lengthdir_x(spd, angle);
+ vspd = lengthdir_y(spd, angle);
             
 if (place_meeting(x + hspd, y, oTestWall)) {
+	show_debug_message("crash")
     for (var _s = 0; _s < abs(hspd) + 1; _s++) {
         if (place_meeting(x + sign(hspd), y, oTestWall)) break;
         x += sign(hspd);
@@ -120,11 +123,12 @@ if (place_meeting(x, y + vspd, oTestWall)) {
 
 //var angle = image_angle
 
-hspd = lengthdir_x(spd, angle);
-show_debug_message(extraR)
+
 
 if (place_meeting(x,y,oTestWall)){
 speed = -speed*0.8}
+
+
 
 
 //if(place_meeting(x + hspd, y, oTestWall)) // checking collision for next horizontal possition

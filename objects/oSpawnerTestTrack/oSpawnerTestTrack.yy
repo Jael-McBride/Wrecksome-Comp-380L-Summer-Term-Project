@@ -9,8 +9,8 @@
   "name":"oSpawnerTestTrack",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"Tracks",
+    "path":"folders/gameRoomStuff/Tracks.yy",
   },
   "parentObjectId":null,
   "persistent":false,
