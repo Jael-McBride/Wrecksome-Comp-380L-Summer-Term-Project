@@ -12,5 +12,14 @@ switch (button_id) {
     case 3: // Quit
         game_end();
         break;
+    case 4: // Menu
+        layer_set_visible("MenuLayer", true);
+        layer_set_visible("PauseLayer", false);
+        room_goto(rMenuRoom);
+        break;
+    case 5: // Resume
+        oPauseManager.paused = false;
+        oPauseManager.update_pause();
+        break;
 }
 

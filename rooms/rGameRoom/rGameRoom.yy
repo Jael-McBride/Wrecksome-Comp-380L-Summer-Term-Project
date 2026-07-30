@@ -18,6 +18,7 @@
     {"name":"inst_28910AD","path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"inst_731A8846","path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"inst_75322F02","path":"rooms/rGameRoom/rGameRoom.yy",},
+    {"name":"inst_A1D1144","path":"rooms/rGameRoom/rGameRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -34,6 +35,7 @@
         {"$GMRInstance":"v4","%Name":"inst_28910AD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28910AD","objectId":{"name":"oTestWall","path":"objects/oTestWall/oTestWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.5,"scaleY":3.5,"x":1184.0,"y":1984.0,},
         {"$GMRInstance":"v4","%Name":"inst_731A8846","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_731A8846","objectId":{"name":"oTestWall","path":"objects/oTestWall/oTestWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":1472.0,},
         {"$GMRInstance":"v4","%Name":"inst_75322F02","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75322F02","objectId":{"name":"oSpawnerTestTrack","path":"objects/oSpawnerTestTrack/oSpawnerTestTrack.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":160.0,},
+        {"$GMRInstance":"v4","%Name":"inst_A1D1144","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A1D1144","objectId":{"name":"oPauseManager","path":"objects/oPauseManager/oPauseManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":1696.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Da_track","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_58BDDDD2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_58BDDDD2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sTestTrack","path":"sprites/sTestTrack/sTestTrack.yy",},"x":448.0,"y":384.0,},
