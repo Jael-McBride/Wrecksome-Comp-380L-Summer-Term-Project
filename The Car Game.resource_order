@@ -9,6 +9,9 @@
     {"name":"menuRoomStuff","order":1,"path":"folders/menuRoomStuff.yy",},
     {"name":"playerSelectionRoom","order":6,"path":"folders/playerSelectionRoom.yy",},
     {"name":"trackRoomStuff","order":8,"path":"folders/trackRoomStuff.yy",},
+    {"name":"uiAssets","order":9,"path":"folders/uiAssets.yy",},
+    {"name":"componentObjects","order":1,"path":"folders/uiAssets/componentObjects.yy",},
+    {"name":"componentSprites","order":2,"path":"folders/uiAssets/componentSprites.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fSelectionFont","order":16,"path":"fonts/fSelectionFont/fSelectionFont.yy",},
