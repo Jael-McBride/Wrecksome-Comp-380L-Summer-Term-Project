@@ -5,7 +5,7 @@ with(oPlayer)
 		var inst = instance_place(x, y, oChecked)	
 		instance_destroy(inst)
 		if (instance_exists(oChecked) == 0){
-			instance_create_layer(1824, 800, "Instances", oFinishLine)
+			instance_create_layer(2400, 800, "Instances", oFinishLine)
 		}
 
 	}
@@ -19,11 +19,11 @@ with(oPlayer) {
 	global.lap+=1
 	
 	if (global.lap <= 3){
-		instance_create_layer(4224, 800, "Instances", oChecked)
-		instance_create_layer(4352, 2624, "Instances", oChecked)
-		instance_create_layer(2528, 3104, "Instances", oChecked)
-		instance_create_layer(1824, 1920, "Instances", oChecked)
-		instance_create_layer(608, 864, "Instances", oChecked)
+		instance_create_layer(4960, 1344, "Instances", oChecked)
+		instance_create_layer(2080, 1856, "Instances", oChecked)
+		instance_create_layer(5152, 2592, "Instances", oChecked)
+		instance_create_layer(2080, 1856, "Instances", oChecked)
+		instance_create_layer(1088, 3072, "Instances", oChecked)
 		instance_destroy(oFinishLine)
 		
 	}

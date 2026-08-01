@@ -154,13 +154,13 @@ y = clamp(y, 0, room_height);
 
 
 //powerUps?
-if (place_meeting(x,y, oPowerUpSpeed)) {
-var powerUp = instance_place(x, y, oPowerUpSpeed)
-spd += 15
-image_index = 1
-alarm[0] = 2*game_get_speed(gamespeed_fps)
-instance_destroy(powerUp)
-}
+//if (place_meeting(x,y, oPowerUpSpeed)) {
+//var powerUp = instance_place(x, y, oPowerUpSpeed)
+//spd += 15
+//image_index = 1
+//alarm[0] = 2*game_get_speed(gamespeed_fps)
+//instance_destroy(powerUp)
+//}
 
 if (place_meeting(x,y, oSmallPowerUp)) {
 image_xscale = 0.5
