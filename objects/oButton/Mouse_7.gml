@@ -1,7 +1,7 @@
-switch (button_id) {
+switch(button_id) {
     case 0: // Singleplayer
         layer_set_visible("MenuLayer", false);
-        room_goto(rGameRoom);
+        room_goto(rTrackRoom);
         break;
     case 1: // How to Play
         layer_set_visible("MenuLayer", false);
@@ -21,5 +21,5 @@ switch (button_id) {
         oPauseManager.paused = false;
         oPauseManager.update_pause();
         break;
+        
 }
-

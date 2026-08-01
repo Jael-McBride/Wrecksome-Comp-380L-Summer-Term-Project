@@ -5,4 +5,5 @@
 event_inherited();
 
 global.lap = 1;
+layer_set_visible("MenuLayer", true);
 room_goto(rMenuRoom);
