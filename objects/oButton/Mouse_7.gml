@@ -1,7 +1,7 @@
 switch(button_id) {
     case 0: // Singleplayer
         layer_set_visible("MenuLayer", false);
-        room_goto(rTrackRoom);
+        room_goto(rPlayerSelect);
         break;
     case 1: // How to Play
         layer_set_visible("MenuLayer", false);
