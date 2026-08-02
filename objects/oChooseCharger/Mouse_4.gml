@@ -2,4 +2,5 @@
 // You can write your code in this editor
 
 global.playerCar = oCharger
+layer_set_visible("TrackSelectLayer", true);
 room_goto(rTrackRoom);

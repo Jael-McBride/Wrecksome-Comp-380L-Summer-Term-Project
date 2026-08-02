@@ -85,6 +85,7 @@
     {"name":"sParentButton","order":4,"path":"sprites/sParentButton/sParentButton.yy",},
     {"name":"sPauseContainer","order":2,"path":"sprites/sPauseContainer/sPauseContainer.yy",},
     {"name":"sPinkPhantom","order":4,"path":"sprites/sPinkPhantom/sPinkPhantom.yy",},
+    {"name":"sPlaceholderTrackImg","order":1,"path":"sprites/sPlaceholderTrackImg/sPlaceholderTrackImg.yy",},
     {"name":"Sprite14","order":5,"path":"sprites/Sprite14/Sprite14.yy",},
     {"name":"sRoadTile","order":1,"path":"sprites/sRoadTile/sRoadTile.yy",},
     {"name":"sSandyRoad","order":4,"path":"sprites/sSandyRoad/sSandyRoad.yy",},

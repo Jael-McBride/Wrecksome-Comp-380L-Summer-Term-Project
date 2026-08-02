@@ -120,6 +120,7 @@
     {"id":{"name":"sPauseContainer","path":"sprites/sPauseContainer/sPauseContainer.yy",},},
     {"id":{"name":"sPinkPhantom","path":"sprites/sPinkPhantom/sPinkPhantom.yy",},},
     {"id":{"name":"sPlaceholderCar","path":"sprites/sPlaceholderCar/sPlaceholderCar.yy",},},
+    {"id":{"name":"sPlaceholderTrackImg","path":"sprites/sPlaceholderTrackImg/sPlaceholderTrackImg.yy",},},
     {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},},
     {"id":{"name":"sRoadTile","path":"sprites/sRoadTile/sRoadTile.yy",},},
     {"id":{"name":"sSandyRoad","path":"sprites/sSandyRoad/sSandyRoad.yy",},},
