@@ -12,6 +12,7 @@ var reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_ch
 
 //hspeed = hspd
 //vspeed = vspd
+
 speed = spd
 var lastdir = direction
 
@@ -21,11 +22,11 @@ var extraR = 0
 if (left == 1 && abs(spd) > 0.05 && (driftAngle >= 0 || driftCorrCheck == 1) ) { direction += (turnR + extraR); } 
 if (right == 1 && abs(spd) > 0.05 && (driftAngle <= 0 || driftCorrCheck == 1) ) { direction -= (turnR + extraR); }
 
-if (drive == 1 && spd <= topSpeed && abs(driftAngle) < 1) {
-	spd += accel;
+if (drive == 1 && spd <= realSpeed && abs(driftAngle) < 1) {
+	spd += realAccel;
 	}
-if (drive == 1 && spd <= (topSpeed - Slowdown) && abs(driftAngle) > 1) {
-	spd += (accel - (/*(Slowdown/10)*/ + 0.1)); //experimenting with natural drift slowdowns
+if (drive == 1 && spd <= (realSpeed - Slowdown) && abs(driftAngle) > 1) {
+	spd += (realAccel - (/*(Slowdown/10)*/ + 0.1)); //experimenting with natural drift slowdowns
 	}
 
 else if (spd > 0) {spd -= 0.1}
@@ -121,28 +122,10 @@ if (place_meeting(x, y + vspd, oTestWall)) {
     spd *= 0.5;
 }
 
-//var angle = image_angle
-
-
 
 if (place_meeting(x,y,oTestWall)){
 speed = -speed*0.8}
 
-
-
-
-//if(place_meeting(x + hspd, y, oTestWall)) // checking collision for next horizontal possition
-//{
-//    hspd=0; // since we can't move anymore set to 0
-	
-//}
-//if(place_meeting(x, y + vspd, oTestWall)) // checking collision for next horizontal possition
-//{
-//    vspd=0; // since we can't move anymore set to 0
-	
-//}
-
-//move_and_collide(hspd, vspd, oTestWall)
 
 
 // Prevent leaving the left and right room boundaries
@@ -152,15 +135,22 @@ x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height);
 
 
+//boost gauge implementation
+//replace temp variables with new stats in Car Stats
+var boost =  keyboard_check(vk_lshift) || keyboard_check(vk_rshift)
 
-//powerUps?
-//if (place_meeting(x,y, oPowerUpSpeed)) {
-//var powerUp = instance_place(x, y, oPowerUpSpeed)
-//spd += 15
-//image_index = 1
-//alarm[0] = 2*game_get_speed(gamespeed_fps)
-//instance_destroy(powerUp)
-//}
+if (boost == 1 && boostGauge > 0) {
+	realSpeed = topSpeed + 7
+	realAccel = accel + 10
+	boostGauge -= 0.5
+	show_debug_message(boostGauge)
+} else {
+	realSpeed = topSpeed
+	realAccel = accel
+	
+}
+
+
 
 if (place_meeting(x,y, oSmallPowerUp)) {
 image_xscale = 0.5

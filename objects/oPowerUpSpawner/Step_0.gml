@@ -7,7 +7,7 @@ with(oPlayer)
 		other.instID = instance_place(x, y, oPowerUpSpeed)
 		other.instIDx = other.instID.x
 		other.instIDy = other.instID.y
-		oPlayer.spd += 15
+		oPlayer.boostGauge += 25
 		instance_destroy(other.instID)
 		other.alarm[0] = 2*game_get_speed(gamespeed_fps)
 	

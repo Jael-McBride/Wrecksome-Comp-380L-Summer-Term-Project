@@ -66,7 +66,7 @@ function setCar(carName){
 	case "PinkPhantom":
 	accel = 0.35;
 	turnR = 2.3;
-	topSpeed = 15;
+	topSpeed = 14;
 	brakes = 0.25;
 	
 	driftCorrCheck = 1
@@ -100,7 +100,7 @@ function setCar(carName){
 	break;
 	
 	case "charger":
-	accel = 0.4;
+	accel = 0.35;
 	turnR = 2;
 	topSpeed = 15;
 	brakes = 0.2;
