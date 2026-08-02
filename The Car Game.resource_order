@@ -20,11 +20,6 @@
   "ResourceOrderSettings":[
     {"name":"fSelectionFont","order":16,"path":"fonts/fSelectionFont/fSelectionFont.yy",},
     {"name":"oButtonBack","order":7,"path":"objects/oButtonBack/oButtonBack.yy",},
-    {"name":"oButtonProposalTrack","order":1,"path":"objects/oButtonProposalTrack/oButtonProposalTrack.yy",},
-    {"name":"oButtonTestTrack","order":2,"path":"objects/oButtonTestTrack/oButtonTestTrack.yy",},
-    {"name":"oButtonTileTrack","order":3,"path":"objects/oButtonTileTrack/oButtonTileTrack.yy",},
-    {"name":"oButtonTileTrackConcrete","order":5,"path":"objects/oButtonTileTrackConcrete/oButtonTileTrackConcrete.yy",},
-    {"name":"oButtonTileTrackSandy","order":4,"path":"objects/oButtonTileTrackSandy/oButtonTileTrackSandy.yy",},
     {"name":"oCharger","order":6,"path":"objects/oCharger/oCharger.yy",},
     {"name":"oChooseCharger","order":6,"path":"objects/oChooseCharger/oChooseCharger.yy",},
     {"name":"oChooseF40","order":1,"path":"objects/oChooseF40/oChooseF40.yy",},
