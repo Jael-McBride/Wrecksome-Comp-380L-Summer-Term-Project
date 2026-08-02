@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"componentObjects",
-    "path":"folders/uiAssets/componentObjects.yy",
+    "path":"folders/globalAssets/componentObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"MenuButtonBlue",
-    "path":"sprites/MenuButtonBlue/MenuButtonBlue.yy",
+    "name":"sMenuButtonBlue",
+    "path":"sprites/sMenuButtonBlue/sMenuButtonBlue.yy",
   },
   "spriteMaskId":null,
   "visible":true,
