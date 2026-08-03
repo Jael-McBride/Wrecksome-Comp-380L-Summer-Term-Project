@@ -3,3 +3,4 @@
 
 global.playerCar = oVeneno
 room_goto(rTrackRoom);
+layer_set_visible("TrackSelectLayer", true);
