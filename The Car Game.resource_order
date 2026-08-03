@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"roomSprites","order":1,"path":"folders/trackRoomStuff/assets/roomSprites.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"oAfterImage","order":1,"path":"objects/oAfterImage/oAfterImage.yy",},
     {"name":"oOilPickup","order":7,"path":"objects/oOilPickup/oOilPickup.yy",},
