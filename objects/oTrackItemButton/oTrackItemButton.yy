@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTrackButton",
-    "path":"sprites/sTrackButton/sTrackButton.yy",
+    "name":"sTrackItemButton",
+    "path":"sprites/sTrackItemButton/sTrackItemButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

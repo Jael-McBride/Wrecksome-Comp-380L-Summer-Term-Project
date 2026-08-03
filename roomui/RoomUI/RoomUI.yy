@@ -121,7 +121,7 @@
                   ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
               ],"flexDirection":0,"height":{"unit":1,"value":60.0,},"justifyContent":1,"name":"Quit","nodeColour":4294068466,"paddingLeft":{"unit":1,"value":20.0,},"paddingRight":{"unit":1,"value":20.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":55.0,},},
           ],"flexDirection":0,"gapRow":5.0,"height":{"unit":1,"value":720.0,},"justifyContent":2,"layoutDirection":1,"name":"MainMenuPanel","nodeColour":4282970816,"paddingBottom":{"unit":1,"value":45.0,},"paddingLeft":{"unit":1,"value":45.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":1280.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"MenuLayer","nodeColour":4284303602,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"MenuLayer","nodeColour":4284303602,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"ThirdLap","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"FlexPanel_7","alignItems":2,"children":[
             {"$GMRInstance":"v4","%Name":"inst_2EE3C4C5","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2EE3C4C5","objectId":{"name":"oThirdLap","path":"objects/oThirdLap/oThirdLap.yy",},"properties":[
