@@ -51,6 +51,7 @@
     {"id":{"name":"oBoostGaugeSpawn","path":"objects/oBoostGaugeSpawn/oBoostGaugeSpawn.yy",},},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},},
     {"id":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},},
+    {"id":{"name":"oCarItemButton","path":"objects/oCarItemButton/oCarItemButton.yy",},},
     {"id":{"name":"oCharger","path":"objects/oCharger/oCharger.yy",},},
     {"id":{"name":"oChecked","path":"objects/oChecked/oChecked.yy",},},
     {"id":{"name":"oChooseCharger","path":"objects/oChooseCharger/oChooseCharger.yy",},},
