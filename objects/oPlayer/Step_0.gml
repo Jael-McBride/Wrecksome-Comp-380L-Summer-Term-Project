@@ -139,7 +139,7 @@ y = clamp(y, 0, room_height);
 var boost =  keyboard_check(vk_lshift) || keyboard_check(vk_rshift)
 var extraBoost = keyboard_check_pressed(vk_lcontrol) || keyboard_check_pressed(vk_rcontrol)
 
-if (boost == 1 && boostGauge > 0) {
+if (boost == 1 && boostGauge > 0 && spd > 1) {
 	realSpeed = topSpeed + boostTopSpeed
 	realAccel = accel + boostAccel
 	boostGauge -= boostUsage
@@ -159,7 +159,7 @@ if (boost == 1 && boostGauge > 0) {
 
 //extra boost implementation. Just an idea I thought up of
 
-if (extraBoost == 1 && boostGauge >= 20 && extraBoostInterval == 1){
+if (extraBoost == 1 && boostGauge >= 20 && extraBoostInterval == 1 && spd > 1){
 	fastState = 1
 	spd += extraBoostSpeed
 	direction = image_angle
@@ -186,7 +186,7 @@ if (fastState == 1){
 
 
 //gain boost through drifting
-if (abs(driftAngle) > 3 && boost == 0 && extraBoost == 0){
+if (abs(driftAngle) > 3 && boost == 0 && extraBoost == 0 && boostGauge < 100){
 	boostGauge += 0.1
 	boostGauge = clamp(boostGauge, 0, 100)
 	show_debug_message(boostGauge)
@@ -208,13 +208,55 @@ if (usePower) {
 	
 	case "oil":
 
-	var _distance = 150; 
-	var _spawn_angle = image_angle - 180;
-	var _spawn_x = x + lengthdir_x(_distance, _spawn_angle);
-	var _spawn_y = y + lengthdir_y(_distance, _spawn_angle);
+	var _distanceOil = 150; 
+	var _spawn_angleOil = image_angle - 180;
+	var _spawn_xOil = x + lengthdir_x(_distanceOil, _spawn_angleOil);
+	var _spawn_yOil = y + lengthdir_y(_distanceOil, _spawn_angleOil);
 
-	instance_create_layer(_spawn_x, _spawn_y, "Instances", oOilSpill);
+	instance_create_layer(_spawn_xOil, _spawn_yOil, "Instances", oOilSpill);
 	currentPower = "none"
+	break;
+	
+	case "mine":
+
+	var _distanceMine = 150; 
+	var _spawn_angleMine = image_angle - 180;
+	var _spawn_xMine = x + lengthdir_x(_distanceMine, _spawn_angleMine);
+	var _spawn_yMine = y + lengthdir_y(_distanceMine, _spawn_angleMine);
+
+	instance_create_layer(_spawn_xMine, _spawn_yMine, "Instances", oMine);
+	currentPower = "none"
+	break;
+	
+	case "gun":
+	
+	if (rockets > 1) {
+	var _distanceGun = 150; 
+	var _spawn_angleGun = image_angle;
+	var _spawn_xGun = x + lengthdir_x(_distanceGun, _spawn_angleGun);
+	var _spawn_yGun = y + lengthdir_y(_distanceGun, _spawn_angleGun);
+	rockets -= 1
+
+	var theRocket = instance_create_layer(_spawn_xGun, _spawn_yGun, "Instances", oRocket)
+	with(theRocket){
+		image_angle = other.image_angle
+		direction = other.image_angle
+		speed = other.spd + 20} 
+	}
+	else 	
+	{
+	var _distanceGun = 150; 
+	var _spawn_angleGun = image_angle;
+	var _spawn_xGun = x + lengthdir_x(_distanceGun, _spawn_angleGun);
+	var _spawn_yGun = y + lengthdir_y(_distanceGun, _spawn_angleGun);
+
+	var theRocket = instance_create_layer(_spawn_xGun, _spawn_yGun, "Instances", oRocket)
+	with(theRocket){
+		image_angle = other.image_angle
+		direction = other.image_angle
+		speed = other.spd + 20}
+	currentPower = "none"
+	}
 	break;
 	
 	default:
@@ -234,6 +276,14 @@ if (place_meeting(x,y,oOilSpill)){
 		alarm[3] = 1.8*game_get_speed(gamespeed_fps)
 	}
 	
+}
+
+//interaction with mines
+if (place_meeting(x,y,oMine)){
+	var mineID = instance_place(x,y,oMine)
+	show_debug_message("damage!")
+	instance_create_layer(x,y,"Instances", oPlosion)
+	instance_destroy(mineID)
 }
 
 

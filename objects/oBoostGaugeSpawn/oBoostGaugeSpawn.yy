@@ -10,8 +10,8 @@
   "name":"oBoostGaugeSpawn",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tracks",
-    "path":"folders/gameRoomStuff/Tracks.yy",
+    "name":"PowerUpSpwners",
+    "path":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sNitro",
+    "path":"sprites/sNitro/sNitro.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
