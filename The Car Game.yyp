@@ -35,7 +35,9 @@
     {"$GMFolder":"","%Name":"componentSprites","folderPath":"folders/trackRoomStuff/assets/componentSprites.yy","name":"componentSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"roomSprites","folderPath":"folders/trackRoomStuff/assets/roomSprites.yy","name":"roomSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_large_blur-1.0.0","name":"io.gamemaker.gm_filter_large_blur-1.0.0","path":"io.gamemaker.gm_filter_large_blur-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],

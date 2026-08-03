@@ -1,6 +1,7 @@
 switch(button_id) {
     case 0: // Singleplayer
         layer_set_visible("MenuLayer", false);
+        layer_set_visible("CarSelectLayer", true);
         room_goto(rPlayerSelect);
         break;
     case 1: // How to Play
