@@ -25,6 +25,11 @@ function setCar(carName){
 	driftSlowdown = 3.5;
 	driftStart = 12;
 	
+	boostAccel = 4
+	boostTopSpeed = 7
+	boostUsage = 1.1
+	extraBoostSpeed = 11
+	
 	break;
 	
 	case "miata":
@@ -42,6 +47,11 @@ function setCar(carName){
 	entrySpeed = 5;
 	driftSlowdown = -3;
 	driftStart = 5;
+	
+	boostAccel = 1
+	boostTopSpeed = 10
+	boostUsage = 0.7
+	extraBoostSpeed = 19
 	
 	break;
 	
@@ -61,6 +71,11 @@ function setCar(carName){
 	driftSlowdown = 2.5;
 	driftStart = 8;
 	
+	boostAccel = 0.5
+	boostTopSpeed = 13
+	boostUsage = 1.5
+	extraBoostSpeed = 24
+	
 	break;
 	
 	case "PinkPhantom":
@@ -78,6 +93,11 @@ function setCar(carName){
 	entrySpeed = 3;
 	driftSlowdown = 1.5;
 	driftStart = 7;
+	
+	boostAccel = 1
+	boostTopSpeed = 10
+	boostUsage = 0.8
+	extraBoostSpeed = 18
 	
 	break;
 	
@@ -97,6 +117,11 @@ function setCar(carName){
 	driftSlowdown = 3;
 	driftStart = 12;
 	
+	boostAccel = 10
+	boostTopSpeed = 6
+	boostUsage = 1.5
+	extraBoostSpeed = 13
+	
 	break;
 	
 	case "charger":
@@ -114,6 +139,11 @@ function setCar(carName){
 	entrySpeed = 4;
 	driftSlowdown = 2;
 	driftStart = 8;
+	
+	boostAccel = 9
+	boostTopSpeed = 6
+	boostUsage = 1.5
+	extraBoostSpeed = 13
 	
 	break;
 		
@@ -133,6 +163,13 @@ function setCar(carName){
 	entrySpeed = 5; //to make the game feel better, a boost of speed is given upon a start of a drift, depending on the car
 	driftSlowdown = 0; //how much top speed is affected during a drift. makes sure that drifting is slower than going straight
 	driftStart = 4; //minimum speed in which a drift is allowed to happen. set to 99 if you want a car that cant drift
+	
+	//boostgauge variables
+	boostAccel = 7
+	boostTopSpeed = 8
+	boostUsage = 0.5
+	extraBoostSpeed = 15
+	
 	}
 }
 

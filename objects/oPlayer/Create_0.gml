@@ -1,4 +1,6 @@
 
+oldTurnR = 0
+
 image_speed = 0
 image_index = 0
 
@@ -26,3 +28,8 @@ realAccel = accel
 realSpeed = topSpeed
 
 boostGauge = 100
+extraBoostInterval = 1
+
+fastState = 0
+
+currentPower = "none"

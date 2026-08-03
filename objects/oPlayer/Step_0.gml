@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
@@ -12,11 +11,12 @@ var reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_ch
 
 //hspeed = hspd
 //vspeed = vspd
+var extraR = 0
+
 
 speed = spd
 var lastdir = direction
 
-var extraR = 0
 
 
 if (left == 1 && abs(spd) > 0.05 && (driftAngle >= 0 || driftCorrCheck == 1) ) { direction += (turnR + extraR); } 
@@ -136,21 +136,109 @@ y = clamp(y, 0, room_height);
 
 
 //boost gauge implementation
-//replace temp variables with new stats in Car Stats
 var boost =  keyboard_check(vk_lshift) || keyboard_check(vk_rshift)
+var extraBoost = keyboard_check_pressed(vk_lcontrol) || keyboard_check_pressed(vk_rcontrol)
 
 if (boost == 1 && boostGauge > 0) {
-	realSpeed = topSpeed + 7
-	realAccel = accel + 10
-	boostGauge -= 0.5
+	realSpeed = topSpeed + boostTopSpeed
+	realAccel = accel + boostAccel
+	boostGauge -= boostUsage
+	boostGauge = clamp(boostGauge, 0, 100)
+		
+	var afterImageBoost = instance_create_layer(x, y, "Instances", oAfterImage)
+	with(afterImageBoost){
+		sprite_index = other.sprite_index
+		image_angle = other.image_angle
+	}
+		
 	show_debug_message(boostGauge)
 } else {
 	realSpeed = topSpeed
 	realAccel = accel
+}
+
+//extra boost implementation. Just an idea I thought up of
+
+if (extraBoost == 1 && boostGauge >= 20 && extraBoostInterval == 1){
+	fastState = 1
+	spd += extraBoostSpeed
+	direction = image_angle
+	extraR = 0
+	driftAngle = 0
+	Slowdown = 0
+	boostGauge -= 20
+	show_debug_message(boostGauge)
+	extraBoostInterval = 0
+	alarm[0] = 2.5*game_get_speed(gamespeed_fps)
+}
+
+if (fastState == 1){
+	var afterImageBoost = instance_create_layer(x, y, "Instances", oAfterImage)
+	with(afterImageBoost){
+		sprite_index = other.sprite_index
+		image_angle = other.image_angle
+	}
+		
+	if (alarm[2] == -1) {
+	alarm[2] = 1.5*game_get_speed(gamespeed_fps)
+	}
+}
+
+
+//gain boost through drifting
+if (abs(driftAngle) > 3 && boost == 0 && extraBoost == 0){
+	boostGauge += 0.1
+	boostGauge = clamp(boostGauge, 0, 100)
+	show_debug_message(boostGauge)
+} 
+
+//power ups WIP
+var usePower = keyboard_check_pressed(ord("E"))
+
+//the big Switch Statement for powers
+
+if (usePower) {
+	
+	switch(currentPower)
+	{
+	case "shield":
+	var shield = instance_create_layer(x, y, "PowerUpEffects", oShield)
+	currentPower = "none"
+	break;
+	
+	case "oil":
+
+	var _distance = 150; 
+	var _spawn_angle = image_angle - 180;
+	var _spawn_x = x + lengthdir_x(_distance, _spawn_angle);
+	var _spawn_y = y + lengthdir_y(_distance, _spawn_angle);
+
+	instance_create_layer(_spawn_x, _spawn_y, "Instances", oOilSpill);
+	currentPower = "none"
+	break;
+	
+	default:
+	show_debug_message("you aint got nothin, fool!");
+	break;
+	}
+}
+
+//interacting with oil spills
+if (turnR > 1) {
+	oldTurnR = turnR
+}
+
+if (place_meeting(x,y,oOilSpill)){
+	turnR = 0.2
+	if (alarm[3] == -1){
+		alarm[3] = 1.8*game_get_speed(gamespeed_fps)
+	}
 	
 }
 
 
+
+//legacy code for abandoned power up. I'll leave it be in case anyone still wanted to use said power up
 
 if (place_meeting(x,y, oSmallPowerUp)) {
 image_xscale = 0.5
