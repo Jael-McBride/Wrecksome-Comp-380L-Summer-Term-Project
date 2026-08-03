@@ -1,5 +1,9 @@
 {
   "FolderOrderSettings":[
+    {"name":"assets","order":1,"path":"folders/playerSelectionRoom/assets.yy",},
+    {"name":"componentObjects","order":1,"path":"folders/playerSelectionRoom/assets/componentObjects.yy",},
+    {"name":"componentSprites","order":2,"path":"folders/playerSelectionRoom/assets/componentSprites.yy",},
+    {"name":"roomSprites","order":3,"path":"folders/playerSelectionRoom/assets/roomSprites.yy",},
     {"name":"roomSprites","order":1,"path":"folders/trackRoomStuff/assets/roomSprites.yy",},
   ],
   "ResourceOrderSettings":[
