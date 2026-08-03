@@ -8,10 +8,13 @@
   "name":"oShieldPickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"PowerUps",
+    "path":"folders/gameRoomStuff/carObjects/PowerUps.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oGenericPowerUp",
+    "path":"objects/oGenericPowerUp/oGenericPowerUp.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

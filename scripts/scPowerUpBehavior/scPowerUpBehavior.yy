@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scPowerUpBehavior",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scPowerUpBehavior",
+  "parent":{
+    "name":"PowerUpSpwners",
+    "path":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
