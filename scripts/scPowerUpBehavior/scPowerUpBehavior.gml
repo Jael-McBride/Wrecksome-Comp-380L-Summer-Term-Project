@@ -28,7 +28,8 @@ case "gun":
 	break;
 	
 case "repair":
-	show_debug_message("repaired!")
+	player.carHealth = player.maxHealth
+	show_debug_message(player.carHealth)
 	break;
 	
 default:

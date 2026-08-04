@@ -10,6 +10,7 @@ function setCar(carName){
 	{
 	
 	case "sportsCar":
+	carHealth = 90
 	accel = 0.3;
 	turnR = 2.5;
 	topSpeed = 15;
@@ -33,6 +34,8 @@ function setCar(carName){
 	break;
 	
 	case "miata":
+	carHealth = 100
+	
 	accel = 0.4;
 	turnR = 3;
 	topSpeed = 12;
@@ -56,6 +59,8 @@ function setCar(carName){
 	break;
 	
 	case "oshKosh":
+	carHealth = 150
+	
 	accel = 0.15;
 	turnR = 1.5;
 	topSpeed = 14;
@@ -79,6 +84,8 @@ function setCar(carName){
 	break;
 	
 	case "PinkPhantom":
+	carHealth = 100
+	
 	accel = 0.35;
 	turnR = 2.3;
 	topSpeed = 14;
@@ -102,6 +109,8 @@ function setCar(carName){
 	break;
 	
 	case "veneno":
+	carHealth = 85
+	
 	accel = 0.3;
 	turnR = 2;
 	topSpeed = 17;
@@ -125,6 +134,8 @@ function setCar(carName){
 	break;
 	
 	case "charger":
+	carHealth = 100
+	
 	accel = 0.35;
 	turnR = 2;
 	topSpeed = 15;
@@ -148,6 +159,9 @@ function setCar(carName){
 	break;
 		
 	default:
+	//health
+	carHealth = 100
+	
 	accel = 0.3;
 	turnR = 2.5;
 	topSpeed = 12;

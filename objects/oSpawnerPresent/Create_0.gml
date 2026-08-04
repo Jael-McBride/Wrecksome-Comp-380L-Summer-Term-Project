@@ -1,4 +1,10 @@
-instance_create_layer(2368, 832, "Instances", global.playerCar)
+inst = instance_create_layer(2368, 832, "Instances", global.playerCar)
+
+if(instance_exists(oPlayer)){
+	layer_set_visible("WIPGameHUD", true);
+}else{
+	layer_set_visible("WIPGameHUD", false);
+}
 
 
 

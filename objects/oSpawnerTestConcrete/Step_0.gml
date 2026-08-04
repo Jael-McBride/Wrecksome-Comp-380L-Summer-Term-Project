@@ -1,9 +1,13 @@
 //this is probably not the most efficient way to code this. figure a better way later
+if(!instance_exists(inst)&& alarm[0] == -1){
+	alarm[0] = 2*game_get_speed(gamespeed_fps)
+
+}
 
 with(oPlayer)
 	if (place_meeting(x,y,oChecked)){
-		var inst = instance_place(x, y, oChecked)	
-		instance_destroy(inst)
+		var inst2 = instance_place(x, y, oChecked)	
+		instance_destroy(inst2)
 		if (instance_exists(oChecked) == 0){
 			instance_create_layer(2208, 1008, "Instances", oFinishLine)
 		}

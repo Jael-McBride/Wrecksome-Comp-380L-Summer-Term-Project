@@ -1,7 +1,11 @@
+maxHealth = 100
+damageTaken = 0
 
 oldTurnR = 0
 
 rockets = 0
+
+shieldState = 0
 
 image_speed = 0
 image_index = 0

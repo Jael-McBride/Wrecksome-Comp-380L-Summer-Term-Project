@@ -20,6 +20,7 @@
     {"$GMFolder":"","%Name":"Tilesets","folderPath":"folders/gameRoomStuff/Tilesets.yy","name":"Tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"TilesetSprites","folderPath":"folders/gameRoomStuff/Tilesets/TilesetSprites.yy","name":"TilesetSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tracks","folderPath":"folders/gameRoomStuff/Tracks.yy","name":"Tracks","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"TrackPaths","folderPath":"folders/gameRoomStuff/Tracks/TrackPaths.yy","name":"TrackPaths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PowerUpSpwners","folderPath":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy","name":"PowerUpSpwners","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"globalAssets","folderPath":"folders/globalAssets.yy","name":"globalAssets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"componentObjects","folderPath":"folders/globalAssets/componentObjects.yy","name":"componentObjects","resourceType":"GMFolder","resourceVersion":"2.0",},

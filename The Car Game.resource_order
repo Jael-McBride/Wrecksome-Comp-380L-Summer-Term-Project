@@ -4,6 +4,7 @@
     {"name":"gameRoomStuff","order":5,"path":"folders/gameRoomStuff.yy",},
     {"name":"ParentAndStats","order":6,"path":"folders/gameRoomStuff/carObjects/ParentAndStats.yy",},
     {"name":"PowerUps","order":7,"path":"folders/gameRoomStuff/carObjects/PowerUps.yy",},
+    {"name":"TrackPaths","order":16,"path":"folders/gameRoomStuff/Tracks/TrackPaths.yy",},
     {"name":"PowerUpSpwners","order":15,"path":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy",},
     {"name":"globalAssets","order":6,"path":"folders/globalAssets.yy",},
     {"name":"menuRoomStuff","order":7,"path":"folders/menuRoomStuff.yy",},

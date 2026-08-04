@@ -2,3 +2,4 @@
 event_inherited();
 
 setCar("charger");
+maxHealth = carHealth

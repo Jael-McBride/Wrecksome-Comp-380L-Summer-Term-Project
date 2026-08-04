@@ -190,20 +190,6 @@
               ],"flexDirection":0,"height":{"unit":1,"value":60.0,},"justifyContent":1,"name":"Quit","nodeColour":4294068466,"paddingLeft":{"unit":1,"value":20.0,},"paddingRight":{"unit":1,"value":20.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":55.0,},},
           ],"flexDirection":0,"gapRow":5.0,"height":{"unit":1,"value":720.0,},"justifyContent":2,"layoutDirection":1,"name":"MainMenuPanel","nodeColour":4282970816,"paddingBottom":{"unit":1,"value":45.0,},"paddingLeft":{"unit":1,"value":45.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":1280.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"MenuLayer","nodeColour":4284303602,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
-    {"$GMRUILayer":"v1","%Name":"ThirdLap","alignItems":2,"children":[
-        {"$GMRFlexPanel":"","%Name":"FlexPanel_7","alignItems":2,"children":[
-            {"$GMRInstance":"v4","%Name":"inst_2EE3C4C5","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2EE3C4C5","objectId":{"name":"oThirdLap","path":"objects/oThirdLap/oThirdLap.yy",},"properties":[
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Final Lap",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
-          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_7","nodeColour":4289743090,"paddingBottom":{"unit":1,"value":233.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"ThirdLap","nodeColour":4282970750,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
-    {"$GMRUILayer":"v1","%Name":"SecondLap","alignItems":2,"children":[
-        {"$GMRFlexPanel":"","%Name":"FlexPanel_6","alignItems":2,"children":[
-            {"$GMRInstance":"v4","%Name":"inst_795013CC","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_795013CC","objectId":{"name":"oSecondLap","path":"objects/oSecondLap/oSecondLap.yy",},"properties":[
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Second Lap",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
-          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_6","nodeColour":4294069576,"paddingBottom":{"unit":1,"value":248.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"SecondLap","nodeColour":4282938866,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
   ],
   "locked":false,
   "name":"RoomUI",
@@ -230,6 +216,7 @@
           ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_5","nodeColour":4282956274,"paddingBottom":{"unit":1,"value":77.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
         {"$GMRFlexPanel":"","%Name":"FlexPanel_4","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_4","nodeColour":4293653064,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Pause","nodeColour":4291250418,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+    {"$GMRUILayer":"v1","%Name":"WIPGameHUD","alignItems":2,"children":[],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"WIPGameHUD","nodeColour":4293849672,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
   "visible":true,
 }

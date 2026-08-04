@@ -2,3 +2,4 @@
 event_inherited();
 
 setCar("veneno");
+maxHealth = carHealth

@@ -104,7 +104,13 @@ else if (spd < 0) {spd += 0.1}
  vspd = lengthdir_y(spd, angle);
             
 if (place_meeting(x + hspd, y, oTestWall)) {
-	show_debug_message("crash")
+	if (damageTaken == 1 || shieldState == 1){
+		show_debug_message(carHealth)
+	} else {
+		carHealth -= 2
+		show_debug_message(carHealth)
+	}
+	damageTaken = 1
     for (var _s = 0; _s < abs(hspd) + 1; _s++) {
         if (place_meeting(x + sign(hspd), y, oTestWall)) break;
         x += sign(hspd);
@@ -114,6 +120,13 @@ if (place_meeting(x + hspd, y, oTestWall)) {
 }
 
 if (place_meeting(x, y + vspd, oTestWall)) {
+	if (damageTaken == 1 || shieldState == 1){
+		show_debug_message(carHealth)
+	}else {
+		carHealth -= 2
+		show_debug_message(carHealth)
+	}
+	damageTaken = 1
     for (var _s = 0; _s < abs(vspd) + 1; _s++) {
         if (place_meeting(x, y + sign(vspd), oTestWall)) break;
         y += sign(vspd);
@@ -125,6 +138,10 @@ if (place_meeting(x, y + vspd, oTestWall)) {
 
 if (place_meeting(x,y,oTestWall)){
 speed = -speed*0.8}
+
+if(!place_meeting(x,y,oTestWall)){
+	damageTaken = 0
+}
 
 
 
@@ -159,14 +176,14 @@ if (boost == 1 && boostGauge > 0 && spd > 1) {
 
 //extra boost implementation. Just an idea I thought up of
 
-if (extraBoost == 1 && boostGauge >= 20 && extraBoostInterval == 1 && spd > 1){
+if (extraBoost == 1 && boostGauge >= 25 && extraBoostInterval == 1 && spd > 1){
 	fastState = 1
 	spd += extraBoostSpeed
 	direction = image_angle
 	extraR = 0
 	driftAngle = 0
 	Slowdown = 0
-	boostGauge -= 20
+	boostGauge -= 25
 	show_debug_message(boostGauge)
 	extraBoostInterval = 0
 	alarm[0] = 2.5*game_get_speed(gamespeed_fps)
@@ -204,6 +221,8 @@ if (usePower) {
 	case "shield":
 	var shield = instance_create_layer(x, y, "PowerUpEffects", oShield)
 	currentPower = "none"
+	shieldState = 1
+	alarm[4] = 6*game_get_speed(gamespeed_fps)
 	break;
 	
 	case "oil":
@@ -270,7 +289,7 @@ if (turnR > 1) {
 	oldTurnR = turnR
 }
 
-if (place_meeting(x,y,oOilSpill)){
+if (place_meeting(x,y,oOilSpill) && shieldState == 0){
 	turnR = 0.2
 	if (alarm[3] == -1){
 		alarm[3] = 1.8*game_get_speed(gamespeed_fps)
@@ -281,12 +300,27 @@ if (place_meeting(x,y,oOilSpill)){
 //interaction with mines
 if (place_meeting(x,y,oMine)){
 	var mineID = instance_place(x,y,oMine)
-	show_debug_message("damage!")
+	if (shieldState == 0){
+	carHealth -= 30
+	}
 	instance_create_layer(x,y,"Instances", oPlosion)
 	instance_destroy(mineID)
 }
 
+if (place_meeting(x,y,oRocket)){
+	var rocketID = instance_place(x,y,oRocket)
+	if (shieldState == 0){
+	carHealth -= 25
+	}
+	instance_create_layer(x,y,"Instances", oPlosion)
+	instance_destroy(rocketID)
+}
 
+//health??????
+if (carHealth <= 0) {
+	instance_create_layer(x,y,"Instances", oPlosion)
+	instance_destroy()
+}
 
 //legacy code for abandoned power up. I'll leave it be in case anyone still wanted to use said power up
 

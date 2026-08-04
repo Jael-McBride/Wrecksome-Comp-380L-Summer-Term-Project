@@ -2,3 +2,4 @@
 event_inherited();
 
 setCar("miata");
+maxHealth = carHealth

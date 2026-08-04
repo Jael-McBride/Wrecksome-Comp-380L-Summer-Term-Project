@@ -2,3 +2,4 @@
 event_inherited();
 
 setCar("PinkPhantom");
+maxHealth = carHealth
