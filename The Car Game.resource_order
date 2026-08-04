@@ -3,6 +3,7 @@
     {"name":"fonts","order":4,"path":"folders/fonts.yy",},
     {"name":"gameRoomStuff","order":5,"path":"folders/gameRoomStuff.yy",},
     {"name":"ParentAndStats","order":6,"path":"folders/gameRoomStuff/carObjects/ParentAndStats.yy",},
+    {"name":"opponentCars","order":8,"path":"folders/gameRoomStuff/carObjects/opponentCars.yy",},
     {"name":"PowerUps","order":7,"path":"folders/gameRoomStuff/carObjects/PowerUps.yy",},
     {"name":"PowerUpSpwners","order":15,"path":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy",},
     {"name":"TrackPaths","order":16,"path":"folders/gameRoomStuff/Tracks/TrackPaths.yy",},

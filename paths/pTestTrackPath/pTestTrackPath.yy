@@ -1,0 +1,24 @@
+{
+  "$GMPath":"",
+  "%Name":"pTestTrackPath",
+  "closed":true,
+  "kind":1,
+  "name":"pTestTrackPath",
+  "parent":{
+    "name":"TrackPaths",
+    "path":"folders/gameRoomStuff/Tracks/TrackPaths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":672.0,"y":1632.0,},
+    {"speed":100.0,"x":576.0,"y":480.0,},
+    {"speed":100.0,"x":2560.0,"y":448.0,},
+    {"speed":100.0,"x":2464.0,"y":1984.0,},
+    {"speed":100.0,"x":2464.0,"y":2464.0,},
+    {"speed":100.0,"x":1152.0,"y":2400.0,},
+    {"speed":100.0,"x":736.0,"y":2432.0,},
+    {"speed":100.0,"x":640.0,"y":2464.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
