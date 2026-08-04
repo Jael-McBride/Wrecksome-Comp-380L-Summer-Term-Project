@@ -25,6 +25,7 @@
     {"name":"inst_760BC1A5","path":"rooms/rTileSetSandy/rTileSetSandy.yy",},
     {"name":"inst_54B1B213","path":"rooms/rTileSetSandy/rTileSetSandy.yy",},
     {"name":"inst_68824B3F","path":"rooms/rTileSetSandy/rTileSetSandy.yy",},
+    {"name":"inst_44DD5C96","path":"rooms/rTileSetSandy/rTileSetSandy.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -49,6 +50,7 @@
         {"$GMRInstance":"v4","%Name":"inst_760BC1A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_760BC1A5","objectId":{"name":"oOilPickupSpawn","path":"objects/oOilPickupSpawn/oOilPickupSpawn.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3424.0,"y":2976.0,},
         {"$GMRInstance":"v4","%Name":"inst_54B1B213","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54B1B213","objectId":{"name":"oTestWall","path":"objects/oTestWall/oTestWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":19.5,"scaleY":5.0,"x":4304.0,"y":1408.0,},
         {"$GMRInstance":"v4","%Name":"inst_68824B3F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_68824B3F","objectId":{"name":"oTestWall","path":"objects/oTestWall/oTestWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":13.0,"scaleY":3.0,"x":2336.0,"y":2240.0,},
+        {"$GMRInstance":"v4","%Name":"inst_44DD5C96","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44DD5C96","objectId":{"name":"oPickUpPowerUps","path":"objects/oPickUpPowerUps/oPickUpPowerUps.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":416.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":125,"SerialiseWidth":188,"TileCompressedData":[
           -50,-2147483648,1,0,-192,-2147483648,-121,0,-62,-2147483648,1,0,-4,-2147483648,-121,0,-62,-2147483648,

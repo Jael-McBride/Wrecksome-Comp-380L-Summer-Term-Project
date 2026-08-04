@@ -59,7 +59,7 @@ function setCar(carName){
 	break;
 	
 	case "oshKosh":
-	carHealth = 150
+	carHealth = 200
 	
 	accel = 0.15;
 	turnR = 1.5;
