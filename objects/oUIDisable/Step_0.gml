@@ -10,6 +10,8 @@ layer_name = "Pause"
 
 layer_set_visible(layer_name, false);
 
+layer_set_visible("lose", false);
+
 if(instance_exists(oPlayer)){
 	layer_set_visible("WIPGameHUD", true);
 }else{

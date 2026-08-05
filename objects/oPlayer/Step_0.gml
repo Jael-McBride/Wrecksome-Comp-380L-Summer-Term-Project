@@ -105,10 +105,10 @@ else if (spd < 0) {spd += 0.1}
             
 if (place_meeting(x + hspd, y, oTestWall)) {
 	if (damageTaken == 1 || shieldState == 1){
-		show_debug_message(carHealth)
+		
 	} else {
 		carHealth -= 2
-		show_debug_message(carHealth)
+		
 	}
 	damageTaken = 1
     for (var _s = 0; _s < abs(hspd) + 1; _s++) {
@@ -121,10 +121,10 @@ if (place_meeting(x + hspd, y, oTestWall)) {
 
 if (place_meeting(x, y + vspd, oTestWall)) {
 	if (damageTaken == 1 || shieldState == 1){
-		show_debug_message(carHealth)
+		
 	}else {
 		carHealth -= 2
-		show_debug_message(carHealth)
+		
 	}
 	damageTaken = 1
     for (var _s = 0; _s < abs(vspd) + 1; _s++) {
@@ -168,7 +168,7 @@ if (boost == 1 && boostGauge > 0 && spd > 1) {
 		image_angle = other.image_angle
 	}
 		
-	show_debug_message(boostGauge)
+	
 } else {
 	realSpeed = topSpeed
 	realAccel = accel
@@ -184,7 +184,7 @@ if (extraBoost == 1 && boostGauge >= 25 && extraBoostInterval == 1 && spd > 1){
 	driftAngle = 0
 	Slowdown = 0
 	boostGauge -= 25
-	show_debug_message(boostGauge)
+
 	extraBoostInterval = 0
 	alarm[0] = 2.5*game_get_speed(gamespeed_fps)
 }
@@ -206,7 +206,7 @@ if (fastState == 1){
 if (abs(driftAngle) > 3 && boost == 0 && extraBoost == 0 && boostGauge < 100){
 	boostGauge += 0.1
 	boostGauge = clamp(boostGauge, 0, 100)
-	show_debug_message(boostGauge)
+	
 } 
 
 //power ups WIP

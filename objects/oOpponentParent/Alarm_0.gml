@@ -1,0 +1,1 @@
+damageCooldown = 0
