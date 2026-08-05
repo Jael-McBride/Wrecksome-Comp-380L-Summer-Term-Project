@@ -17,6 +17,9 @@ switch(step) {
         lights[2].light_state = 2;
         break;
     case 5:
+        lights[0].light_state = 0;
+        lights[1].light_state = 0;
+        lights[2].light_state = 0;
         layer_set_visible("RaceCountdownLayer", false);
         break;
 }
