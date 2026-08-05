@@ -70,6 +70,7 @@
     {"id":{"name":"oChooseOshKosh","path":"objects/oChooseOshKosh/oChooseOshKosh.yy",},},
     {"id":{"name":"oChoosePinkPhantom","path":"objects/oChoosePinkPhantom/oChoosePinkPhantom.yy",},},
     {"id":{"name":"oChooseVeneno","path":"objects/oChooseVeneno/oChooseVeneno.yy",},},
+    {"id":{"name":"oCountdownManager","path":"objects/oCountdownManager/oCountdownManager.yy",},},
     {"id":{"name":"oF40","path":"objects/oF40/oF40.yy",},},
     {"id":{"name":"oFinishedYippee","path":"objects/oFinishedYippee/oFinishedYippee.yy",},},
     {"id":{"name":"oFinishLine","path":"objects/oFinishLine/oFinishLine.yy",},},

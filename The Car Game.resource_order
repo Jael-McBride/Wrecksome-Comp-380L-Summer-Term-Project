@@ -29,6 +29,7 @@
     {"name":"oChooseMiata","order":6,"path":"objects/oChooseMiata/oChooseMiata.yy",},
     {"name":"oChooseOshKosh","order":1,"path":"objects/oChooseOshKosh/oChooseOshKosh.yy",},
     {"name":"oChoosePinkPhantom","order":2,"path":"objects/oChoosePinkPhantom/oChoosePinkPhantom.yy",},
+    {"name":"oCountdownManager","order":1,"path":"objects/oCountdownManager/oCountdownManager.yy",},
     {"name":"oF40","order":5,"path":"objects/oF40/oF40.yy",},
     {"name":"oGunPickup","order":7,"path":"objects/oGunPickup/oGunPickup.yy",},
     {"name":"oGunPickupSpawn","order":7,"path":"objects/oGunPickupSpawn/oGunPickupSpawn.yy",},
