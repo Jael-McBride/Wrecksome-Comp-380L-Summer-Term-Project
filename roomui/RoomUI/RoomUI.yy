@@ -216,6 +216,14 @@
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
   "viewspaceChildren":[
+    {"$GMRUILayer":"v1","%Name":"lose","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_7","alignItems":2,"children":[
+            {"$GMRSpriteGraphic":"v1","%Name":"graphic_2CDE3AD5","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2CDE3AD5","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sYoureLoser","path":"sprites/sYoureLoser/sYoureLoser.yy",},"x":128.0,"y":64.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":128.0,},"justifyContent":1,"name":"FlexPanel_7","nodeColour":4287885896,"paddingBottom":{"unit":1,"value":102.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_6","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_377FC8F6","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_377FC8F6","objectId":{"name":"oButtonBack","path":"objects/oButtonBack/oButtonBack.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":40.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_6","nodeColour":4294068420,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"lose","nodeColour":4282970862,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"workDammit","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"FlexPanel_1","alignItems":2,"children":[
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_489BBCE2","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_489BBCE2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sYoureWinner","path":"sprites/sYoureWinner/sYoureWinner.yy",},"x":128.0,"y":64.0,},
