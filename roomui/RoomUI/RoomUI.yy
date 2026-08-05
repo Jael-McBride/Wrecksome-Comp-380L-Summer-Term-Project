@@ -2,6 +2,22 @@
   "$GMRoomUI":"",
   "%Name":"RoomUI",
   "children":[
+    {"$GMRUILayer":"v1","%Name":"RaceCountdownLayer","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"RaceCountdownPanel","alignItems":2,"children":[
+            {"$GMRFlexPanel":"","%Name":"LightContainer","alignItems":2,"children":[
+                {"$GMRFlexPanel":"","%Name":"Light_0","alignItems":2,"children":[
+                    {"$GMRSpriteGraphic":"v1","%Name":"graphic_2ADDA899","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2ADDA899","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sLightOff","path":"sprites/sLightOff/sLightOff.yy",},"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":3,"value":108.0,},"justifyContent":1,"name":"Light_0","nodeColour":4294068330,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":96.0,},},
+                {"$GMRFlexPanel":"","%Name":"Light_1","alignItems":2,"children":[
+                    {"$GMRSpriteGraphic":"v1","%Name":"graphic_38900F95","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_38900F95","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sLightOff","path":"sprites/sLightOff/sLightOff.yy",},"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":3,"value":108.0,},"justifyContent":1,"name":"Light_1","nodeColour":4282948850,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":96.0,},},
+                {"$GMRFlexPanel":"","%Name":"Light_2","alignItems":2,"children":[
+                    {"$GMRSpriteGraphic":"v1","%Name":"graphic_2690EF4C","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2690EF4C","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sLightOff","path":"sprites/sLightOff/sLightOff.yy",},"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":3,"value":108.0,},"justifyContent":1,"name":"Light_2","nodeColour":4291686984,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":96.0,},},
+                {"$GMRSpriteGraphic":"v1","%Name":"graphic_603C85A6","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_603C85A6","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sLightContainer","path":"sprites/sLightContainer/sLightContainer.yy",},"x":0.0,"y":0.0,},
+              ],"flexDirection":2,"height":{"unit":1,"value":156.0,},"justifyContent":3,"name":"LightContainer","nodeColour":4293216498,"paddingBottom":{"unit":1,"value":18.0,},"paddingLeft":{"unit":1,"value":36.0,},"paddingRight":{"unit":1,"value":36.0,},"paddingTop":{"unit":1,"value":30.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":402.0,},},
+          ],"flexDirection":0,"height":{"unit":1,"value":720.0,},"justifyContent":0,"name":"RaceCountdownPanel","nodeColour":4282970804,"paddingTop":{"unit":1,"value":90.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":1280.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"RaceCountdownLayer","nodeColour":4294083144,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"CarSelectLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"CarSelectPanel","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"SportsCar","alignItems":2,"children":[
