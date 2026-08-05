@@ -2,9 +2,14 @@
 
 //bestPos += 0.2
 
-if (speed <= maxSpeed){
-	speed += accel
+if (spd <= maxSpeed){
+	spd += accel
 }
+
+hspd=lengthdir_x(spd, direction); // extracting horizontal movement
+vspd=lengthdir_y(spd, direction); // extracting vertical movement
+
+move_and_collide(hspd, vspd, oPlayer)
 
 
 pointX = path_get_x(pTestTrackPath, bestPos)
@@ -12,27 +17,17 @@ pointY = path_get_y(pTestTrackPath, bestPos)
 
 //move_towards_point(pointX, pointY, spd)
 
-if(direction > point_direction(x,y,pointX,pointY) || point_direction(x,y,pointX,pointY) - direction > 300)
+if(angle_difference(point_direction(x,y,pointX,pointY), direction) < 0 )
 	{
-		direction -= 5
-		//if(driftAngle > -50){
-		//driftAngle -= 2
-		//}
+		direction -= 3
+	} 
+	
+if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 0)
+	{
+		direction += 3
+		
 	} 
 
-if(direction < point_direction(x,y,pointX,pointY) /*&& (abs(point_direction(x,y,pointX,pointY) - direction) < 300)*/)
-	{
-		if((point_direction(x,y,pointX,pointY) - direction) > 335){
-			direction -= 5
-			//if(driftAngle > -50){
-			//driftAngle -= 3
-			//}
-		}else
-		direction += 5
-		//if(driftAngle < 50){
-		//driftAngle += 3
-		//}
-	} 
 
 //if(driftAngle < 0 && (abs(point_direction(x,y,pointX,pointY) - direction) < 10 ||abs(point_direction(x,y,pointX,pointY) - direction) > 350))
 //{driftAngle += 1}
