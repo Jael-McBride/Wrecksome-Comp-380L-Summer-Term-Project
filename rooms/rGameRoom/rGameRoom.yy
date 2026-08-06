@@ -26,6 +26,7 @@
     {"name":"inst_6EE7E9AF","path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"inst_537F2D91","path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"inst_1E200A66","path":"rooms/rGameRoom/rGameRoom.yy",},
+    {"name":"inst_F423B33","path":"rooms/rGameRoom/rGameRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -55,6 +56,7 @@
         {"$GMRInstance":"v4","%Name":"inst_6EE7E9AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EE7E9AF","objectId":{"name":"oGunPickupSpawn","path":"objects/oGunPickupSpawn/oGunPickupSpawn.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1568.0,"y":2368.0,},
         {"$GMRInstance":"v4","%Name":"inst_537F2D91","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_537F2D91","objectId":{"name":"oPickUpPowerUps","path":"objects/oPickUpPowerUps/oPickUpPowerUps.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":320.0,},
         {"$GMRInstance":"v4","%Name":"inst_1E200A66","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E200A66","objectId":{"name":"oCheckForAI","path":"objects/oCheckForAI/oCheckForAI.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.3333333,"scaleY":0.5833334,"x":640.0,"y":1296.0,},
+        {"$GMRInstance":"v4","%Name":"inst_F423B33","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F423B33","objectId":{"name":"oCountdownManager","path":"objects/oCountdownManager/oCountdownManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2080.0,"y":1408.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Da_track","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_58BDDDD2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_58BDDDD2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sTestTrack","path":"sprites/sTestTrack/sTestTrack.yy",},"x":448.0,"y":384.0,},
