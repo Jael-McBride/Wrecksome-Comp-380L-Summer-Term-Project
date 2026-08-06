@@ -1,7 +1,7 @@
-inst = instance_create_layer(2048, 1248, "Instances", global.playerCar)
+inst = instance_create_layer(1812, 1120, "Instances", global.playerCar)
 with(inst)
 {
-	direction = 0
+	direction = -45
 }
 
 if(instance_exists(oPlayer)){

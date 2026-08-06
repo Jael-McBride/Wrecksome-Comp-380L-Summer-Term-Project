@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oSpawnerTestTrack",
+  "%Name":"oOpponentTestTrack",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSpawnerTestTrack",
+  "name":"oOpponentTestTrack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tracks",
-    "path":"folders/gameRoomStuff/Tracks.yy",
+    "name":"OpponentSpawners",
+    "path":"folders/gameRoomStuff/Tracks/OpponentSpawners.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sFinishLine",
+    "path":"sprites/sFinishLine/sFinishLine.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -1,9 +1,5 @@
 //this is probably not the most efficient way to code this. figure a better way later
 //experimental path variance
-if(instance_exists(instBot) && alarm[1] == -1){
-	alarm[1] = (irandom(4)+1)*game_get_speed(gamespeed_fps)
-}
-
 
 
 if(!instance_exists(inst)&& alarm[0] == -1){

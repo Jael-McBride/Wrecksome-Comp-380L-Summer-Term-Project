@@ -9,10 +9,6 @@ with(instBot){
 		pathUsed = pTestTrackPath3
 		break;
 		
-		case 3:
-		pathUsed = pTestTrackPath4
-		break;
-		
 		default:
 		pathUsed = pTestTrackPath
 	

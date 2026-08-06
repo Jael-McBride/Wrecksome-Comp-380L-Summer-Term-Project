@@ -1,30 +1,34 @@
 //lets see if this works
 //the spawner object will have to tell the car what path its using
+//randomize sprite?
+
+theSprite = randomizeSprite()
+
+sprite_index = theSprite
+
 checkContact = 0
 lapDone = 0
 lapNeeded = 3
 
 driftAngle = 0
 bestPos = 0
-maxDriftAngle = 40
+maxDriftAngle = 50
 
 damageCooldown = 0
 
 carHealth = 90
 
-regularR = 1.5
-driftR = 4
+regularR = 1
+driftR = 3
 rotate = regularR
-
-dd = 0
 
 hspd = 0
 vspd = 0
 
 spd = 0
-maxSpeed = 13
+maxSpeed = 10 + irandom(4)
 oldSpeed = maxSpeed
-accel = 0.3
+accel = 0.2
 
 pointX = 0
 pointY = 0

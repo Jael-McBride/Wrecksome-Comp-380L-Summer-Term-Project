@@ -10,6 +10,7 @@ if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
 } 
 if (lapDone > lapNeeded){
 	layer_set_visible("lose", true);
+	instance_deactivate_layer("Instances")
 }
 
 
@@ -22,7 +23,21 @@ if (spd <= maxSpeed){
 hspd=lengthdir_x(spd, direction); // extracting horizontal movement
 vspd=lengthdir_y(spd, direction); // extracting vertical movement
 
-move_and_collide(hspd, vspd, [oPlayer, oTestWall])
+move_and_collide(hspd, vspd, [oPlayer, oTestWall, oOpponentParent])
+
+if(place_meeting(x-3,y,[oOpponentParent,oPlayer])){
+	x+=3
+}
+if(place_meeting(x+3,y,[oOpponentParent,oPlayer])){
+	x-=3	
+}
+if(place_meeting(x,y-3,[oOpponentParent,oPlayer])){
+	y+=3
+}
+if(place_meeting(x,y+3,[oOpponentParent,oPlayer])){
+	y-=3
+}
+
 
 
 pointX = path_get_x(pathUsed, bestPos)
@@ -30,7 +45,7 @@ pointY = path_get_y(pathUsed, bestPos)
 
 
 //move_towards_point(pointX, pointY, spd)
-if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -20)
+if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	{
 		maxSpeed = 9
 		rotate = driftR
@@ -39,7 +54,7 @@ if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -20)
 		}
 	}
 	
-else if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 20)
+else if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 10)
 	{
 		maxSpeed = 9
 		rotate = driftR
@@ -48,7 +63,7 @@ else if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 20)
 		}
 	} 
 else {
-		maxSpeed = 13
+		maxSpeed = oldSpeed
 		rotate = regularR
 		direction = image_angle
 		driftAngle = 0
@@ -69,7 +84,7 @@ if (bestPos >= 1){
 	bestPos = 0
 }
 
-if (distance_to_point(pointX,pointY) < 100){
+if (distance_to_point(pointX,pointY) < 80){
 	bestPos += 0.05
 } else if (distance_to_point(pointX,pointY) > 500){
 	bestPos = getClosestPoint(pathUsed, x, y)

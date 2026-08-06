@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scRandomSprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scRandomSprite",
+  "parent":{
+    "name":"opponentCars",
+    "path":"folders/gameRoomStuff/carObjects/opponentCars.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

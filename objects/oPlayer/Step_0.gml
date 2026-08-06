@@ -135,9 +135,21 @@ if (place_meeting(x, y + vspd, oTestWall)) {
     spd *= 0.5;
 }
 
+if(place_meeting(x-3,y,[oOpponentParent,oTestWall])){
+	x+=3
+}
+if(place_meeting(x+3,y,[oOpponentParent,oTestWall])){
+	x-=3
+}
+if(place_meeting(x,y-3,[oOpponentParent,oTestWall])){
+	y+=3
+}
+if(place_meeting(x,y+3,[oOpponentParent,oTestWall])){
+	y-=3
+}
 
-if (place_meeting(x,y,oTestWall)){
-speed = -speed*0.8}
+//if (place_meeting(x,y,oTestWall)){
+//speed = -speed*0.8}
 
 if(!place_meeting(x,y,oTestWall)){
 	damageTaken = 0
