@@ -16,6 +16,7 @@ switch(button_id) {
     case 4: // Menu
         layer_set_visible("MenuLayer", true);
         layer_set_visible("PauseLayer", false);
+        layer_set_visible("RaceCountdownLayer", false);
         room_goto(rMenuRoom);
         break;
     case 5: // Resume

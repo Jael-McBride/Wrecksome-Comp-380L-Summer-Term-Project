@@ -1,0 +1,1 @@
+global.race_started = false;
