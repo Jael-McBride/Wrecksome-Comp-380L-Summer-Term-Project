@@ -10,7 +10,7 @@ if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
 	lapDone += 1
 	checkContact = 1
 	if (alarm[1] == -1){
-		alarm[1] = 3.5*game_get_speed(gamespeed_fps)
+		alarm[1] = 5*game_get_speed(gamespeed_fps)
 	}
 } 
 if (lapDone > lapNeeded){
@@ -19,7 +19,7 @@ if (lapDone > lapNeeded){
 }
 
 
-if (spd <= maxSpeed){
+if (spd <= oldSpeed){
 	spd += accel
 } else {
 	spd -= accel
@@ -30,29 +30,29 @@ vspd=lengthdir_y(spd, direction); // extracting vertical movement
 
 move_and_collide(hspd, vspd, [oPlayer, oTestWall, oOpponentParent])
 
-if(place_meeting(x-7,y,[oOpponentParent,oPlayer,oTestWall])){
-	x+=7
+if(place_meeting(x-(7+hspd),y,[oOpponentParent,oPlayer,oTestWall])){
+	x+=(7+hspd)
 	if(contactState == 0 && shieldState == 0){
 		carHealth -= 1
 		contactState = 1
 	}
 }
-if(place_meeting(x+7,y,[oOpponentParent,oPlayer,oTestWall])){
-	x-=7
+if(place_meeting(x+(7+hspd),y,[oOpponentParent,oPlayer,oTestWall])){
+	x-=(7+hspd)
 	if(contactState == 0 && shieldState == 0){
 		carHealth -= 1
 		contactState = 1
 	}
 }
-if(place_meeting(x,y-7,[oOpponentParent,oPlayer,oTestWall])){
-	y+=7
+if(place_meeting(x,y-(7+vspd),[oOpponentParent,oPlayer,oTestWall])){
+	y+=(7+vspd)
 	if(contactState == 0 && shieldState == 0){
 		carHealth -= 1
 		contactState = 1
 	}
 }
-if(place_meeting(x,y+7,[oOpponentParent,oPlayer,oTestWall])){
-	y-=7
+if(place_meeting(x,y+(7+vspd),[oOpponentParent,oPlayer,oTestWall])){
+	y-=(7+vspd)
 	if(contactState == 0 && shieldState == 0){
 		carHealth -= 1
 		contactState = 1
@@ -72,7 +72,7 @@ pointY = path_get_y(pathUsed, bestPos)
 //move_towards_point(pointX, pointY, spd)
 if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	{
-		maxSpeed = 9
+		maxSpeed = oldSpeed - 3
 		rotate = driftR
 		if(abs(driftAngle) < maxDriftAngle){
 		driftAngle -= 2
@@ -81,7 +81,7 @@ if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	
 else if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 10)
 	{
-		maxSpeed = 9
+		maxSpeed = oldSpeed - 3
 		rotate = driftR
 		if(abs(driftAngle) < maxDriftAngle){
 		driftAngle += 2
@@ -143,6 +143,48 @@ if (place_meeting(x,y,oShieldPickup)){
 	}
 }
 
+if (place_meeting(x,y,oMinePickup)){
+	var mineID = instance_place(x,y,oMinePickup)
+	instance_destroy(mineID)
+	if(alarm[5]==-1){
+	alarm[5] = (0.5 + irandom(6))*game_get_speed(gamespeed_fps)
+	}
+}
+
+
+if (place_meeting(x,y,oOilPickup)){
+	var oilID = instance_place(x,y,oOilPickup)
+	instance_destroy(oilID)
+	if(alarm[6]==-1){
+	alarm[6] = (0.5 + irandom(6))*game_get_speed(gamespeed_fps)
+	}
+}
+
+if (place_meeting(x,y, oGunPickup)){
+	var gunID = instance_place(x,y,oOilPickup)
+	instance_destroy(gunID)
+	gun = 3
+}
+
+if(gun > 0 && collision_line(x, y, x + hspd, y + vspd, [oOpponentParent, oPlayer], false, false) && gunCooldown == 0){
+	var _distanceGun = 150; 
+	var _spawn_angleGun = image_angle;
+	var _spawn_xGun = x + lengthdir_x(_distanceGun, _spawn_angleGun);
+	var _spawn_yGun = y + lengthdir_y(_distanceGun, _spawn_angleGun);
+	gun -= 1
+	var theRocket = instance_create_layer(_spawn_xGun, _spawn_yGun, "Instances", oRocket)
+	with(theRocket){
+		image_angle = other.image_angle
+		direction = other.image_angle
+		speed = other.spd + 20} 
+	gunCooldown = 1
+	if (alarm[7] == -1){
+		alarm[7] = 1*game_get_speed(gamespeed_fps)
+	}
+}
+
+//getting hit by powerups
+
 if (place_meeting(x,y,oMine) && damageCooldown == 0 && shieldState == 0){
 	carHealth -= 30
 	damageCooldown = 1
@@ -181,4 +223,16 @@ if(spd < 1 && alarm[3] == -1){
 }
 
 
+if (alarm[8] == -1){
+	alarm[8] = (6 + irandom(7))*game_get_speed(gamespeed_fps)
+}
 
+//the afterImage
+
+if (fastState == 1){
+	var afterImageBoost = instance_create_layer(x, y, "Instances", oAfterImage)
+	with(afterImageBoost){
+		sprite_index = other.sprite_index
+		image_angle = other.image_angle
+	}
+}

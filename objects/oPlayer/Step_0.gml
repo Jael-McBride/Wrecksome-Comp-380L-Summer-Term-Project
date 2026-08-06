@@ -310,7 +310,7 @@ if (turnR > 1) {
 if (place_meeting(x,y,oOilSpill) && shieldState == 0){
 	turnR = 0.2
 	if (alarm[3] == -1){
-		alarm[3] = 2.5*game_get_speed(gamespeed_fps)
+		alarm[3] = 1.5*game_get_speed(gamespeed_fps)
 	}
 	
 }

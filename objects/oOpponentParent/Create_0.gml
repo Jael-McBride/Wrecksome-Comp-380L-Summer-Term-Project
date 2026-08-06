@@ -20,6 +20,9 @@ damageCooldown = 0
 
 shieldState = 0
 
+gunCooldown = 0
+gun = 0
+
 carHealth = 90
 
 oilSpillR = 0
@@ -29,11 +32,15 @@ rotate = regularR
 
 hspd = 0
 vspd = 0
-
 spd = 0
-maxSpeed = 11 + irandom(3)
+
+storedSpeed = 0
+maxSpeed = 11 + irandom(4)
 oldSpeed = maxSpeed
-accel = 0.2
+storedSpeed = oldSpeed
+rubberBandSpeed = maxSpeed + 2
+boostedSpeed = maxSpeed + 8
+accel = 0.3
 
 pointX = 0
 pointY = 0
@@ -49,3 +56,6 @@ bestPos = getClosestPoint(pathUsed, x, y)
 //path_start(pTestTrackPath, 10, path_action_restart, true)
 
 contactState = 0
+
+fastState = 0
+RNGcounter = 0
