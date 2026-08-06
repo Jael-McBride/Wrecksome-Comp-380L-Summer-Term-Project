@@ -6,6 +6,9 @@ if (!setup_done) {
             other.lights[_i] = id;
             _i++;
         }
+        lights[0].light_state = 0;
+        lights[1].light_state = 0;
+        lights[2].light_state = 0;
         alarm[0] = game_get_speed(gamespeed_fps);
         setup_done = true;
     }
