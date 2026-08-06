@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GetPathofTrack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetPathofTrack",
+  "parent":{
+    "name":"TrackPaths",
+    "path":"folders/gameRoomStuff/Tracks/TrackPaths.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

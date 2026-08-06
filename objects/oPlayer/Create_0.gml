@@ -1,6 +1,8 @@
 maxHealth = 100
 damageTaken = 0
 
+pathUsed = 0
+
 oldTurnR = 0
 
 rockets = 0

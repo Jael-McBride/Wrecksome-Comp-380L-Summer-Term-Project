@@ -1,5 +1,4 @@
-x = oPlayer.x
-y = oPlayer.y
+followInstance = 0
 
 image_alpha = 0.4
 

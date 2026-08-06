@@ -19,7 +19,7 @@ function setCar(carName){
 	driftCorrCheck = 1
 	driftR = 10;
 	driftRecovery = 2;
-	autoRecovery = 1.5; 
+	autoRecovery = 2; 
 	entryAngle = 10;
 	maxAngle = 60; 
 	entrySpeed = 2;
@@ -162,10 +162,10 @@ function setCar(carName){
 	//health
 	carHealth = 100
 	
-	accel = 0.3;
+	accel = 0.5;
 	turnR = 2.5;
-	topSpeed = 12;
-	brakes = 0.3;
+	topSpeed = 20;
+	brakes = 0.4;
 	
 	//remember to add drifting attributes. This default case will be used to explain each attribute.
 	driftCorrCheck = 1 //Boolean value. 0 or 1. Controls whether you need to fully straighten out before trying to swing into another direction. Hard to explain. Just set to 1 for more responsive cars and 0 for heavier cars.

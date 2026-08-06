@@ -2,15 +2,15 @@ with(instBot){
 	pathNumber = irandom(3)
 	switch pathNumber{
 		case 1:
-		pathUsed = pTestTrackPath2
+		pathUsed = other.path3
 		break;
 		
 		case 2:
-		pathUsed = pTestTrackPath3
+		pathUsed = other.path2
 		break;
 		
 		default:
-		pathUsed = pTestTrackPath
+		pathUsed = other.path1
 	
 	}
 	

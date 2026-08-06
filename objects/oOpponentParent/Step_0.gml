@@ -1,4 +1,9 @@
+//freeze
+image_angle = direction + driftAngle
+if(!variable_global_exists("race_started") || !global.race_started) exit;
+
 //pathing
+
 
 //bestPos += 0.2
 if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
@@ -10,7 +15,7 @@ if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
 } 
 if (lapDone > lapNeeded){
 	layer_set_visible("lose", true);
-	instance_deactivate_layer("Instances")
+	global.race_started = 0
 }
 
 
@@ -25,17 +30,37 @@ vspd=lengthdir_y(spd, direction); // extracting vertical movement
 
 move_and_collide(hspd, vspd, [oPlayer, oTestWall, oOpponentParent])
 
-if(place_meeting(x-3,y,[oOpponentParent,oPlayer])){
-	x+=3
+if(place_meeting(x-7,y,[oOpponentParent,oPlayer,oTestWall])){
+	x+=7
+	if(contactState == 0 && shieldState == 0){
+		carHealth -= 1
+		contactState = 1
+	}
 }
-if(place_meeting(x+3,y,[oOpponentParent,oPlayer])){
-	x-=3	
+if(place_meeting(x+7,y,[oOpponentParent,oPlayer,oTestWall])){
+	x-=7
+	if(contactState == 0 && shieldState == 0){
+		carHealth -= 1
+		contactState = 1
+	}
 }
-if(place_meeting(x,y-3,[oOpponentParent,oPlayer])){
-	y+=3
+if(place_meeting(x,y-7,[oOpponentParent,oPlayer,oTestWall])){
+	y+=7
+	if(contactState == 0 && shieldState == 0){
+		carHealth -= 1
+		contactState = 1
+	}
 }
-if(place_meeting(x,y+3,[oOpponentParent,oPlayer])){
-	y-=3
+if(place_meeting(x,y+7,[oOpponentParent,oPlayer,oTestWall])){
+	y-=7
+	if(contactState == 0 && shieldState == 0){
+		carHealth -= 1
+		contactState = 1
+	}
+}
+
+if(!place_meeting(x,y,[oOpponentParent,oPlayer,oTestWall])){
+	contactState = 0
 }
 
 
@@ -96,8 +121,6 @@ if (distance_to_point(pointX,pointY) < 80){
 
 
 
-image_angle = direction + driftAngle
-
 var smoke = instance_create_layer(x,y,"Instances", oSmokeTest)
 with(smoke){
 		image_angle = other.image_angle
@@ -109,7 +132,18 @@ x = clamp(x, 0, room_width);
 // Prevent leaving the top and bottom room boundaries
 y = clamp(y, 0, room_height);
 
-if (place_meeting(x,y,oMine) && damageCooldown == 0){
+
+//powerup interactions
+
+if (place_meeting(x,y,oShieldPickup)){
+	var shieldID = instance_place(x,y,oShieldPickup)
+	instance_destroy(shieldID)
+	if(alarm[2]==-1){
+	alarm[2] = (0.5 + irandom(6))*game_get_speed(gamespeed_fps)
+	}
+}
+
+if (place_meeting(x,y,oMine) && damageCooldown == 0 && shieldState == 0){
 	carHealth -= 30
 	damageCooldown = 1
 	var mineID = instance_place(x,y,oMine)
@@ -121,7 +155,7 @@ if (place_meeting(x,y,oMine) && damageCooldown == 0){
 	
 }
 
-if (place_meeting(x,y,oRocket) && damageCooldown == 0){
+if (place_meeting(x,y,oRocket) && damageCooldown == 0 && shieldState == 0){
 	carHealth -= 30
 	damageCooldown = 1
 	var rocketID = instance_place(x,y,oRocket)
@@ -133,9 +167,18 @@ if (place_meeting(x,y,oRocket) && damageCooldown == 0){
 	
 }
 
+if (place_meeting(x,y,oOilSpill) && shieldState == 0){
+	maxSpeed = 0
+}
+
 if (carHealth <= 0){
 	instance_create_layer(x,y, "Instances", oPlosion)
 	instance_destroy()
 }
 
-show_debug_message(lapDone)
+if(spd < 1 && alarm[3] == -1){
+	alarm[3] = 15*game_get_speed(gamespeed_fps)
+}
+
+
+

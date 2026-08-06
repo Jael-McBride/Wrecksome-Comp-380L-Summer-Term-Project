@@ -2,6 +2,8 @@
 //the spawner object will have to tell the car what path its using
 //randomize sprite?
 
+image_angle = direction
+
 theSprite = randomizeSprite()
 
 sprite_index = theSprite
@@ -16,8 +18,11 @@ maxDriftAngle = 50
 
 damageCooldown = 0
 
+shieldState = 0
+
 carHealth = 90
 
+oilSpillR = 0
 regularR = 1
 driftR = 3
 rotate = regularR
@@ -26,7 +31,7 @@ hspd = 0
 vspd = 0
 
 spd = 0
-maxSpeed = 10 + irandom(4)
+maxSpeed = 11 + irandom(3)
 oldSpeed = maxSpeed
 accel = 0.2
 
@@ -43,4 +48,4 @@ bestPos = getClosestPoint(pathUsed, x, y)
 
 //path_start(pTestTrackPath, 10, path_action_restart, true)
 
-image_angle = direction
+contactState = 0

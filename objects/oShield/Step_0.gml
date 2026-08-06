@@ -1,2 +1,2 @@
-x = oPlayer.x
-y = oPlayer.y
+x = followInstance.x
+y = followInstance.y

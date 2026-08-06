@@ -71,6 +71,7 @@
     {"name":"rTileSetTesting","order":10,"path":"rooms/rTileSetTesting/rTileSetTesting.yy",},
     {"name":"deactivateOpponents","order":2,"path":"scripts/deactivateOpponents/deactivateOpponents.yy",},
     {"name":"getClosestPoint","order":1,"path":"scripts/getClosestPoint/getClosestPoint.yy",},
+    {"name":"GetPathofTrack","order":4,"path":"scripts/GetPathofTrack/GetPathofTrack.yy",},
     {"name":"scPowerUpBehavior","order":4,"path":"scripts/scPowerUpBehavior/scPowerUpBehavior.yy",},
     {"name":"scRandomSprite","order":3,"path":"scripts/scRandomSprite/scRandomSprite.yy",},
     {"name":"scScriptUI","order":2,"path":"scripts/scScriptUI/scScriptUI.yy",},

@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (!variable_global_exists("race_started") || !global.race_started) exit;
-
 var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
@@ -19,7 +17,10 @@ var extraR = 0
 speed = spd
 var lastdir = direction
 
+//if any problems occur with the handling, this might be the reason why
+image_angle = direction + driftAngle
 
+if(!variable_global_exists("race_started") || !global.race_started) exit;
 
 if (left == 1 && abs(spd) > 0.05 && (driftAngle >= 0 || driftCorrCheck == 1) ) { direction += (turnR + extraR); } 
 if (right == 1 && abs(spd) > 0.05 && (driftAngle <= 0 || driftCorrCheck == 1) ) { direction -= (turnR + extraR); }
@@ -34,7 +35,6 @@ if (drive == 1 && spd <= (realSpeed - Slowdown) && abs(driftAngle) > 1) {
 else if (spd > 0) {spd -= 0.1}
 
 image_angle = direction + driftAngle
-
 //tiresmoke
 
 if (spd > 1){
@@ -118,7 +118,7 @@ if (place_meeting(x + hspd, y, oTestWall)) {
         x += sign(hspd);
     }
     hspd = 0;
-    spd *= 0.5;
+    spd *= 0.001;
 }
 
 if (place_meeting(x, y + vspd, oTestWall)) {
@@ -134,20 +134,21 @@ if (place_meeting(x, y + vspd, oTestWall)) {
         y += sign(vspd);
     }
     vspd = 0;
-    spd *= 0.5;
+    spd *= 0.001;
 }
 
-if(place_meeting(x-3,y,[oOpponentParent,oTestWall])){
-	x+=3
+
+if(place_meeting(x-(7+speed),y,[/*oOpponentParent,*/oTestWall])){
+	x+=(7+speed)
 }
-if(place_meeting(x+3,y,[oOpponentParent,oTestWall])){
-	x-=3
+if(place_meeting(x+(7+speed),y,[/*oOpponentParent,*/oTestWall])){
+	x-=(7+speed)
 }
-if(place_meeting(x,y-3,[oOpponentParent,oTestWall])){
-	y+=3
+if(place_meeting(x,y-(7+speed),[/*oOpponentParent,*/oTestWall])){
+	y+=(7+speed)
 }
-if(place_meeting(x,y+3,[oOpponentParent,oTestWall])){
-	y-=3
+if(place_meeting(x,y+(7+speed),[/*oOpponentParent,*/oTestWall])){
+	y-=(7+speed)
 }
 
 //if (place_meeting(x,y,oTestWall)){
@@ -234,6 +235,9 @@ if (usePower) {
 	{
 	case "shield":
 	var shield = instance_create_layer(x, y, "PowerUpEffects", oShield)
+	with(shield){
+		followInstance = other.id
+	}
 	currentPower = "none"
 	shieldState = 1
 	alarm[4] = 6*game_get_speed(gamespeed_fps)
