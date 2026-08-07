@@ -9,7 +9,7 @@
     "path":"folders/gameRoomStuff/Tracks/TrackPaths/sandTrack.yy",
   },
   "points":[
-    {"speed":100.0,"x":2048.0,"y":1056.0,},
+    {"speed":100.0,"x":2112.0,"y":1056.0,},
     {"speed":100.0,"x":2304.0,"y":1024.0,},
     {"speed":100.0,"x":2528.0,"y":864.0,},
     {"speed":100.0,"x":2816.0,"y":800.0,},

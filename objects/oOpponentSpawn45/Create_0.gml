@@ -1,8 +1,9 @@
-var thePaths = getPathofTrack(room)
+var thePaths = getPathofTrack(room_get_name(room))
 
 path1 = thePaths.FirstPath
 path2 = thePaths.SecondPath
 path3 = thePaths.ThirdPath
+
 
 pointX = 0
 pointY = 0

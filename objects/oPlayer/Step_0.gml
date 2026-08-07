@@ -38,7 +38,10 @@ image_angle = direction + driftAngle
 //tiresmoke
 
 if (spd > 1){
-	var smoke = instance_create_layer(x, y, "Instances", oSmokeTest);
+	var smoke = instance_create_layer(x, y, "Instances", oSmokeTest)
+	with(smoke){
+		image_angle = other.image_angle
+	}
 }
 
 //ability to start the drift. 

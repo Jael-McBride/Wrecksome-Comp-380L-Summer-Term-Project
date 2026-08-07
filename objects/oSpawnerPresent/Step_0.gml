@@ -44,6 +44,7 @@ with(oPlayer) {
 		global.lap = 1
 		update("workDammit");
 		instance_destroy(oFinishLine);
+		global.race_started = 0
 	}
 	}
 }

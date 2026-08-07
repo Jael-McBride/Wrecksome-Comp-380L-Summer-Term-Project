@@ -1,36 +1,36 @@
 function getPathofTrack(roomName){
-	currentTrackPath = 0
+	
 	switch roomName {
-		case rPresentGameRoom:
+		case "rPresentGameRoom":
 		currentTrackPath = {
 			FirstPath: pProposal,
 			SecondPath: pProposal2,
-			ThirdPath: pProposal3,
+			ThirdPath: pProposal3
 		}
 		break;
 		
 		
-		case rTileSetConcrete:
+		case "rTileSetConcrete":
 		currentTrackPath = {
 			FirstPath: pConcrete,
 			SecondPath: pConcrete2,
-			ThirdPath: pConcrete3,
+			ThirdPath: pConcrete3
 		}
 		break;
 		
-		case rTileSetSandy:
+		case "rTileSetSandy":
 		currentTrackPath = {
-			FirstPath: pSandPath,
+			FirstPath: pSandPath3,
 			SecondPath: pSandPath2,
-			ThirdPath: pSandPath3,
+			ThirdPath: pSandPath
 		}
 		break;
 		
-		case rTileSetTesting:
+		case "rTileSetTesting":
 		currentTrackPath = {
 			FirstPath: pGrassPath,
 			SecondPath: pGrassPath2,
-			ThirdPath: pGrassPath3,
+			ThirdPath: pGrassPath3
 		}
 		break;
 		
@@ -40,6 +40,7 @@ function getPathofTrack(roomName){
 			SecondPath: pTestTrackPath2,
 			ThirdPath: pTestTrackPath3
 		}
-		return currentTrackPath
+		
 	}
+	return currentTrackPath
 }

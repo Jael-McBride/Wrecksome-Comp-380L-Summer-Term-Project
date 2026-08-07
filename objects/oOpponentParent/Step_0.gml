@@ -3,7 +3,7 @@ image_angle = direction + driftAngle
 if(!variable_global_exists("race_started") || !global.race_started) exit;
 
 //pathing
-
+show_debug_message(lapDone)
 
 //bestPos += 0.2
 if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
@@ -109,9 +109,9 @@ if (bestPos >= 1){
 	bestPos = 0
 }
 
-if (distance_to_point(pointX,pointY) < 80){
+if (distance_to_point(pointX,pointY) < 300){
 	bestPos += 0.05
-} else if (distance_to_point(pointX,pointY) > 500){
+} else if (distance_to_point(pointX,pointY) > 1000){
 	bestPos = getClosestPoint(pathUsed, x, y)
 }
 

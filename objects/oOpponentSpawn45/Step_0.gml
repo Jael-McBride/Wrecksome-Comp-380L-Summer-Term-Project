@@ -7,5 +7,6 @@ if(!instance_exists(instBot) && alarm[1] == -1){
 } else if (instance_exists(instBot)){
 	instanceX = instBot.x
 	instanceY = instBot.y
+	oldLapDone = instBot.lapDone
 }
 
