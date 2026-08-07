@@ -22,3 +22,5 @@ switch(car_id) {
 room_goto(rTrackRoom);
 layer_set_visible("CarSelectLayer", false);
 layer_set_visible("TrackSelectLayer", true)
+
+audio_play_sound(sfxButtonClick_1, 1, false);

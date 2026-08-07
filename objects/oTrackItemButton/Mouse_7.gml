@@ -17,3 +17,5 @@ switch(track_id) {
 }
 
 layer_set_visible("TrackSelectLayer", false);
+
+audio_play_sound(sfxButtonClick_1, 1, false);

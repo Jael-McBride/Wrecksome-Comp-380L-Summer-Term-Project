@@ -25,3 +25,5 @@ switch(button_id) {
         break;
         
 }
+
+audio_play_sound(sfxButtonClick_1, 1, false);
