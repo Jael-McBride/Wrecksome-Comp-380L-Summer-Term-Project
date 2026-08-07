@@ -10,7 +10,7 @@ layer_name = "Pause"
 
 layer_set_visible(layer_name, false);
 
-layer_set_visible("lose", false);
+layer_set_visible("LoseScreenLayer", false);
 
 if(instance_exists(oPlayer)){
 	layer_set_visible("WIPGameHUD", true);
