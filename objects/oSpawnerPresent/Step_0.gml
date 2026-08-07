@@ -38,7 +38,7 @@ with(oPlayer) {
 		instance_create_layer(3808, 1728, "Instances", oChecked)
 		instance_destroy(oFinishLine)
 	}
-	else
+	else if(!layer_get_visible("LoseScreenLayer"))
 	{
 		global.lap = 1
 		update("WinScreenLayer");

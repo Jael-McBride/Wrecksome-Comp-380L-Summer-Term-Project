@@ -40,7 +40,7 @@ with(oPlayer) {
 		instance_destroy(oFinishLine)
 		
 	}
-	else
+	else if(!layer_get_visible("LoseScreenLayer"))
 	{
 		global.lap = 1
 		update("WinScreenLayer");
