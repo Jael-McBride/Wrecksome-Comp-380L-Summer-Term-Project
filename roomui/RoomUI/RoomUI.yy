@@ -244,7 +244,7 @@
           ],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_5","nodeColour":4282956274,"paddingBottom":{"unit":1,"value":77.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
         {"$GMRFlexPanel":"","%Name":"FlexPanel_4","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":80.0,},"justifyContent":1,"name":"FlexPanel_4","nodeColour":4293653064,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":256.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"Pause","nodeColour":4291250418,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
-    {"$GMRUILayer":"v1","%Name":"WIPGameHUD","alignItems":2,"children":[],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"WIPGameHUD","nodeColour":4293849672,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+    {"$GMRUILayer":"v1","%Name":"WIPGameHUD","alignItems":2,"children":[],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"WIPGameHUD","nodeColour":4293849672,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
   ],
   "visible":true,
 }

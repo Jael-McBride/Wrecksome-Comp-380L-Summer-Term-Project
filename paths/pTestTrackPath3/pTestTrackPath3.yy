@@ -5,8 +5,8 @@
   "kind":1,
   "name":"pTestTrackPath3",
   "parent":{
-    "name":"TrackPaths",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths.yy",
+    "name":"testTrack",
+    "path":"folders/gameRoomStuff/Tracks/TrackPaths/testTrack.yy",
   },
   "points":[
     {"speed":100.0,"x":672.0,"y":1568.0,},

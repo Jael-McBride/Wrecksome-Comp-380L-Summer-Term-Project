@@ -5,6 +5,13 @@ if(!instance_exists(inst)&& alarm[0] == -1){
 }
 
 
+if(!instance_exists(inst)&& alarm[0] == -1){
+	alarm[0] = 1.5*game_get_speed(gamespeed_fps)
+} else if (instance_exists(inst)){
+	instanceX = inst.x
+	instanceY = inst.y
+}
+
 
 with(oPlayer)
 	if (place_meeting(x,y,oChecked)){

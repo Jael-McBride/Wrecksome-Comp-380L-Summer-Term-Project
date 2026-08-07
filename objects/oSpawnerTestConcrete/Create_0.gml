@@ -1,11 +1,18 @@
-inst = instance_create_layer(2208, 1088, "Instances", global.playerCar)
+pointX = 0
+pointY = 0
+
+
+instanceX = 0
+instanceY = 0
+
+oldDirection = 0
+
+
+
+inst = instance_create_layer(2400, 960, "Instances", global.playerCar)
 with(inst)
 {
+	pathUsed = pConcrete
 	direction = 0
 }
 
-if(instance_exists(oPlayer)){
-	layer_set_visible("WIPGameHUD", true);
-}else{
-	layer_set_visible("WIPGameHUD", false);
-}
