@@ -14,7 +14,7 @@ if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
 	}
 } 
 if (lapDone > lapNeeded){
-	layer_set_visible("lose", true);
+	layer_set_visible("LoseScreenLayer", true);
 	global.race_started = 0
 }
 
