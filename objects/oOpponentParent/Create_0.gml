@@ -50,7 +50,7 @@ futurePointY = 0
 
 pathUsed = 0
 
-bestPos = getClosestPoint(pathUsed, x, y)
+bestPos = 0//getClosestPoint(pathUsed, x, y)
 //bestPos = 1
 
 //path_start(pTestTrackPath, 10, path_action_restart, true)
@@ -58,4 +58,4 @@ bestPos = getClosestPoint(pathUsed, x, y)
 contactState = 0
 
 fastState = 0
-RNGcounter = 70
+RNGcounter = 60

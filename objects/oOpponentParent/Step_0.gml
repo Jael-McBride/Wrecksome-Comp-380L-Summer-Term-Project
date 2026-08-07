@@ -109,7 +109,7 @@ if (bestPos >= 1){
 	bestPos = 0
 }
 
-if (distance_to_point(pointX,pointY) < 300){
+if (distance_to_point(pointX,pointY) < 200){
 	bestPos += 0.05
 } else if (distance_to_point(pointX,pointY) > 1000){
 	bestPos = getClosestPoint(pathUsed, x, y)
@@ -210,7 +210,10 @@ if (place_meeting(x,y,oRocket) && damageCooldown == 0 && shieldState == 0){
 }
 
 if (place_meeting(x,y,oOilSpill) && shieldState == 0){
-	maxSpeed = 0
+	oldSpeed = 2
+	if (alarm[9] == -1) {
+		alarm[9] = 3.5*game_get_speed(gamespeed_fps)
+	}
 }
 
 if (carHealth <= 0){

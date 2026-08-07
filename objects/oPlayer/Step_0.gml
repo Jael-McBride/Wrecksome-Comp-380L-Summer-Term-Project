@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 
-var drive = keyboard_check(vk_up) || keyboard_check(ord("W"));
-var reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_check(vk_space)
+drive = keyboard_check(vk_up) || keyboard_check(ord("W"));
+reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_check(vk_space)
 
 //driftR is there to add or subtract from the turn radius upon drifting, if needed
 
