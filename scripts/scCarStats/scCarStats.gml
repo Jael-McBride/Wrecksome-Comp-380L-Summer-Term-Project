@@ -26,6 +26,30 @@ function setCar(carName){
 	driftSlowdown = 3.5;
 	driftStart = 12;
 	
+	boostAccel = 5
+	boostTopSpeed = 8
+	boostUsage = 1.1
+	extraBoostSpeed = 13
+	
+	break;
+	
+	case "supra":
+	carHealth = 90
+	accel = 0.35;
+	turnR = 2.8;
+	topSpeed = 13;
+	brakes = 0.3;
+	
+	driftCorrCheck = 1
+	driftR = 11;
+	driftRecovery = 2.2;
+	autoRecovery = 2; 
+	entryAngle = 10;
+	maxAngle = 60; 
+	entrySpeed = 2;
+	driftSlowdown = 3.5;
+	driftStart = 12;
+	
 	boostAccel = 4
 	boostTopSpeed = 7
 	boostUsage = 1.1
@@ -58,8 +82,33 @@ function setCar(carName){
 	
 	break;
 	
+	case "tofu":
+	carHealth = 100
+	
+	accel = 0.32;
+	turnR = 2.7;
+	topSpeed = 13;
+	brakes = 0.3;
+	
+	driftCorrCheck = 0
+	driftR = 13;
+	driftRecovery = 3;
+	autoRecovery = 3; 
+	entryAngle = 4;
+	maxAngle = 60; 
+	entrySpeed = 5;
+	driftSlowdown = -2;
+	driftStart = 5;
+	
+	boostAccel = 1
+	boostTopSpeed = 10
+	boostUsage = 0.7
+	extraBoostSpeed = 19
+	
+	break;
+	
 	case "oshKosh":
-	carHealth = 200
+	carHealth = 250
 	
 	accel = 0.15;
 	turnR = 1.5;
@@ -80,6 +129,56 @@ function setCar(carName){
 	boostTopSpeed = 13
 	boostUsage = 1.5
 	extraBoostSpeed = 24
+	
+	break;
+	
+	case "silverado":
+	carHealth = 125
+	
+	accel = 0.23;
+	turnR = 1.8;
+	topSpeed = 13;
+	brakes = 0.2;
+	
+	driftCorrCheck = 0
+	driftR = 0;
+	driftRecovery = 1.8;
+	autoRecovery = 1; 
+	entryAngle = 4;
+	maxAngle = 50; 
+	entrySpeed = 0;
+	driftSlowdown = 1.5;
+	driftStart = 7;
+	
+	boostAccel = 0.7
+	boostTopSpeed = 9
+	boostUsage = 1
+	extraBoostSpeed = 17
+	
+	break;
+	
+	case "hummer":
+	carHealth = 125
+	
+	accel = 0.28;
+	turnR = 2;
+	topSpeed = 13;
+	brakes = 0.2;
+	
+	driftCorrCheck = 0
+	driftR = 0;
+	driftRecovery = 1.7;
+	autoRecovery = 0.8; 
+	entryAngle = 4;
+	maxAngle = 50; 
+	entrySpeed = 0;
+	driftSlowdown = 2;
+	driftStart = 9;
+	
+	boostAccel = 0.7
+	boostTopSpeed = 9
+	boostUsage = 1
+	extraBoostSpeed = 17
 	
 	break;
 	
@@ -108,6 +207,8 @@ function setCar(carName){
 	
 	break;
 	
+	
+	
 	case "veneno":
 	carHealth = 85
 	
@@ -133,11 +234,36 @@ function setCar(carName){
 	
 	break;
 	
+	case "gt40":
+	carHealth = 95
+	
+	accel = 0.3;
+	turnR = 2.2;
+	topSpeed = 15;
+	brakes = 0.3;
+	
+	driftCorrCheck = 1
+	driftR = 10;
+	driftRecovery = 2;
+	autoRecovery = 1.8; 
+	entryAngle = 10;
+	maxAngle = 50; 
+	entrySpeed = 2;
+	driftSlowdown = 3;
+	driftStart = 12;
+	
+	boostAccel = 7
+	boostTopSpeed = 6
+	boostUsage = 1.5
+	extraBoostSpeed = 13
+	
+	break;
+	
 	case "charger":
 	carHealth = 100
 	
-	accel = 0.35;
-	turnR = 2;
+	accel = 0.25;
+	turnR = 1.8;
 	topSpeed = 15;
 	brakes = 0.2;
 	
@@ -155,6 +281,31 @@ function setCar(carName){
 	boostTopSpeed = 6
 	boostUsage = 1.5
 	extraBoostSpeed = 13
+	
+	break;
+		
+	case "formula1":
+	carHealth = 65
+	
+	accel = 0.4;
+	turnR = 5;
+	topSpeed = 19;
+	brakes = 0.2;
+	
+	driftCorrCheck = 0
+	driftR = 12;
+	driftRecovery = 3;
+	autoRecovery = 1; 
+	entryAngle = 12;
+	maxAngle = 45; 
+	entrySpeed = 4;
+	driftSlowdown = 2;
+	driftStart = 100;
+	
+	boostAccel = 8
+	boostTopSpeed = 12
+	boostUsage = 2
+	extraBoostSpeed = 20
 	
 	break;
 		

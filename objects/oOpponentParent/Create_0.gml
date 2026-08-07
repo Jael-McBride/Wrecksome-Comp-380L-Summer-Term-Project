@@ -35,12 +35,12 @@ vspd = 0
 spd = 0
 
 storedSpeed = 0
-maxSpeed = 11 + irandom(4)
+maxSpeed = 10 + irandom(3)
 oldSpeed = maxSpeed
 storedSpeed = oldSpeed
 rubberBandSpeed = maxSpeed + 2
-boostedSpeed = maxSpeed + 8
-accel = 0.3
+boostedSpeed = maxSpeed + 7
+accel = 0.22
 
 pointX = 0
 pointY = 0

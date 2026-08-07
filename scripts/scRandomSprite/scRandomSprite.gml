@@ -1,7 +1,7 @@
 function randomizeSprite(){
 var theSprite
 
-var randomSprite = irandom(6)
+var randomSprite = irandom(10)
 
 switch(randomSprite){
 	case 1:
@@ -28,8 +28,24 @@ switch(randomSprite){
 	theSprite = sVeneno
 	break;
 	
+	case 7:
+	theSprite = sAE86
+	break;
+	
+	case 8:
+	theSprite = sHummer
+	break;
+	
+	case 9:
+	theSprite = sSupra
+	break;
+	
+	case 10:
+	theSprite = sSilverado
+	break;
+	
 	default:
-	theSprite = sPlaceholderCar
+	theSprite = sGT40
 }
 
 return theSprite
