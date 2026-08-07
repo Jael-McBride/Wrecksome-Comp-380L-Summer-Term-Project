@@ -42,7 +42,7 @@ with(oPlayer) {
 	else
 	{
 		global.lap = 1
-		update("workDammit");
+		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
 	}

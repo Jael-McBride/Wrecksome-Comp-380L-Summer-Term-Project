@@ -27,6 +27,7 @@
     {"name":"roomSprites","order":1,"path":"folders/trackRoomStuff/assets/roomSprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Upheaval_TT_Secondary","order":1,"path":"fonts/Upheaval_TT_Secondary/Upheaval_TT_Secondary.yy",},
     {"name":"oAfterImage","order":1,"path":"objects/oAfterImage/oAfterImage.yy",},
     {"name":"oCharger","order":2,"path":"objects/oCharger/oCharger.yy",},
     {"name":"oCheckForAI","order":20,"path":"objects/oCheckForAI/oCheckForAI.yy",},
@@ -112,6 +113,7 @@
     {"name":"sLightGreen","order":1,"path":"sprites/sLightGreen/sLightGreen.yy",},
     {"name":"sLightOff","order":2,"path":"sprites/sLightOff/sLightOff.yy",},
     {"name":"sLightRed","order":3,"path":"sprites/sLightRed/sLightRed.yy",},
+    {"name":"sLoseScreen","order":5,"path":"sprites/sLoseScreen/sLoseScreen.yy",},
     {"name":"sMiataPreview","order":3,"path":"sprites/sMiataPreview/sMiataPreview.yy",},
     {"name":"sMine","order":10,"path":"sprites/sMine/sMine.yy",},
     {"name":"sMinePickup","order":13,"path":"sprites/sMinePickup/sMinePickup.yy",},
@@ -131,6 +133,7 @@
     {"name":"sTrackSelectFrame","order":1,"path":"sprites/sTrackSelectFrame/sTrackSelectFrame.yy",},
     {"name":"sTrackSelectItemButton","order":4,"path":"sprites/sTrackSelectItemButton/sTrackSelectItemButton.yy",},
     {"name":"sVenenoPreview","order":6,"path":"sprites/sVenenoPreview/sVenenoPreview.yy",},
+    {"name":"sWinScreen","order":4,"path":"sprites/sWinScreen/sWinScreen.yy",},
     {"name":"sWrecksomeMenuFrame","order":1,"path":"sprites/sWrecksomeMenuFrame/sWrecksomeMenuFrame.yy",},
     {"name":"sYoureLoser","order":21,"path":"sprites/sYoureLoser/sYoureLoser.yy",},
     {"name":"tFinishLine","order":1,"path":"tilesets/tFinishLine/tFinishLine.yy",},

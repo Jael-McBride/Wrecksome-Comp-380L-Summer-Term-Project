@@ -37,12 +37,11 @@ with(oPlayer) {
 		instance_create_layer(544, 896, "Instances", oChecked)
 		instance_create_layer(3808, 1728, "Instances", oChecked)
 		instance_destroy(oFinishLine)
-		
 	}
 	else
 	{
 		global.lap = 1
-		update("workDammit");
+		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
 	}

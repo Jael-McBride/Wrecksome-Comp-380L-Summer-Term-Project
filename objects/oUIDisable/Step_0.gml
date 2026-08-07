@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-layer_name = "workDammit"
+layer_name = "WinScreenLayer"
 
 layer_set_visible(layer_name, false);
 
