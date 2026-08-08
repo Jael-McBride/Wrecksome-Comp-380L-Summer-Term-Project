@@ -33,9 +33,6 @@
     "name":"Group_1730",
     "path":"sprites/Group_1730/Group_1730.yy",
   },
-  "spriteMaskId":{
-    "name":"sNitro",
-    "path":"sprites/sNitro/sNitro.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
