@@ -35,5 +35,5 @@
     "path":"sprites/sHummer/sHummer.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

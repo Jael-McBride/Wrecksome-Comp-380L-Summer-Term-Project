@@ -35,5 +35,5 @@
     "path":"sprites/sSemiTrailer/sSemiTrailer.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

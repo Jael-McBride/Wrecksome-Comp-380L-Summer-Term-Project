@@ -35,5 +35,5 @@
     "path":"sprites/sMiata/sMiata.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

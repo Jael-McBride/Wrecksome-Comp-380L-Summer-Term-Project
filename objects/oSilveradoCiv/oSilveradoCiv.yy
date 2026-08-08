@@ -35,5 +35,5 @@
     "path":"sprites/sSilverado/sSilverado.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -35,5 +35,5 @@
     "path":"sprites/sCrate_1/sCrate_1.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

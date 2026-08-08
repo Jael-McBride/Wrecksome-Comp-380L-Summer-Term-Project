@@ -36,6 +36,7 @@
   "ResourceOrderSettings":[
     {"name":"Upheaval_TT_Secondary","order":1,"path":"fonts/Upheaval_TT_Secondary/Upheaval_TT_Secondary.yy",},
     {"name":"oAfterImage","order":1,"path":"objects/oAfterImage/oAfterImage.yy",},
+    {"name":"oBarbieCiv","order":24,"path":"objects/oBarbieCiv/oBarbieCiv.yy",},
     {"name":"oCharger","order":2,"path":"objects/oCharger/oCharger.yy",},
     {"name":"oChargerCiv","order":21,"path":"objects/oChargerCiv/oChargerCiv.yy",},
     {"name":"oCheckForAI","order":20,"path":"objects/oCheckForAI/oCheckForAI.yy",},
@@ -49,6 +50,7 @@
     {"name":"oF40","order":5,"path":"objects/oF40/oF40.yy",},
     {"name":"oF40Civ","order":22,"path":"objects/oF40Civ/oF40Civ.yy",},
     {"name":"oFormula1","order":14,"path":"objects/oFormula1/oFormula1.yy",},
+    {"name":"oFormulaCiv","order":25,"path":"objects/oFormulaCiv/oFormulaCiv.yy",},
     {"name":"oGT40","order":9,"path":"objects/oGT40/oGT40.yy",},
     {"name":"oGunPickup","order":7,"path":"objects/oGunPickup/oGunPickup.yy",},
     {"name":"oGunPickupSpawn","order":7,"path":"objects/oGunPickupSpawn/oGunPickupSpawn.yy",},

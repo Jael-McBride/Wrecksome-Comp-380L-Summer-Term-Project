@@ -35,5 +35,5 @@
     "path":"sprites/sRock_1/sRock_1.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

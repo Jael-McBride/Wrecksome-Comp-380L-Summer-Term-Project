@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oSemiTruck_1",
+  "%Name":"oBarbieCiv",
   "eventList":[],
   "managed":true,
-  "name":"oSemiTruck_1",
+  "name":"oBarbieCiv",
   "overriddenProperties":[],
   "parent":{
     "name":"EnvironmentalAssetDump",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSemiTruck_2",
-    "path":"sprites/sSemiTruck_2/sSemiTruck_2.yy",
+    "name":"sPinkPhantom",
+    "path":"sprites/sPinkPhantom/sPinkPhantom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

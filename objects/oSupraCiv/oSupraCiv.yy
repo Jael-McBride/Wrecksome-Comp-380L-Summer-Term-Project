@@ -35,5 +35,5 @@
     "path":"sprites/sSupra/sSupra.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

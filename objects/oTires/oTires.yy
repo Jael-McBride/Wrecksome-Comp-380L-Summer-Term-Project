@@ -35,5 +35,5 @@
     "path":"sprites/sTires/sTires.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

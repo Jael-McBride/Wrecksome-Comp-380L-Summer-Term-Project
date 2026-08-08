@@ -35,5 +35,5 @@
     "path":"sprites/sCharger/sCharger.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

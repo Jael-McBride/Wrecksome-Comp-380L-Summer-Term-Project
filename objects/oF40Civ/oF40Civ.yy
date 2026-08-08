@@ -35,5 +35,5 @@
     "path":"sprites/sF40/sF40.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

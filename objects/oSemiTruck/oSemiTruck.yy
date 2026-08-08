@@ -35,5 +35,5 @@
     "path":"sprites/sSemiTruck/sSemiTruck.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

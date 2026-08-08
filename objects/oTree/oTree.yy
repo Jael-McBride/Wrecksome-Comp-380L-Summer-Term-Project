@@ -35,5 +35,5 @@
     "path":"sprites/sTree/sTree.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

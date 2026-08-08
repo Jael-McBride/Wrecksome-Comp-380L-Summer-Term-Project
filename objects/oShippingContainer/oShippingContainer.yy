@@ -35,5 +35,5 @@
     "path":"sprites/sShippingContainer/sShippingContainer.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
