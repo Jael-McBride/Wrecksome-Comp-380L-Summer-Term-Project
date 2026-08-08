@@ -46,6 +46,10 @@ with(oPlayer) {
 		update("workDammit");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
+		if(global.oshkoshUnlocked != 1){
+			global.oshkoshUnlocked = 1
+			saveData();
+		}
 	}
 	}
 }
