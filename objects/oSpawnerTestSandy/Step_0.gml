@@ -43,7 +43,7 @@ with(oPlayer) {
 	else if(!layer_get_visible("LoseScreenLayer"))
 	{
 		global.lap = 1
-		update("workDammit");
+		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
 	}
