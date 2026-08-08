@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNitro",
-    "path":"sprites/sNitro/sNitro.yy",
+    "name":"Group_1723",
+    "path":"sprites/Group_1723/Group_1723.yy",
   },
   "spriteMaskId":{
     "name":"sNitro",

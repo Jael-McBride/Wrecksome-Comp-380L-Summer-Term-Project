@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sShieldPickup",
-    "path":"sprites/sShieldPickup/sShieldPickup.yy",
+    "name":"Group_1718",
+    "path":"sprites/Group_1718/Group_1718.yy",
   },
   "spriteMaskId":null,
   "visible":false,

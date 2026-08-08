@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGun",
-    "path":"sprites/sGun/sGun.yy",
+    "name":"Group_1720",
+    "path":"sprites/Group_1720/Group_1720.yy",
   },
   "spriteMaskId":null,
   "visible":true,

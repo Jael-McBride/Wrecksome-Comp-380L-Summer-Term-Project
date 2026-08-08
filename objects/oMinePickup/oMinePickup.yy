@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMinePickup",
-    "path":"sprites/sMinePickup/sMinePickup.yy",
+    "name":"Group_1716",
+    "path":"sprites/Group_1716/Group_1716.yy",
   },
   "spriteMaskId":null,
   "visible":true,
