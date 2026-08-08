@@ -43,9 +43,13 @@ with(oPlayer) {
 	else if(!layer_get_visible("LoseScreenLayer"))
 	{
 		global.lap = 1
-		update("workDammit");
+		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
+		if(global.oshkoshUnlocked != 1){
+			global.oshkoshUnlocked = 1
+			saveData();
+		}
 	}
 	}
 }

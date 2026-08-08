@@ -45,6 +45,10 @@ with(oPlayer) {
 		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
+		if(global.venenoUnlocked != 1){
+			global.venenoUnlocked = 1
+			saveData();
+		}
 	}
 	}
 }
