@@ -6,8 +6,8 @@
   "name":"oTestWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"EnvironmentalAssetDump",
+    "path":"folders/EnvironmentalAssetDump.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sRepair",
-    "path":"sprites/sRepair/sRepair.yy",
+    "name":"sRepairPickup",
+    "path":"sprites/sRepairPickup/sRepairPickup.yy",
   },
   "spriteMaskId":null,
   "visible":false,

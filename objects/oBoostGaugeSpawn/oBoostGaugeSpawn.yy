@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNitro",
-    "path":"sprites/sNitro/sNitro.yy",
+    "name":"sNitroPickup",
+    "path":"sprites/sNitroPickup/sNitroPickup.yy",
   },
   "spriteMaskId":null,
   "visible":false,
