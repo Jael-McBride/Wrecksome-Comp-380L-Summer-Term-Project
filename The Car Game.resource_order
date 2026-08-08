@@ -24,6 +24,7 @@
     {"name":"testTrack","order":5,"path":"folders/gameRoomStuff/Tracks/TrackPaths/testTrack.yy",},
     {"name":"globalAssets","order":6,"path":"folders/globalAssets.yy",},
     {"name":"componentAudio","order":1,"path":"folders/globalAssets/componentAudio.yy",},
+    {"name":"saveData","order":12,"path":"folders/saveData.yy",},
     {"name":"menuRoomStuff","order":7,"path":"folders/menuRoomStuff.yy",},
     {"name":"playerSelectionRoom","order":8,"path":"folders/playerSelectionRoom.yy",},
     {"name":"assets","order":1,"path":"folders/playerSelectionRoom/assets.yy",},

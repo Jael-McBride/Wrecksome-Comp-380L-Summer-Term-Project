@@ -4,12 +4,18 @@ switch(car_id) {
         break;
     case 1: // Pink Phantom
         global.playerCar = oPinkPhantom;
+		if(global.pinkUnlocked == 0)
+			return;
         break;
     case 2: // Oshkosh
         global.playerCar = oOshKosh;
+		if(global.oshkoshUnlocked == 0)
+			return;
         break;
     case 3: // Supercar
         global.playerCar = oVeneno;
+		if(global.venenoUnlocked == 0)
+			return;
         break;
     case 4: // Miata
         global.playerCar = oMiata;
