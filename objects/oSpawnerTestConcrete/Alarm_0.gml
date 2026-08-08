@@ -1,10 +1,10 @@
-var spawnPoint = getClosestPoint(pTestTrackPath, instanceX, instanceY)
+var spawnPoint = getClosestPoint(pConcrete, instanceX, instanceY)
 
-instanceX = path_get_x(pTestTrackPath, spawnPoint)
-instanceY = path_get_y(pTestTrackPath, spawnPoint)
+instanceX = path_get_x(pConcrete, spawnPoint)
+instanceY = path_get_y(pConcrete, spawnPoint)
 
-pointX = path_get_x(pTestTrackPath, spawnPoint + 0.05)
-pointY = path_get_y(pTestTrackPath, spawnPoint + 0.05)
+pointX = path_get_x(pConcrete, spawnPoint + 0.05)
+pointY = path_get_y(pConcrete, spawnPoint + 0.05)
 
 oldDirection = point_direction(instanceX,instanceY, pointX, pointY)
 

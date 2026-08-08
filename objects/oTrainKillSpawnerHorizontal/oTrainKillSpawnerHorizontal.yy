@@ -1,11 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oTestWall",
+  "%Name":"oTrainKillSpawnerHorizontal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTestWall",
+  "name":"oTrainKillSpawnerHorizontal",
   "overriddenProperties":[],
   "parent":{
     "name":"EnvironmentalAssetDump",
@@ -30,9 +32,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTestWall",
-    "path":"sprites/sTestWall/sTestWall.yy",
+    "name":"sTestTile",
+    "path":"sprites/sTestTile/sTestTile.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

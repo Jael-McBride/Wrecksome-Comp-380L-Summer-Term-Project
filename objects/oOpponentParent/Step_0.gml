@@ -109,6 +109,10 @@ if (bestPos >= 1){
 	bestPos = 0
 }
 
+if(place_meeting(x,y,oTestWall)){
+	bestPos = getClosestPoint(pathUsed, x, y)
+}
+
 if (distance_to_point(pointX,pointY) < 200){
 	bestPos += 0.05
 } else if (distance_to_point(pointX,pointY) > 1000){
@@ -214,6 +218,10 @@ if (place_meeting(x,y,oOilSpill) && shieldState == 0){
 	if (alarm[9] == -1) {
 		alarm[9] = 3.5*game_get_speed(gamespeed_fps)
 	}
+}
+
+if (place_meeting(x,y,oTrainKill) && shieldState == 0){
+	carHealth -= 99999
 }
 
 if (carHealth <= 0){
