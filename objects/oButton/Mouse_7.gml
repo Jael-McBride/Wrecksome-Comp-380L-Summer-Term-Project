@@ -17,6 +17,7 @@ switch(button_id) {
         layer_set_visible("MenuLayer", true);
         layer_set_visible("PauseLayer", false);
         layer_set_visible("RaceCountdownLayer", false);
+		global.lap = 1
         room_goto(rMenuRoom);
         break;
     case 5: // Resume
