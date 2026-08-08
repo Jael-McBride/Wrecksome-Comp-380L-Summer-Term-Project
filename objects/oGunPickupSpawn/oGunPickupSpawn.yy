@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Group_1720",
-    "path":"sprites/Group_1720/Group_1720.yy",
+    "name":"sGunPickup",
+    "path":"sprites/sGunPickup/sGunPickup.yy",
   },
   "spriteMaskId":null,
   "visible":false,

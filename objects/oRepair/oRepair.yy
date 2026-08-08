@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Group_1730",
-    "path":"sprites/Group_1730/Group_1730.yy",
+    "name":"sRepairPickup",
+    "path":"sprites/sRepairPickup/sRepairPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

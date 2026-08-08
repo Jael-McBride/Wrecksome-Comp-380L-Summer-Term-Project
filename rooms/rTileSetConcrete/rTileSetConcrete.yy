@@ -215,7 +215,7 @@
           12,1,14,-144,-2147483648,1,10,-42,12,1,14,-144,-2147483648,1,10,-42,12,1,14,-144,-2147483648,2,15,16,
           -40,12,2,18,19,-145,-2147483648,2,15,16,-38,12,5,18,19,-2147483648,-2147483648,0,-144,-2147483648,1,
           15,-38,22,1,23,-4,0,-2655,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tRoadTile","path":"tilesets/tRoadTile/tRoadTile.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tRoadTile","path":"tilesets/tRoadTile/tRoadTile.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sConcrete","path":"sprites/sConcrete/sConcrete.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"rTileSetConcrete",

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Group_1729",
-    "path":"sprites/Group_1729/Group_1729.yy",
+    "name":"sOilPickup",
+    "path":"sprites/sOilPickup/sOilPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

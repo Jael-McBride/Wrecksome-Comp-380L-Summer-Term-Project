@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Group_1723",
-    "path":"sprites/Group_1723/Group_1723.yy",
+    "name":"sNitroPickup",
+    "path":"sprites/sNitroPickup/sNitroPickup.yy",
   },
   "spriteMaskId":null,
   "visible":false,
