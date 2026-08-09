@@ -6,7 +6,7 @@ switch(button_id) {
         break;
     case 1: // How to Play
         layer_set_visible("MenuLayer", false);
-        room_goto(helpRoom);
+        room_goto(rTutorialRoom);
         break;
     case 2: // Settings
         break;
