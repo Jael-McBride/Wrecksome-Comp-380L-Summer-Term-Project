@@ -26,6 +26,8 @@ switch(button_id) {
         oPauseManager.paused = false;
         oPauseManager.update_pause();
         break;
+    case 6: // Credits
+        break;
         
 }
 
