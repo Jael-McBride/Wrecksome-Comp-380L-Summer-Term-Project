@@ -130,7 +130,6 @@
     {"name":"pTestTrackPath2","order":1,"path":"paths/pTestTrackPath2/pTestTrackPath2.yy",},
     {"name":"pTestTrackPath3","order":2,"path":"paths/pTestTrackPath3/pTestTrackPath3.yy",},
     {"name":"pTestTrackPath4","order":3,"path":"paths/pTestTrackPath4/pTestTrackPath4.yy",},
-{"name":"helpRoom","order":1,"path":"rooms/helpRoom/helpRoom.yy",},
     {"name":"rDirtTrack","order":9,"path":"rooms/rDirtTrack/rDirtTrack.yy",},
     {"name":"rGameRoom","order":7,"path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"rPlayerSelect","order":3,"path":"rooms/rPlayerSelect/rPlayerSelect.yy",},

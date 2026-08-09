@@ -201,7 +201,6 @@
     {"id":{"name":"pTestTrackPath2","path":"paths/pTestTrackPath2/pTestTrackPath2.yy",},},
     {"id":{"name":"pTestTrackPath3","path":"paths/pTestTrackPath3/pTestTrackPath3.yy",},},
     {"id":{"name":"pTestTrackPath4","path":"paths/pTestTrackPath4/pTestTrackPath4.yy",},},
-    {"id":{"name":"helpRoom","path":"rooms/helpRoom/helpRoom.yy",},},
     {"id":{"name":"rDirtTrack","path":"rooms/rDirtTrack/rDirtTrack.yy",},},
     {"id":{"name":"rGameRoom","path":"rooms/rGameRoom/rGameRoom.yy",},},
     {"id":{"name":"rMenuRoom","path":"rooms/rMenuRoom/rMenuRoom.yy",},},
