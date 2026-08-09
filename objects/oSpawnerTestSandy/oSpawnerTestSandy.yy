@@ -10,8 +10,8 @@
   "name":"oSpawnerTestSandy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tracks",
-    "path":"folders/gameRoomStuff/Tracks.yy",
+    "name":"TrackSpawners",
+    "path":"folders/gameRoomStuff/Tracks/TrackSpawners.yy",
   },
   "parentObjectId":null,
   "persistent":false,
