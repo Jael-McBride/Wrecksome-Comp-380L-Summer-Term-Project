@@ -11,10 +11,17 @@ pointY = 0
 instanceX = 0
 instanceY = 0
 
+theOpponent = 0
+if (global.hard == 1){
+	theOpponent = oOpponentHard
+} else {
+	theOpponent = oOpponentParent
+}
+
 //save all stats upon death!
 oldLapDone = 0
 
-instBot = instance_create_layer(x, y, "Instances", oOpponentParent)
+instBot = instance_create_layer(x, y, "Instances", theOpponent)
 with(instBot)
 {
 	direction = 0

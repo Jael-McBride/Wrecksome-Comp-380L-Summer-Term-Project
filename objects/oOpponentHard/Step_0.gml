@@ -151,7 +151,7 @@ if (place_meeting(x,y,oMinePickup)){
 	var mineID = instance_place(x,y,oMinePickup)
 	instance_destroy(mineID)
 	if(alarm[5]==-1){
-	alarm[5] = (0.5 + irandom(6))*game_get_speed(gamespeed_fps)
+	alarm[5] = (irandom(5))*game_get_speed(gamespeed_fps)
 	}
 }
 
@@ -160,14 +160,14 @@ if (place_meeting(x,y,oOilPickup)){
 	var oilID = instance_place(x,y,oOilPickup)
 	instance_destroy(oilID)
 	if(alarm[6]==-1){
-	alarm[6] = (0.5 + irandom(6))*game_get_speed(gamespeed_fps)
+	alarm[6] = (irandom(5))*game_get_speed(gamespeed_fps)
 	}
 }
 
 if (place_meeting(x,y, oGunPickup)){
 	var gunID = instance_place(x,y,oOilPickup)
 	instance_destroy(gunID)
-	gun = 3
+	gun = 6
 }
 
 if(gun > 0 && collision_line(x, y, x + hspd, y + vspd, [oOpponentParent, oPlayer], false, false) && gunCooldown == 0){
@@ -235,7 +235,7 @@ if(spd < 1 && alarm[3] == -1){
 
 
 if (alarm[8] == -1){
-	alarm[8] = (4 + irandom(6))*game_get_speed(gamespeed_fps)
+	alarm[8] = (4 + irandom(5))*game_get_speed(gamespeed_fps)
 }
 
 //the afterImage

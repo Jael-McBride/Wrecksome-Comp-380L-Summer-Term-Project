@@ -58,4 +58,4 @@ bestPos = 0//getClosestPoint(pathUsed, x, y)
 contactState = 0
 
 fastState = 0
-RNGcounter = 40
+RNGcounter = 50
