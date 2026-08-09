@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Upheaval_TT",
+  "%Name":"Upheaval_TT_Main",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":25,
@@ -118,7 +118,7 @@
   "last":0,
   "lineHeight":30,
   "maintainGms1Font":false,
-  "name":"Upheaval_TT",
+  "name":"Upheaval_TT_Main",
   "parent":{
     "name":"fonts",
     "path":"folders/fonts.yy",

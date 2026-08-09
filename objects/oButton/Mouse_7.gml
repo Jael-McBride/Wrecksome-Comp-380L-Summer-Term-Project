@@ -6,6 +6,7 @@ switch(button_id) {
         break;
     case 1: // How to Play
         layer_set_visible("MenuLayer", false);
+        layer_set_visible("TutorialLayer", true);
         room_goto(rTutorialRoom);
         break;
     case 2: // Settings
@@ -17,6 +18,7 @@ switch(button_id) {
         layer_set_visible("MenuLayer", true);
         layer_set_visible("PauseLayer", false);
         layer_set_visible("RaceCountdownLayer", false);
+        layer_set_visible("TutorialLayer", false);
         room_goto(rMenuRoom);
         break;
     case 5: // Resume
