@@ -3,7 +3,7 @@ switch(track_id) {
         room_goto(rPresentGameRoom);
         break;
     case 1: // Test
-        room_goto(rGameRoom);
+        room_goto(rDirtTrack);
         break;
     case 2: // Concrete
         room_goto(rTileSetConcrete);
