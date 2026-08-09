@@ -6,7 +6,8 @@ switch(button_id) {
         break;
     case 1: // How to Play
         layer_set_visible("MenuLayer", false);
-        room_goto(helpRoom);
+        layer_set_visible("TutorialLayer", true);
+        room_goto(rTutorialRoom);
         break;
     case 2: // Settings
         break;
@@ -17,12 +18,15 @@ switch(button_id) {
         layer_set_visible("MenuLayer", true);
         layer_set_visible("PauseLayer", false);
         layer_set_visible("RaceCountdownLayer", false);
-		global.lap = 1
+        layer_set_visible("TutorialLayer", false);
+        global.lap = 1;
         room_goto(rMenuRoom);
         break;
     case 5: // Resume
         oPauseManager.paused = false;
         oPauseManager.update_pause();
+        break;
+    case 6: // Credits
         break;
         
 }
