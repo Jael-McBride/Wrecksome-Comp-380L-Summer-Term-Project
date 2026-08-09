@@ -1,0 +1,1 @@
+SpawnDirection = 90

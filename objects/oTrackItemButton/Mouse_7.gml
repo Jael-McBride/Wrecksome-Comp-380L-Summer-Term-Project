@@ -2,7 +2,7 @@ switch(track_id) {
     case 0: // Demo
         room_goto(rPresentGameRoom);
         break;
-    case 1: // Test
+    case 1: // Dirt
         room_goto(rDirtTrack);
         break;
     case 2: // Concrete
@@ -14,6 +14,9 @@ switch(track_id) {
     case 4: // Sandy
         room_goto(rTileSetSandy);
         break;
+	case 5: //DirtHighway
+		room_goto(rDirtHighway);
+		break;
 }
 
 layer_set_visible("TrackSelectLayer", false);

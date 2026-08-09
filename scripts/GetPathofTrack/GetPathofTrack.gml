@@ -42,6 +42,15 @@ function getPathofTrack(roomName){
 		}
 		break;
 		
+				
+		case "rDirtHighway":
+		currentTrackPath = {
+			FirstPath: pDirtHigh,
+			SecondPath: pDirtHigh2,
+			ThirdPath: pDirtHigh3
+		}
+		break;
+		
 		
 		default:
 		currentTrackPath = {
