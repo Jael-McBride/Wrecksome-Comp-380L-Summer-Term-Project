@@ -111,6 +111,7 @@
     {"id":{"name":"oOilPickup","path":"objects/oOilPickup/oOilPickup.yy",},},
     {"id":{"name":"oOilPickupSpawn","path":"objects/oOilPickupSpawn/oOilPickupSpawn.yy",},},
     {"id":{"name":"oOilSpill","path":"objects/oOilSpill/oOilSpill.yy",},},
+    {"id":{"name":"oOpponentHard","path":"objects/oOpponentHard/oOpponentHard.yy",},},
     {"id":{"name":"oOpponentParent","path":"objects/oOpponentParent/oOpponentParent.yy",},},
     {"id":{"name":"oOpponentSpawn45","path":"objects/oOpponentSpawn45/oOpponentSpawn45.yy",},},
     {"id":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},},

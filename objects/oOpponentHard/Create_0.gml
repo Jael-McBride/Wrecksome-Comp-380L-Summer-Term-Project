@@ -26,8 +26,8 @@ gun = 0
 carHealth = 90
 
 oilSpillR = 0
-regularR = 1
-driftR = 3
+regularR = 2
+driftR = 4
 rotate = regularR
 
 hspd = 0
@@ -35,12 +35,12 @@ vspd = 0
 spd = 0
 
 storedSpeed = 0
-maxSpeed = 11
+maxSpeed = 11 + irandom(3)
 oldSpeed = maxSpeed
 storedSpeed = oldSpeed
 rubberBandSpeed = maxSpeed + 2
-boostedSpeed = maxSpeed + 6
-accel = 0.2
+boostedSpeed = maxSpeed + 8
+accel = 0.3
 
 pointX = 0
 pointY = 0
@@ -58,4 +58,4 @@ bestPos = 0//getClosestPoint(pathUsed, x, y)
 contactState = 0
 
 fastState = 0
-RNGcounter = 70
+RNGcounter = 40

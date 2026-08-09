@@ -65,6 +65,7 @@
     {"name":"oOilPickup","order":1,"path":"objects/oOilPickup/oOilPickup.yy",},
     {"name":"oOilPickupSpawn","order":1,"path":"objects/oOilPickupSpawn/oOilPickupSpawn.yy",},
     {"name":"oOilSpill","order":9,"path":"objects/oOilSpill/oOilSpill.yy",},
+    {"name":"oOpponentHard","order":4,"path":"objects/oOpponentHard/oOpponentHard.yy",},
     {"name":"oOpponentSpawn45","order":2,"path":"objects/oOpponentSpawn45/oOpponentSpawn45.yy",},
     {"name":"oOpponentSpawnStraight","order":1,"path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},
     {"name":"oOshKosh","order":1,"path":"objects/oOshKosh/oOshKosh.yy",},

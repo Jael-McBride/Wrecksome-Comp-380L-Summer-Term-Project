@@ -72,7 +72,7 @@ pointY = path_get_y(pathUsed, bestPos)
 //move_towards_point(pointX, pointY, spd)
 if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	{
-		maxSpeed = oldSpeed - 5
+		maxSpeed = oldSpeed - 2
 		rotate = driftR
 		if(abs(driftAngle) < maxDriftAngle){
 		driftAngle -= 2
@@ -81,7 +81,7 @@ if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	
 else if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 10)
 	{
-		maxSpeed = oldSpeed - 5
+		maxSpeed = oldSpeed - 2
 		rotate = driftR
 		if(abs(driftAngle) < maxDriftAngle){
 		driftAngle += 2
@@ -190,7 +190,7 @@ if(gun > 0 && collision_line(x, y, x + hspd, y + vspd, [oOpponentParent, oPlayer
 //getting hit by powerups
 
 if (place_meeting(x,y,oMine) && damageCooldown == 0 && shieldState == 0){
-	carHealth -= 30
+	carHealth -= 90
 	damageCooldown = 1
 	var mineID = instance_place(x,y,oMine)
 	instance_create_layer(x,y,"Instances", oPlosion)
@@ -202,7 +202,7 @@ if (place_meeting(x,y,oMine) && damageCooldown == 0 && shieldState == 0){
 }
 
 if (place_meeting(x,y,oRocket) && damageCooldown == 0 && shieldState == 0){
-	carHealth -= 30
+	carHealth -= 90
 	damageCooldown = 1
 	var rocketID = instance_place(x,y,oRocket)
 	instance_create_layer(x,y,"Instances", oPlosion)
@@ -214,9 +214,9 @@ if (place_meeting(x,y,oRocket) && damageCooldown == 0 && shieldState == 0){
 }
 
 if (place_meeting(x,y,oOilSpill) && shieldState == 0){
-	oldSpeed = 2
+	oldSpeed = 3
 	if (alarm[9] == -1) {
-		alarm[9] = 3.5*game_get_speed(gamespeed_fps)
+		alarm[9] = 3*game_get_speed(gamespeed_fps)
 	}
 }
 
@@ -235,7 +235,7 @@ if(spd < 1 && alarm[3] == -1){
 
 
 if (alarm[8] == -1){
-	alarm[8] = (6 + irandom(7))*game_get_speed(gamespeed_fps)
+	alarm[8] = (4 + irandom(6))*game_get_speed(gamespeed_fps)
 }
 
 //the afterImage

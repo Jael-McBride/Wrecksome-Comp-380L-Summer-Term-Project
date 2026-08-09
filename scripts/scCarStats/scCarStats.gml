@@ -26,7 +26,7 @@ function setCar(carName){
 	driftSlowdown = 3.5;
 	driftStart = 12;
 	
-	boostAccel = 5
+	boostAccel = 1
 	boostTopSpeed = 8
 	boostUsage = 1.1
 	extraBoostSpeed = 13
@@ -50,7 +50,7 @@ function setCar(carName){
 	driftSlowdown = 3.5;
 	driftStart = 12;
 	
-	boostAccel = 4
+	boostAccel = 1
 	boostTopSpeed = 7
 	boostUsage = 1.1
 	extraBoostSpeed = 11
@@ -227,7 +227,7 @@ function setCar(carName){
 	driftSlowdown = 3;
 	driftStart = 12;
 	
-	boostAccel = 10
+	boostAccel = 1
 	boostTopSpeed = 6
 	boostUsage = 1.5
 	extraBoostSpeed = 13
@@ -252,7 +252,7 @@ function setCar(carName){
 	driftSlowdown = 3;
 	driftStart = 12;
 	
-	boostAccel = 7
+	boostAccel = 1
 	boostTopSpeed = 6
 	boostUsage = 1.5
 	extraBoostSpeed = 13
@@ -277,7 +277,7 @@ function setCar(carName){
 	driftSlowdown = 2;
 	driftStart = 8;
 	
-	boostAccel = 9
+	boostAccel = 1
 	boostTopSpeed = 6
 	boostUsage = 1.5
 	extraBoostSpeed = 13
