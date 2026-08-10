@@ -1,3 +1,5 @@
+// This is a silly hack. Due to time constraints, it had to be done
+
 switch(button_id) {
     case 0: // Singleplayer
         layer_set_visible("MenuLayer", false);
@@ -19,6 +21,7 @@ switch(button_id) {
         layer_set_visible("PauseLayer", false);
         layer_set_visible("RaceCountdownLayer", false);
         layer_set_visible("TutorialLayer", false);
+        // layer_set_visible("GameHUDLayer", false);
         global.lap = 1;
         room_goto(rMenuRoom);
         break;
