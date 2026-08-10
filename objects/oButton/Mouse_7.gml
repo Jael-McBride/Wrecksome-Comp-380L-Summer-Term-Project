@@ -21,7 +21,7 @@ switch(button_id) {
         layer_set_visible("PauseLayer", false);
         layer_set_visible("RaceCountdownLayer", false);
         layer_set_visible("TutorialLayer", false);
-        // layer_set_visible("GameHUDLayer", false);
+        layer_set_visible("GameHUDLayer", false);
         global.lap = 1;
         room_goto(rMenuRoom);
         break;

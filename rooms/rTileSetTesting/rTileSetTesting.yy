@@ -78,6 +78,7 @@
     {"name":"inst_3B6BE131","path":"rooms/rTileSetTesting/rTileSetTesting.yy",},
     {"name":"inst_45962060","path":"rooms/rTileSetTesting/rTileSetTesting.yy",},
     {"name":"inst_6B09580C","path":"rooms/rTileSetTesting/rTileSetTesting.yy",},
+    {"name":"inst_470AC949","path":"rooms/rTileSetTesting/rTileSetTesting.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -160,6 +161,7 @@
         {"$GMRInstance":"v4","%Name":"inst_3DAF191B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3DAF191B","objectId":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":704.0,},
         {"$GMRInstance":"v4","%Name":"inst_433E5FF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_433E5FF","objectId":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1536.0,"y":896.0,},
         {"$GMRInstance":"v4","%Name":"inst_66749943","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66749943","objectId":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":736.0,},
+        {"$GMRInstance":"v4","%Name":"inst_470AC949","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_470AC949","objectId":{"name":"oGameHUDManager","path":"objects/oGameHUDManager/oGameHUDManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4224.0,"y":1568.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_3","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":125,"SerialiseWidth":188,"TileCompressedData":[
           -3208,-2147483648,1,1,-10,2,-81,-2147483648,-6,2,2,3,9,-87,-2147483648,2,10,11,-97,-2147483648,2,18,

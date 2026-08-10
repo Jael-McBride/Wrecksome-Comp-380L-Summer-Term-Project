@@ -39,6 +39,7 @@
     {"name":"inst_5169CA3F","path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"inst_48250290","path":"rooms/rGameRoom/rGameRoom.yy",},
     {"name":"inst_640DAB1A","path":"rooms/rGameRoom/rGameRoom.yy",},
+    {"name":"inst_4C1DE8F9","path":"rooms/rGameRoom/rGameRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -81,6 +82,7 @@
         {"$GMRInstance":"v4","%Name":"inst_5169CA3F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5169CA3F","objectId":{"name":"oOpponentSpawnUp","path":"objects/oOpponentSpawnUp/oOpponentSpawnUp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":1952.0,},
         {"$GMRInstance":"v4","%Name":"inst_48250290","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48250290","objectId":{"name":"oOpponentSpawnUp","path":"objects/oOpponentSpawnUp/oOpponentSpawnUp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":2144.0,},
         {"$GMRInstance":"v4","%Name":"inst_640DAB1A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_640DAB1A","objectId":{"name":"oOpponentSpawnUp","path":"objects/oOpponentSpawnUp/oOpponentSpawnUp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":2240.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4C1DE8F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C1DE8F9","objectId":{"name":"oGameHUDManager","path":"objects/oGameHUDManager/oGameHUDManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2016.0,"y":1472.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Da_track","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_58BDDDD2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_58BDDDD2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sTestTrack","path":"sprites/sTestTrack/sTestTrack.yy",},"x":448.0,"y":384.0,},
