@@ -17,6 +17,10 @@ switch(track_id) {
 	case 5: //DirtHighway
 		room_goto(rDirtHighway);
 		break;
+	case 6: //Second Sandy Track
+		room_goto(rSandyFigure8);
+		break;
+	//case 7 WIP
 }
 
 layer_set_visible("TrackSelectLayer", false);

@@ -51,6 +51,14 @@ function getPathofTrack(roomName){
 		}
 		break;
 		
+		case "rSandyFigure8":
+		currentTrackPath = {
+			FirstPath: pSandy,
+			SecondPath: pSandy2,
+			ThirdPath: pSandy3
+		}
+		break;
+		
 		
 		default:
 		currentTrackPath = {
