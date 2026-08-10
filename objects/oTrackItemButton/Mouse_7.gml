@@ -20,7 +20,9 @@ switch(track_id) {
 	case 6: //Second Sandy Track
 		room_goto(rSandyFigure8);
 		break;
-	//case 7 WIP
+	case 7: //Shipping Yard
+		room_goto(rGameRoom);
+		break;
 }
 
 layer_set_visible("TrackSelectLayer", false);

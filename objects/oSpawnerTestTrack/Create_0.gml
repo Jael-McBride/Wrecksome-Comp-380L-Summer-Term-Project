@@ -8,9 +8,9 @@ instanceY = 0
 oldDirection = 0
 
 
-inst = instance_create_layer(672, 1600, "Instances", global.playerCar)
+inst = instance_create_layer(2088, 336, "Instances", global.playerCar)
 with(inst)
 {
 	pathUsed = pTestTrackPath
-	direction = 90
+	direction = 0
 }
