@@ -1,4 +1,4 @@
-speed = 21
+speed = 40
 
 if(place_meeting(x,y,[oShield, oMine, oRocket, oTrainKill])){
 	instance_create_layer(x,y,"Instances", oPlosion)
