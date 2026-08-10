@@ -187,6 +187,7 @@
     {"name":"inst_14215E9F","path":"rooms/rTileSetConcrete/rTileSetConcrete.yy",},
     {"name":"inst_42B6555A","path":"rooms/rTileSetConcrete/rTileSetConcrete.yy",},
     {"name":"inst_7A70FAE1","path":"rooms/rTileSetConcrete/rTileSetConcrete.yy",},
+    {"name":"inst_767739E5","path":"rooms/rTileSetConcrete/rTileSetConcrete.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -378,6 +379,7 @@
         {"$GMRInstance":"v4","%Name":"inst_57BD9F16","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_57BD9F16","objectId":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2112.0,"y":1216.0,},
         {"$GMRInstance":"v4","%Name":"inst_5B6F0D17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B6F0D17","objectId":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":928.0,},
         {"$GMRInstance":"v4","%Name":"inst_256D1AB0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_256D1AB0","objectId":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":1184.0,},
+        {"$GMRInstance":"v4","%Name":"inst_767739E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_767739E5","objectId":{"name":"oGameHUDManager","path":"objects/oGameHUDManager/oGameHUDManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3776.0,"y":2208.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"FInishLine","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"FInishLine","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":63,"SerialiseWidth":94,"TileCompressedData":[
           -1262,0,1,3,-93,0,1,3,-93,0,1,3,-93,0,1,3,-93,0,1,3,-93,0,1,3,-93,0,1,3,-93,0,1,3,-93,0,1,3,-3907,0,
