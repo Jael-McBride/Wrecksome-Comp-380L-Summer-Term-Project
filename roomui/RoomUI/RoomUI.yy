@@ -3,7 +3,26 @@
   "%Name":"RoomUI",
   "children":[
     {"$GMRUILayer":"v1","%Name":"GameHUDLayer","alignItems":2,"children":[
-        {"$GMRFlexPanel":"","%Name":"GameHUDPanel","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"name":"GameHUDPanel","nodeColour":4294068425,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":100.0,},},
+        {"$GMRFlexPanel":"","%Name":"GameHUDPanel","alignItems":2,"children":[
+            {"$GMRFlexPanel":"","%Name":"TopPanel","alignItems":3,"children":[
+                {"$GMRFlexPanel":"","%Name":"LapCounter","alignItems":2,"children":[
+                    {"$GMRSpriteGraphic":"v1","%Name":"graphic_4D7F351","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4D7F351","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sLapCounter","path":"sprites/sLapCounter/sLapCounter.yy",},"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":1,"value":48.0,},"justifyContent":1,"name":"LapCounter","nodeColour":4294073160,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":151.0,},},
+              ],"flexDirection":0,"height":{"unit":3,"value":100.0,},"justifyContent":1,"name":"TopPanel","nodeColour":4288213576,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
+            {"$GMRFlexPanel":"","%Name":"BottomPanel","alignItems":3,"children":[
+                {"$GMRFlexPanel":"","%Name":"PlayerBarPanel","alignItems":2,"children":[
+                    {"$GMRFlexPanel":"","%Name":"HealthBar","alignItems":2,"children":[
+                        {"$GMRSpriteGraphic":"v1","%Name":"graphic_7CF07B8A","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7CF07B8A","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sHealthBar","path":"sprites/sHealthBar/sHealthBar.yy",},"x":0.0,"y":0.0,},
+                      ],"flexDirection":0,"height":{"unit":3,"value":57.0,},"justifyContent":1,"name":"HealthBar","nodeColour":4294111304,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":258.0,},},
+                    {"$GMRFlexPanel":"","%Name":"BoostBar","alignItems":2,"children":[
+                        {"$GMRSpriteGraphic":"v1","%Name":"graphic_4D70BEF","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4D70BEF","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sBoostBar","path":"sprites/sBoostBar/sBoostBar.yy",},"x":0.0,"y":0.0,},
+                      ],"flexDirection":0,"height":{"unit":3,"value":57.0,},"justifyContent":1,"name":"BoostBar","nodeColour":4282958578,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":258.0,},},
+                  ],"flexDirection":0,"gapRow":12.0,"height":{"unit":3,"value":100.0,},"justifyContent":1,"name":"PlayerBarPanel","nodeColour":4282970765,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":100.0,},},
+                {"$GMRFlexPanel":"","%Name":"CurrentItem","alignItems":2,"children":[
+                    {"$GMRSpriteGraphic":"v1","%Name":"graphic_1DD1F0E9","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_1DD1F0E9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sCurrentItem","path":"sprites/sCurrentItem/sCurrentItem.yy",},"x":0.0,"y":0.0,},
+                  ],"flexDirection":0,"height":{"unit":3,"value":77.0,},"justifyContent":1,"name":"CurrentItem","nodeColour":4294068369,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":177.0,},},
+              ],"flexDirection":2,"height":{"unit":3,"value":100.0,},"justifyContent":3,"name":"BottomPanel","nodeColour":4282935026,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
+          ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":3,"name":"GameHUDPanel","nodeColour":4294068425,"paddingBottom":{"unit":1,"value":24.0,},"paddingLeft":{"unit":1,"value":24.0,},"paddingRight":{"unit":1,"value":24.0,},"paddingTop":{"unit":1,"value":24.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"GameHUDLayer","nodeColour":4282970857,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"MenuLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"MenuPanel","alignItems":1,"children":[
