@@ -26,6 +26,12 @@ with(instBot)
 {
 	direction = 90
 	pathUsed = other.path1
+	
+	path1 = other.path1
+	path2 = other.path2
+	path3 = other.path3
 }
 
 oldSpriteUsed = instBot.sprite_index
+
+pathSpawned = 0

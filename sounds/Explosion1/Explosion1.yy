@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Explosion1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.9779592,
+  "exportDir":"",
+  "name":"Explosion1",
+  "parent":{
+    "name":"soundDump",
+    "path":"folders/soundDump.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Explosion1.mp3",
+  "volume":1.0,
+}

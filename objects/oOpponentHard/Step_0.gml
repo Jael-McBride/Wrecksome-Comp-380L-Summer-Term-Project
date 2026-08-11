@@ -109,8 +109,26 @@ if (bestPos >= 1){
 	bestPos = 0
 }
 
-if(place_meeting(x,y,oTestWall)){
+if(place_meeting(x,y,oTestWall) || collision_line(x, y, x + 8, y + 8, [oTestWall], false, false)){
+	//bestPos = getClosestPoint(pathUsed, x, y)
+	var tempx1 = path_get_x(path1, bestPos)
+	var tempy1 = path_get_y(path1, bestPos)
+	
+	var tempx2 = path_get_x(path2, bestPos)
+	var tempy2 = path_get_y(path2, bestPos)
+	
+	var tempx3 = path_get_x(path3, bestPos)
+	var tempy3 = path_get_y(path3, bestPos)
+	
+	if(distance_to_point(tempx1,tempy1) > distance_to_point(tempx2,tempy2)){
+		pathUsed = path2
+	}
+	if(distance_to_point(tempx1,tempy1) > distance_to_point(tempx3,tempy3)){
+		pathUsed = path3
+	}	
+	
 	bestPos = getClosestPoint(pathUsed, x, y)
+
 }
 
 if (distance_to_point(pointX,pointY) < 200){

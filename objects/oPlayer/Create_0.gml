@@ -41,3 +41,7 @@ extraBoostInterval = 1
 fastState = 0
 
 currentPower = "none"
+
+//EVERYTHING DOWN HERE IS FOR SOUUUNNNNDDDDD
+
+squealTires = 0

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scFindRespawn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scFindRespawn",
+  "parent":{
+    "name":"OpponentSpawners",
+    "path":"folders/gameRoomStuff/Tracks/OpponentSpawners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

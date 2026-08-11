@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"hpRepair",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.8054649,
+  "exportDir":"",
+  "name":"hpRepair",
+  "parent":{
+    "name":"soundDump",
+    "path":"folders/soundDump.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"hpRepair.mp3",
+  "volume":1.0,
+}

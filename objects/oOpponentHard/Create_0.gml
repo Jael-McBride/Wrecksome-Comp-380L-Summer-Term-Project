@@ -59,3 +59,10 @@ contactState = 0
 
 fastState = 0
 RNGcounter = 50
+
+
+//store paths
+
+path1 = 0
+path2 = 0
+path3 = 0

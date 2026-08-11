@@ -355,3 +355,11 @@ alarm[1] = 5*game_get_speed(gamespeed_fps)
 if (place_meeting(x,y,oTrainKill) && shieldState == 0){
 	carHealth -= 99999
 }
+
+//everything down HERE will be all about SOUNNNDDDDD baby
+
+if(abs(driftAngle) > 3 && !audio_is_playing(squealTires)){
+	squealTires = audio_play_sound(tireSqueal, 11, true)
+} else {
+	audio_stop_sound(squealTires)
+}

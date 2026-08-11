@@ -14,3 +14,5 @@ with(inst)
 	pathUsed = pTestTrackPath
 	direction = 0
 }
+
+global.currentSong = audio_play_sound(RocketRace, 11, true)

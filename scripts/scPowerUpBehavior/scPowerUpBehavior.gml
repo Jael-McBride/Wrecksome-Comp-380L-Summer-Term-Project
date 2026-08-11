@@ -9,11 +9,13 @@ switch powerUpName{
 case "shield":
 	player.currentPower = "shield"
 	show_debug_message("shield get!")
+	audio_play_sound(ShieldPickUp, 10, false)
 	break;
 	
 case "oil":
 	player.currentPower = "oil"
 	show_debug_message("oil get!")
+	audio_play_sound(PickUpOil, 10, false)
 	break;
 	
 case "mine":
@@ -25,11 +27,13 @@ case "gun":
 	player.currentPower = "gun"
 	player.rockets = 3
 	show_debug_message("gun get!")
+	audio_play_sound(Guncock, 10, false)
 	break;
 	
 case "repair":
 	player.carHealth = player.maxHealth
 	show_debug_message(player.carHealth)
+	audio_play_sound(hpRepair, 10, false)
 	break;
 	
 default:

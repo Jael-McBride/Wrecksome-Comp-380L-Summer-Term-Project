@@ -23,7 +23,10 @@
     "name":"opponentCars",
     "path":"folders/gameRoomStuff/carObjects/opponentCars.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oOpponentParent",
+    "path":"objects/oOpponentParent/oOpponentParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

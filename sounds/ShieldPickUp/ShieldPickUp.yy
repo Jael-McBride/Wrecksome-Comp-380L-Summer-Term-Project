@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ShieldPickUp",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.6339002,
+  "exportDir":"",
+  "name":"ShieldPickUp",
+  "parent":{
+    "name":"soundDump",
+    "path":"folders/soundDump.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ShieldPickUp.wav",
+  "volume":1.0,
+}

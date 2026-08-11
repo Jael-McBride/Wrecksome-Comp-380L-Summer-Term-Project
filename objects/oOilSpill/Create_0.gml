@@ -1,1 +1,2 @@
 alarm[0] = 7*game_get_speed(gamespeed_fps)
+soundPlay = 0
