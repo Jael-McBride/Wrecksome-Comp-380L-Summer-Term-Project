@@ -6,7 +6,7 @@
   "name":"GetPathofTrack",
   "parent":{
     "name":"TrackPaths",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

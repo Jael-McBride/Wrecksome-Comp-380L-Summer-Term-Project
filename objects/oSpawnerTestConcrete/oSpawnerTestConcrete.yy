@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"TrackSpawners",
-    "path":"folders/gameRoomStuff/Tracks/TrackSpawners.yy",
+    "path":"folders/gameRoom/Tracks/TrackSpawners.yy",
   },
   "parentObjectId":null,
   "persistent":false,

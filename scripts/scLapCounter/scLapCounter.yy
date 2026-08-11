@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scLapCounter",
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"gameRoom",
+    "path":"folders/gameRoom.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

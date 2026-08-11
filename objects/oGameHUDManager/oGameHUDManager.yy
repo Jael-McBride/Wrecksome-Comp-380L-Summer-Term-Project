@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"componentObjects",
-    "path":"folders/gameRoomStuff/assets/componentObjects.yy",
+    "path":"folders/gameRoom/assets/componentObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

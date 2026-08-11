@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PowerUpSpwners",
-    "path":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy",
+    "path":"folders/gameRoom/Tracks/PowerUpSpwners.yy",
   },
   "parentObjectId":null,
   "persistent":false,

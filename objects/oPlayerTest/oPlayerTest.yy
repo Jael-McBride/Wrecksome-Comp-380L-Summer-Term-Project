@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"noLongerNeeded",
-    "path":"folders/gameRoomStuff/noLongerNeeded.yy",
+    "path":"folders/gameRoom/noLongerNeeded.yy",
   },
   "parentObjectId":null,
   "persistent":false,

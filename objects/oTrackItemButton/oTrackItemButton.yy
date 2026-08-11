@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"componentObjects",
-    "path":"folders/trackRoomStuff/assets/componentObjects.yy",
+    "path":"folders/trackRoom/assets/componentObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"sTrackSelectItemButton",
-    "path":"sprites/sTrackSelectItemButton/sTrackSelectItemButton.yy",
+    "name":"sTrackSelectionItemContainer",
+    "path":"sprites/sTrackSelectionItemContainer/sTrackSelectionItemContainer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

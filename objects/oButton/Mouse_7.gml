@@ -22,6 +22,7 @@ switch(button_id) {
         layer_set_visible("RaceCountdownLayer", false);
         layer_set_visible("TutorialLayer", false);
         layer_set_visible("GameHUDLayer", false);
+        layer_set_visible("CreditsLayer", false);
         global.lap = 1;
 		fadeOutSound(global.currentSong, 3300)
         room_goto(rMenuRoom);
@@ -31,6 +32,9 @@ switch(button_id) {
         oPauseManager.update_pause();
         break;
     case 6: // Credits
+        layer_set_visible("MenuLayer", false);
+        layer_set_visible("CreditsLayer", true);
+        room_goto(rCreditsRoom);
         break;
         
 }

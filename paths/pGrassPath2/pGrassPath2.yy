@@ -6,7 +6,7 @@
   "name":"pGrassPath2",
   "parent":{
     "name":"grassTrack",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths/grassTrack.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths/grassTrack.yy",
   },
   "points":[
     {"speed":100.0,"x":2112.0,"y":640.0,},

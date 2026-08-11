@@ -6,7 +6,7 @@
   "name":"scPowerUpBehavior",
   "parent":{
     "name":"PowerUpSpwners",
-    "path":"folders/gameRoomStuff/Tracks/PowerUpSpwners.yy",
+    "path":"folders/gameRoom/Tracks/PowerUpSpwners.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

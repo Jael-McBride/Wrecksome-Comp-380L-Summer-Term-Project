@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"TilesetSprites",
-    "path":"folders/gameRoomStuff/Tilesets/TilesetSprites.yy",
+    "path":"folders/gameRoom/Tilesets/TilesetSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

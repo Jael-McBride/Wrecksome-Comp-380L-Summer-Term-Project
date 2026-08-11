@@ -13,7 +13,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"Tilesets",
-    "path":"folders/gameRoomStuff/Tilesets.yy",
+    "path":"folders/gameRoom/Tilesets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

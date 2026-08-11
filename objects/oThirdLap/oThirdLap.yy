@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Second Lap",},
   ],
   "parent":{
-    "name":"menuRoomStuff",
-    "path":"folders/menuRoomStuff.yy",
+    "name":"menuRoom",
+    "path":"folders/menuRoom.yy",
   },
   "parentObjectId":{
     "name":"oTheParentButton",

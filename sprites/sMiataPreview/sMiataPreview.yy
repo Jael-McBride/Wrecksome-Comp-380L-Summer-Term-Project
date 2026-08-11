@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sMiataPreview",
   "bboxMode":0,
-  "bbox_bottom":198,
+  "bbox_bottom":78,
   "bbox_left":0,
-  "bbox_right":308,
+  "bbox_right":138,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"9c19841d-1ebd-4262-87ce-7772fa812496","name":"9c19841d-1ebd-4262-87ce-7772fa812496","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fba302bd-a19e-4e9b-8610-0ae37985e5ff","name":"fba302bd-a19e-4e9b-8610-0ae37985e5ff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":199,
+  "height":79,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"90bc13f8-b2a7-47ed-89e3-51705f7e700f","blendMode":0,"displayName":"default","isLocked":false,"name":"90bc13f8-b2a7-47ed-89e3-51705f7e700f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8a09e0a4-3a03-4b9e-9117-2e60bd827f01","blendMode":0,"displayName":"default","isLocked":false,"name":"8a09e0a4-3a03-4b9e-9117-2e60bd827f01","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sMiataPreview",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9c19841d-1ebd-4262-87ce-7772fa812496","path":"sprites/sMiataPreview/sMiataPreview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c35136af-adda-45e3-863b-406f87cac36c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fba302bd-a19e-4e9b-8610-0ae37985e5ff","path":"sprites/sMiataPreview/sMiataPreview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9459bea2-019d-4ffb-807d-bfa85d662c84","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":309,
+  "width":139,
 }

@@ -6,7 +6,7 @@
   "name":"pTestTrackPath2",
   "parent":{
     "name":"testTrack",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths/testTrack.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths/testTrack.yy",
   },
   "points":[
     {"speed":100.0,"x":2199.0059,"y":521.0216,},

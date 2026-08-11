@@ -6,7 +6,7 @@
   "name":"scFindRespawn",
   "parent":{
     "name":"OpponentSpawners",
-    "path":"folders/gameRoomStuff/Tracks/OpponentSpawners.yy",
+    "path":"folders/gameRoom/Tracks/OpponentSpawners.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

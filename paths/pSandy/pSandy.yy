@@ -6,7 +6,7 @@
   "name":"pSandy",
   "parent":{
     "name":"sandyFigure",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths/sandyFigure.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths/sandyFigure.yy",
   },
   "points":[
     {"speed":100.0,"x":1330.2878,"y":2118.477,},

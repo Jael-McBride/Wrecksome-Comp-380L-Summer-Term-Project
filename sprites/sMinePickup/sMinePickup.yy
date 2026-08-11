@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"offensivePowerups",
-    "path":"folders/gameRoomStuff/assets/powerupSprites/offensivePowerups.yy",
+    "path":"folders/gameRoom/assets/powerupSprites/offensivePowerups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

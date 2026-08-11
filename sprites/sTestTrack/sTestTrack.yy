@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"gameRoom",
+    "path":"folders/gameRoom.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

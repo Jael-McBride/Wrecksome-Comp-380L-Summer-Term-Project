@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCarItemButton",
-    "path":"sprites/sCarItemButton/sCarItemButton.yy",
+    "name":"sCarSelectionItemContainer",
+    "path":"sprites/sCarSelectionItemContainer/sCarSelectionItemContainer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

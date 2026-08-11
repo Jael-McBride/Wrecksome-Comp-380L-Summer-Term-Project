@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"carObjects",
-    "path":"folders/gameRoomStuff/carObjects.yy",
+    "path":"folders/gameRoom/carObjects.yy",
   },
   "parentObjectId":{
     "name":"oPlayer",

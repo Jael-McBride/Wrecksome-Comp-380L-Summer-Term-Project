@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"utilityPowerups",
-    "path":"folders/gameRoomStuff/assets/powerupSprites/utilityPowerups.yy",
+    "path":"folders/gameRoom/assets/powerupSprites/utilityPowerups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

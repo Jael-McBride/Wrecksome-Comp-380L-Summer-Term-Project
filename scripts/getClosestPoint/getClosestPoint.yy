@@ -6,7 +6,7 @@
   "name":"getClosestPoint",
   "parent":{
     "name":"opponentCars",
-    "path":"folders/gameRoomStuff/carObjects/opponentCars.yy",
+    "path":"folders/gameRoom/carObjects/opponentCars.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
