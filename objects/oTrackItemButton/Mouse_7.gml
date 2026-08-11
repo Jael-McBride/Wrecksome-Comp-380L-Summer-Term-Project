@@ -1,27 +1,27 @@
 switch(track_id) {
-    case 0: // Demo
-        room_goto(rPresentGameRoom);
+    case 0: // Shipping Yard
+        room_goto(rGameRoom);
         break;
-    case 1: // Dirt
-        room_goto(rDirtTrack);
-        break;
-    case 2: // Concrete
-        room_goto(rTileSetConcrete);
-        break;
-    case 3: // Grass
+    case 1: // Grass Track
         room_goto(rTileSetTesting);
         break;
-    case 4: // Sandy
+    case 2: // Sand Track
         room_goto(rTileSetSandy);
         break;
-	case 5: //DirtHighway
-		room_goto(rDirtHighway);
+    case 3: // Twisty Sands
+        room_goto(rSandyFigure8);
+        break;
+    case 4: // Dirt Highway
+        room_goto(rDirtHighway);
+        break;
+	case 5: // Racetrack
+		room_goto(rPresentGameRoom);
 		break;
-	case 6: //Second Sandy Track
-		room_goto(rSandyFigure8);
+	case 6: // Concrete
+		room_goto(rTileSetConcrete);
 		break;
-	case 7: //Shipping Yard
-		room_goto(rGameRoom);
+	case 7: // Dirt Track
+		room_goto(rDirtTrack);
 		break;
 }
 
