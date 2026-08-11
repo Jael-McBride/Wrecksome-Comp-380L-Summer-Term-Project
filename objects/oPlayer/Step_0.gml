@@ -202,6 +202,7 @@ if (extraBoost == 1 && boostGauge >= 25 && extraBoostInterval == 1 && spd > 1){
 	driftAngle = 0
 	Slowdown = 0
 	boostGauge -= 25
+	audio_play_sound(NitroSound, 11, false)
 
 	extraBoostInterval = 0
 	alarm[0] = 2.5*game_get_speed(gamespeed_fps)
@@ -340,6 +341,8 @@ if (place_meeting(x,y,oRocket)){
 //health??????
 if (carHealth <= 0) {
 	fadeOutSound(squealTires, 100)
+	fadeOutSound(brakingTires, 100)
+	fadeOutSound(SoundNitro, 60)
 	instance_create_layer(x,y,"Instances", oPlosion)
 	instance_destroy()
 }
@@ -364,3 +367,18 @@ if(abs(driftAngle) > 3 && (audio_sound_get_gain(squealTires) < 1 || !audio_is_pl
 } else if (abs(driftAngle) <= 3 && audio_is_playing(squealTires)){
 	fadeOutSound(squealTires, 50)
 }
+
+if(reverse == 1 && spd > 4 && (audio_sound_get_gain(brakingTires) < 1 || !audio_is_playing(brakingTires) )) {
+	brakingTires = audio_play_sound(tireSqueal, 11, true)
+} else if (drive == 1 || spd < 4) {
+	fadeOutSound(brakingTires, 50)
+}
+
+if(boost == 1 && (audio_sound_get_gain(SoundNitro) < 1 || !audio_is_playing(SoundNitro)) && boostGauge > 0)
+{
+	SoundNitro = audio_play_sound(NitroSound, 11, true)
+} else if(boost == 0 || boostGauge <= 0){
+	fadeOutSound(SoundNitro, 60)
+}
+
+

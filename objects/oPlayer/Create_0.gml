@@ -45,3 +45,6 @@ currentPower = "none"
 //EVERYTHING DOWN HERE IS FOR SOUUUNNNNDDDDD
 
 squealTires = 0
+brakingTires = 0
+
+SoundNitro = 0

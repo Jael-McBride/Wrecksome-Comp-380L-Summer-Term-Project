@@ -21,6 +21,7 @@ case "oil":
 case "mine":
 	player.currentPower = "mine"
 	show_debug_message("mine get!")
+	audio_play_sound(Guncock, 10, false)
 	break;
 	
 case "gun":
@@ -40,5 +41,6 @@ default:
 	player.boostGauge += 25
 	player.boostGauge = clamp(0,100, boostGauge)
 	show_debug_message(player.boostGauge)
+	audio_play_sound(nitrousPickup, 10, false)
 }
 }
