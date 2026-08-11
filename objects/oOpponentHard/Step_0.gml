@@ -3,7 +3,7 @@ image_angle = direction + driftAngle
 if(!variable_global_exists("race_started") || !global.race_started) exit;
 
 //pathing
-show_debug_message(lapDone)
+
 
 //bestPos += 0.2
 if (place_meeting(x,y,oCheckForAI) && checkContact == 0){

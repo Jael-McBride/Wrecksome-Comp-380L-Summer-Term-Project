@@ -2,6 +2,9 @@
 //the spawner object will have to tell the car what path its using
 //randomize sprite?
 
+currentEngineSound = EngineIdleGeneric
+engineOn = 0
+
 image_angle = direction
 
 theSprite = randomizeSprite()

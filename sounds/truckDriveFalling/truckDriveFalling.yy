@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"RocketRace",
+  "%Name":"truckDriveFalling",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":240.11757,
+  "duration":1.3278005,
   "exportDir":"",
-  "name":"RocketRace",
+  "name":"truckDriveFalling",
   "parent":{
-    "name":"soundDump",
-    "path":"folders/soundDump.yy",
+    "name":"EngineSoundDump",
+    "path":"folders/soundDump/EngineSoundDump.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"RocketRace.mp3",
-  "volume":0.55,
+  "soundFile":"truckDriveFalling.mp3",
+  "volume":1.0,
 }

@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"RocketRace",
+  "%Name":"BadEngineFalling",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":240.11757,
+  "duration":5.1843085,
   "exportDir":"",
-  "name":"RocketRace",
+  "name":"BadEngineFalling",
   "parent":{
-    "name":"soundDump",
-    "path":"folders/soundDump.yy",
+    "name":"EngineSoundDump",
+    "path":"folders/soundDump/EngineSoundDump.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"RocketRace.mp3",
-  "volume":0.55,
+  "soundFile":"BadEngineFalling.mp3",
+  "volume":1.0,
 }

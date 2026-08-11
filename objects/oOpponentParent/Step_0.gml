@@ -1,9 +1,20 @@
 //freeze
 image_angle = direction + driftAngle
+
+//if(!audio_is_playing(currentEngineSound)){
+//	playIngame(id, currentEngineSound, 8, true)
+//} 
+
+//if(spd > 0 && engineOn == 0){
+//	audio_stop_sound(currentEngineSound)
+//	currentEngineSound = BadEngineConstantFix
+//	playIngame(id, currentEngineSound, 8, true)
+//	engineOn = 1
+//}
 if(!variable_global_exists("race_started") || !global.race_started) exit;
 
 //pathing
-show_debug_message(lapDone)
+
 
 //bestPos += 0.2
 if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
@@ -246,6 +257,7 @@ if (place_meeting(x,y,oTrainKill) && shieldState == 0){
 }
 
 if (carHealth <= 0){
+	audio_stop_sound(currentEngineSound)
 	instance_create_layer(x,y, "Instances", oPlosion)
 	instance_destroy()
 }

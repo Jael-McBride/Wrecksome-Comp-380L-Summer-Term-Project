@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+left = keyboard_check(vk_left) || keyboard_check(ord("A"))
+right = keyboard_check(vk_right) || keyboard_check(ord("D"))
 
-drive = keyboard_check(vk_up) || keyboard_check(ord("W"));
+drive = keyboard_check(vk_up) || keyboard_check(ord("W"))
 reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_check(vk_space)
 
 //driftR is there to add or subtract from the turn radius upon drifting, if needed
@@ -13,6 +13,10 @@ reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_check(
 //vspeed = vspd
 var extraR = 0
 
+
+if(!audio_is_playing(currentEngineSound) && drive == 0 && engineState == 0){
+	currentEngineSound = audio_play_sound(engineIdle, 10, true)
+}
 
 speed = spd
 var lastdir = direction
@@ -343,6 +347,7 @@ if (carHealth <= 0) {
 	fadeOutSound(squealTires, 100)
 	fadeOutSound(brakingTires, 100)
 	fadeOutSound(SoundNitro, 60)
+	fadeOutSound(currentEngineSound, 100)
 	instance_create_layer(x,y,"Instances", oPlosion)
 	instance_destroy()
 }
@@ -361,6 +366,41 @@ if (place_meeting(x,y,oTrainKill) && shieldState == 0){
 }
 
 //everything down HERE will be all about SOUNNNDDDDD baby
+
+//the all important engine
+
+if(drive == 1 && (engineState == 0 || engineState == 3)){
+	//audio_stop_sound(currentEngineSound)
+	fadeOutSound(currentEngineSound, 500)
+	currentEngineSound = audio_play_sound(engineRising, 10, false)
+
+	engineState = 1
+
+}
+if (drive == 1 && engineState == 1 && (topSpeed - speed) < 1) {
+	fadeOutSound(currentEngineSound, 100)
+	currentEngineSound = audio_play_sound(engineConstant, 9, true)
+	engineState = 2
+}
+
+show_debug_message(engineState)
+
+
+if(drive == 0 && (engineState == 1 || engineState == 2)) {
+	//audio_stop_sound(currentEngineSound)
+	if(alarm[5] == -1){
+	alarm[5] = 0.5*game_get_speed(gamespeed_fps)
+	}
+	//fadeOutSound(currentEngineSound, 1000)
+	//currentEngineSound = audio_play_sound(engineFalling, 10, false)
+	//engineState = 3
+} else if (engineState == 3 && !audio_is_playing(currentEngineSound)){
+	//currentEngineSound = audio_play_sound(engineIdle, 10, true)
+	engineState = 0
+}
+
+
+//drifting and nitro
 
 if(abs(driftAngle) > 3 && (audio_sound_get_gain(squealTires) < 1 || !audio_is_playing(squealTires) )&& carHealth > 0){
 	squealTires = audio_play_sound(tireSqueal, 11, true)

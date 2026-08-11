@@ -48,3 +48,14 @@ squealTires = 0
 brakingTires = 0
 
 SoundNitro = 0
+
+engineIdle = 0
+engineRising = 0
+engineConstant = 0
+engineFalling = 0
+
+currentEngineSound = 0
+
+//engine state 0 for idle, 1 for rising, 2 for constant, 3 for falling
+engineState = 0
+
