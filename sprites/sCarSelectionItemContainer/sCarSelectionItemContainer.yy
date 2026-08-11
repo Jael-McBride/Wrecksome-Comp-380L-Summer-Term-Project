@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sVenenoPreview",
+  "%Name":"sCarSelectionItemContainer",
   "bboxMode":0,
-  "bbox_bottom":198,
+  "bbox_bottom":120,
   "bbox_left":0,
-  "bbox_right":308,
+  "bbox_right":394,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6be50b97-2fdb-46f7-8b08-bb8b878ab42f","name":"6be50b97-2fdb-46f7-8b08-bb8b878ab42f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7b09d258-ab04-45e3-9cdd-0d94d0cb43af","name":"7b09d258-ab04-45e3-9cdd-0d94d0cb43af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":199,
+  "height":121,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8e9c82ac-2977-4105-917d-9df4803de36b","blendMode":0,"displayName":"default","isLocked":false,"name":"8e9c82ac-2977-4105-917d-9df4803de36b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6f520595-c96e-43f8-a1a5-81dc5b1bbcdc","blendMode":0,"displayName":"default","isLocked":false,"name":"6f520595-c96e-43f8-a1a5-81dc5b1bbcdc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sVenenoPreview",
+  "name":"sCarSelectionItemContainer",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sVenenoPreview",
+    "%Name":"sCarSelectionItemContainer",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sVenenoPreview",
+    "name":"sCarSelectionItemContainer",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6be50b97-2fdb-46f7-8b08-bb8b878ab42f","path":"sprites/sVenenoPreview/sVenenoPreview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"99dd4312-3be5-430a-a81f-4857daf44b1c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b09d258-ab04-45e3-9cdd-0d94d0cb43af","path":"sprites/sCarSelectionItemContainer/sCarSelectionItemContainer.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a0a871dd-5748-4e73-b8f4-856fc10c70bb","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":309,
+  "width":395,
 }
