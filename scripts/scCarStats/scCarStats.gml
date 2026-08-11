@@ -285,10 +285,10 @@ function setCar(carName){
 	break;
 		
 	case "formula1":
-	carHealth = 65
+	carHealth = 1
 	
 	accel = 0.4;
-	turnR = 5;
+	turnR = 4;
 	topSpeed = 19;
 	brakes = 0.2;
 	
@@ -302,7 +302,7 @@ function setCar(carName){
 	driftSlowdown = 2;
 	driftStart = 100;
 	
-	boostAccel = 8
+	boostAccel = 4
 	boostTopSpeed = 12
 	boostUsage = 2
 	extraBoostSpeed = 20

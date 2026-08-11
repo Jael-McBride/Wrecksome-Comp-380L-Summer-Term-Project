@@ -24,7 +24,7 @@ switch(button_id) {
         layer_set_visible("GameHUDLayer", false);
         layer_set_visible("CreditsLayer", false);
         global.lap = 1;
-		fadeOutSound(global.currentSong, 3300)
+		audio_stop_all()
         room_goto(rMenuRoom);
         break;
     case 5: // Resume
