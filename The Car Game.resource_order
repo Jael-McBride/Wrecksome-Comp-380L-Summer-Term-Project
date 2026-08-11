@@ -1,5 +1,8 @@
 {
   "FolderOrderSettings":[
+    {"name":"creditsRoom","order":17,"path":"folders/creditsRoom.yy",},
+    {"name":"assets","order":1,"path":"folders/creditsRoom/assets.yy",},
+    {"name":"images","order":1,"path":"folders/creditsRoom/assets/images.yy",},
     {"name":"dumpofDrawnSprites","order":10,"path":"folders/dumpofDrawnSprites.yy",},
     {"name":"EnvironmentalAssetDump","order":11,"path":"folders/EnvironmentalAssetDump.yy",},
     {"name":"fonts","order":4,"path":"folders/fonts.yy",},
@@ -148,6 +151,7 @@
     {"name":"pSandy3","order":2,"path":"paths/pSandy3/pSandy3.yy",},
     {"name":"pTestTrackPath","order":2,"path":"paths/pTestTrackPath/pTestTrackPath.yy",},
     {"name":"pTestTrackPath3","order":1,"path":"paths/pTestTrackPath3/pTestTrackPath3.yy",},
+    {"name":"rCreditsRoom","order":2,"path":"rooms/rCreditsRoom/rCreditsRoom.yy",},
     {"name":"rDirtHighway","order":11,"path":"rooms/rDirtHighway/rDirtHighway.yy",},
     {"name":"rDirtTrack","order":9,"path":"rooms/rDirtTrack/rDirtTrack.yy",},
     {"name":"rGameRoom","order":7,"path":"rooms/rGameRoom/rGameRoom.yy",},

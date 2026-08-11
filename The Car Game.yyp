@@ -10,6 +10,9 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"creditsRoom","folderPath":"folders/creditsRoom.yy","name":"creditsRoom","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"assets","folderPath":"folders/creditsRoom/assets.yy","name":"assets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"images","folderPath":"folders/creditsRoom/assets/images.yy","name":"images","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"dumpofDrawnSprites","folderPath":"folders/dumpofDrawnSprites.yy","name":"dumpofDrawnSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"EnvironmentalAssetDump","folderPath":"folders/EnvironmentalAssetDump.yy","name":"EnvironmentalAssetDump","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -221,6 +224,7 @@
     {"id":{"name":"pTestTrackPath","path":"paths/pTestTrackPath/pTestTrackPath.yy",},},
     {"id":{"name":"pTestTrackPath2","path":"paths/pTestTrackPath2/pTestTrackPath2.yy",},},
     {"id":{"name":"pTestTrackPath3","path":"paths/pTestTrackPath3/pTestTrackPath3.yy",},},
+    {"id":{"name":"rCreditsRoom","path":"rooms/rCreditsRoom/rCreditsRoom.yy",},},
     {"id":{"name":"rDirtHighway","path":"rooms/rDirtHighway/rDirtHighway.yy",},},
     {"id":{"name":"rDirtTrack","path":"rooms/rDirtTrack/rDirtTrack.yy",},},
     {"id":{"name":"rGameRoom","path":"rooms/rGameRoom/rGameRoom.yy",},},
@@ -363,6 +367,7 @@
     {"id":{"name":"sVeneno","path":"sprites/sVeneno/sVeneno.yy",},},
     {"id":{"name":"sVenenoPreview","path":"sprites/sVenenoPreview/sVenenoPreview.yy",},},
     {"id":{"name":"sWinScreen","path":"sprites/sWinScreen/sWinScreen.yy",},},
+    {"id":{"name":"sWreckSomeCredits","path":"sprites/sWreckSomeCredits/sWreckSomeCredits.yy",},},
     {"id":{"name":"sWrecksomeMenuFrame","path":"sprites/sWrecksomeMenuFrame/sWrecksomeMenuFrame.yy",},},
     {"id":{"name":"sWrecksomeTitleSign","path":"sprites/sWrecksomeTitleSign/sWrecksomeTitleSign.yy",},},
     {"id":{"name":"tConcrete","path":"tilesets/tConcrete/tConcrete.yy",},},
@@ -396,6 +401,7 @@
     {"roomId":{"name":"rDirtHighway","path":"rooms/rDirtHighway/rDirtHighway.yy",},},
     {"roomId":{"name":"rSandyFigure8","path":"rooms/rSandyFigure8/rSandyFigure8.yy",},},
     {"roomId":{"name":"rTestingRoom","path":"rooms/rTestingRoom/rTestingRoom.yy",},},
+    {"roomId":{"name":"rCreditsRoom","path":"rooms/rCreditsRoom/rCreditsRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
