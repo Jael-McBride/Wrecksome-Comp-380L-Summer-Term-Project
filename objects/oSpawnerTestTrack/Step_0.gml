@@ -43,6 +43,7 @@ with(oPlayer) {
 		global.lap = 3
 		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
+		oPlayer.spd = 0
 		global.race_started = 0
 		if(global.supraUnlocked != 1){
 			global.supraUnlocked = 1

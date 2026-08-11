@@ -41,6 +41,7 @@ switch(button_id) {
 			layer_set_visible("LoseScreenLayer", false);
 		else
 			layer_set_visible("WinScreenLayer", false);
+		audio_stop_all()
 		room_restart();
 		global.lap = 1;
 		break;

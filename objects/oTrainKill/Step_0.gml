@@ -2,7 +2,7 @@ speed = 30
 
 
 
-if(place_meeting(x,y,[oShield, oMine, oRocket, oTrainKill])){
+if(place_meeting(x,y,[oShield, oMine, oRocket, oTrainKill,oOshKosh])){
 	instance_create_layer(x,y,"Instances", oPlosion)
 	fadeOutSound(currentSound, 1000)
 	instance_destroy()

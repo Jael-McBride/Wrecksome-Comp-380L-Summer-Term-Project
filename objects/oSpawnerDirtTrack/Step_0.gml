@@ -41,6 +41,7 @@ with(oPlayer) {
 	{
 		global.lap = 3
 		update("WinScreenLayer");
+		oPlayer.spd = 0
 		instance_destroy(oFinishLine);
 		global.race_started = 0
 	}

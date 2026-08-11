@@ -28,3 +28,6 @@ switch(track_id) {
 layer_set_visible("TrackSelectLayer", false);
 
 audio_play_sound(sfxButtonClick_1, 1, false);
+
+//for now, all tracks have the same song. change this when new songs are found
+global.currentSong = audio_play_sound(RocketRace, 11, true)

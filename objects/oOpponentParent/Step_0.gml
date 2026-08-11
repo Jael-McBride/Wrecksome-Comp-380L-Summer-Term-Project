@@ -15,6 +15,9 @@ if (place_meeting(x,y,oCheckForAI) && checkContact == 0){
 } 
 if (lapDone > lapNeeded){
 	layer_set_visible("LoseScreenLayer", true);
+	if(instance_exists(oPlayer) == 1){
+		oPlayer.spd = 0
+	}
 	global.race_started = 0
 }
 

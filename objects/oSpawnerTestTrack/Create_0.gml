@@ -15,4 +15,4 @@ with(inst)
 	direction = 0
 }
 
-global.currentSong = audio_play_sound(RocketRace, 11, true)
+

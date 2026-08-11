@@ -46,8 +46,8 @@ function setCar(carName){
 	autoRecovery = 2; 
 	entryAngle = 10;
 	maxAngle = 60; 
-	entrySpeed = 2;
-	driftSlowdown = 3.5;
+	entrySpeed = 3;
+	driftSlowdown = 0;
 	driftStart = 12;
 	
 	boostAccel = 1
@@ -108,24 +108,24 @@ function setCar(carName){
 	break;
 	
 	case "oshKosh":
-	carHealth = 250
+	carHealth = 300
 	
-	accel = 0.15;
+	accel = 0.18;
 	turnR = 1.5;
-	topSpeed = 14;
+	topSpeed = 15;
 	brakes = 0.2;
 	
 	driftCorrCheck = 0
 	driftR = 0;
 	driftRecovery = 1.5;
-	autoRecovery = 0.7; 
+	autoRecovery = 0.8; 
 	entryAngle = 4;
 	maxAngle = 50; 
 	entrySpeed = -1;
 	driftSlowdown = 2.5;
 	driftStart = 8;
 	
-	boostAccel = 0.5
+	boostAccel = 0.7
 	boostTopSpeed = 13
 	boostUsage = 1.5
 	extraBoostSpeed = 24
@@ -133,11 +133,11 @@ function setCar(carName){
 	break;
 	
 	case "silverado":
-	carHealth = 125
+	carHealth = 150
 	
-	accel = 0.23;
+	accel = 0.22;
 	turnR = 1.8;
-	topSpeed = 13;
+	topSpeed = 14;
 	brakes = 0.2;
 	
 	driftCorrCheck = 0
@@ -158,11 +158,11 @@ function setCar(carName){
 	break;
 	
 	case "hummer":
-	carHealth = 125
+	carHealth = 150
 	
 	accel = 0.28;
 	turnR = 2;
-	topSpeed = 13;
+	topSpeed = 14;
 	brakes = 0.2;
 	
 	driftCorrCheck = 0
@@ -235,7 +235,7 @@ function setCar(carName){
 	break;
 	
 	case "gt40":
-	carHealth = 95
+	carHealth = 90
 	
 	accel = 0.3;
 	turnR = 2.2;
