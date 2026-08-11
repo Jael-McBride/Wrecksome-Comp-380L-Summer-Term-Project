@@ -2,6 +2,9 @@
   "$GMRoomUI":"",
   "%Name":"RoomUI",
   "children":[
+    {"$GMRUILayer":"v1","%Name":"TrackSelectLayer2","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"TrackSelectPanel","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"name":"TrackSelectPanel","nodeColour":4282957042,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":100.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"TrackSelectLayer2","nodeColour":4293849672,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"CarSelectLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"CarSelectPanel","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"SelectCarTitle","alignItems":2,"children":[
@@ -240,7 +243,7 @@
                 {"$GMRSpriteGraphic":"v1","%Name":"graphic_771CCB25","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_771CCB25","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sContainerGold","path":"sprites/sContainerGold/sContainerGold.yy",},"x":0.0,"y":0.0,},
               ],"flexDirection":0,"height":{"unit":3,"value":108.0,},"justifyContent":1,"name":"QuitPanel","nodeColour":4283822664,"paddingBottom":{"unit":1,"value":30.0,},"paddingLeft":{"unit":1,"value":30.0,},"paddingRight":{"unit":1,"value":30.0,},"paddingTop":{"unit":1,"value":18.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":96.0,},},
           ],"flexDirection":0,"height":{"unit":2,"value":100.0,},"justifyContent":3,"name":"MenuPanel","nodeColour":4287645938,"paddingBottom":{"unit":1,"value":24.0,},"paddingLeft":{"unit":1,"value":24.0,},"paddingRight":{"unit":1,"value":24.0,},"paddingTop":{"unit":1,"value":24.0,},"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"MenuLayer","nodeColour":4282970719,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"MenuLayer","nodeColour":4282970719,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"TutorialLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"TutorialPanel","alignItems":1,"children":[
             {"$GMRFlexPanel":"","%Name":"FlexPanel","alignItems":2,"alignSelf":3,"children":[
