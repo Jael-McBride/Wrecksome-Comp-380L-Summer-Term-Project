@@ -44,6 +44,10 @@ with(oPlayer) {
 		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
+		if(global.gt40Unlocked != 1){
+			global.gt40Unlocked = 1
+			saveData();
+		}
 	}
 	}
 }

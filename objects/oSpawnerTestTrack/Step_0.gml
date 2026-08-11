@@ -44,6 +44,10 @@ with(oPlayer) {
 		update("WinScreenLayer");
 		instance_destroy(oFinishLine);
 		global.race_started = 0
+		if(global.supraUnlocked != 1){
+			global.supraUnlocked = 1
+			saveData();
+		}
 	}
 	}
 }
