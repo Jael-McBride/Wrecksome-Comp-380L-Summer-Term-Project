@@ -13,7 +13,7 @@ switch(car_id) {
 			return;
         break;
     case 3: // Hypercar
-        global.playerCar = oVeneno;
+		global.playerCar = oVeneno;
 		if(global.venenoUnlocked == 0)
 			return;
         break;
@@ -25,15 +25,21 @@ switch(car_id) {
         break;
     case 6: // Formula 1
         global.playerCar = oFormula1;
+		if(global.formula1Unlocked == 0)
+			return;
         break;
     case 7: // Ford GT40
         global.playerCar = oGT40;
+		if(global.gt40Unlocked == 0)
+			return;
         break;
     case 8: // Hummer
         global.playerCar = oHummer;
         break;
     case 9: // Supra
         global.playerCar = oSupra;
+		if(global.supraUnlocked == 0)
+			return;
         break;
     case 10: // Silverado
         global.playerCar = oSilverado;
