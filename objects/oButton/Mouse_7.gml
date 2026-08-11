@@ -36,6 +36,14 @@ switch(button_id) {
         layer_set_visible("CreditsLayer", true);
         room_goto(rCreditsRoom);
         break;
+	case 7: // Restart
+		if(layer_get_visible("LoseScreenLayer"))
+			layer_set_visible("LoseScreenLayer", false);
+		else
+			layer_set_visible("WinScreenLayer", false);
+		room_restart();
+		global.lap = 1;
+		break;
         
 }
 
