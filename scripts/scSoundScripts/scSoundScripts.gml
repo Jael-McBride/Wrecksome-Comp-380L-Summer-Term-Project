@@ -23,10 +23,23 @@ function getCarSounds(instanceID){
 	
 	//wip. place car sounds here
 	
-	var spriteOfCar = instanceID.sprite_index
+	var spriteOfCar = instanceID
 	
 	switch(spriteOfCar){
+		
+		case sOshKosh: 
+			engineIdle = TruckIdleGeneric
+			engineRising = TruckDriveSteady
+			engineConstant = truckDriveConstant
+			engineFalling = truckDriveFalling
+			
+		break;
+		
 		default:
+			engineIdle = EngineIdleGeneric
+			engineRising = BadEngineRising
+			engineConstant = BadEngineConstantFix
+			engineFalling = BadEngineFallingNewShort
 		break;
 	}
 }

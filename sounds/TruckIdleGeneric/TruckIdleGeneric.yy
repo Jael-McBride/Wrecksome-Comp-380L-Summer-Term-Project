@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"RocketRace",
+  "%Name":"TruckIdleGeneric",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":240.11757,
+  "duration":4.68,
   "exportDir":"",
-  "name":"RocketRace",
+  "name":"TruckIdleGeneric",
   "parent":{
-    "name":"soundDump",
-    "path":"folders/soundDump.yy",
+    "name":"EngineSoundDump",
+    "path":"folders/soundDump/EngineSoundDump.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"RocketRace.mp3",
-  "volume":0.55,
+  "soundFile":"TruckIdleGeneric.mp3",
+  "volume":0.79,
 }

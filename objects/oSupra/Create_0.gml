@@ -3,3 +3,5 @@ event_inherited();
 
 setCar("supra");
 maxHealth = carHealth
+
+getCarSounds(sprite_index)
