@@ -4,7 +4,7 @@ speed = 30
 
 if(place_meeting(x,y,[oShield, oMine, oRocket, oTrainKill])){
 	instance_create_layer(x,y,"Instances", oPlosion)
-	fadeOutSound(currentSound)
+	fadeOutSound(currentSound, 1000)
 	instance_destroy()
 }
 
@@ -14,7 +14,7 @@ if(place_meeting(x,y,oPlayer) && soundPlay == 0){
 }
 
 if(x > room_width || y > room_height){
-	fadeOutSound(currentSound)
+	fadeOutSound(currentSound, 1000)
 	instance_destroy()
 }
 

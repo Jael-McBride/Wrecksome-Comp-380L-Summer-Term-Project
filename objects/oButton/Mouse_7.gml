@@ -23,7 +23,7 @@ switch(button_id) {
         layer_set_visible("TutorialLayer", false);
         layer_set_visible("GameHUDLayer", false);
         global.lap = 1;
-		fadeOutSound(global.currentSong)
+		fadeOutSound(global.currentSong, 3300)
         room_goto(rMenuRoom);
         break;
     case 5: // Resume

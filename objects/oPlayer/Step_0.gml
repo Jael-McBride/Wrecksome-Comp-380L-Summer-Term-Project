@@ -339,6 +339,7 @@ if (place_meeting(x,y,oRocket)){
 
 //health??????
 if (carHealth <= 0) {
+	fadeOutSound(squealTires, 100)
 	instance_create_layer(x,y,"Instances", oPlosion)
 	instance_destroy()
 }
@@ -358,8 +359,8 @@ if (place_meeting(x,y,oTrainKill) && shieldState == 0){
 
 //everything down HERE will be all about SOUNNNDDDDD baby
 
-if(abs(driftAngle) > 3 && !audio_is_playing(squealTires)){
+if(abs(driftAngle) > 3 && (audio_sound_get_gain(squealTires) < 1 || !audio_is_playing(squealTires) )&& carHealth > 0){
 	squealTires = audio_play_sound(tireSqueal, 11, true)
-} else {
-	audio_stop_sound(squealTires)
+} else if (abs(driftAngle) <= 3 && audio_is_playing(squealTires)){
+	fadeOutSound(squealTires, 50)
 }
