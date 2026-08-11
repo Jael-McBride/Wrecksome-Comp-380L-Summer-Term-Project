@@ -21,8 +21,8 @@
   ],
   "name":"rTrackRoom",
   "parent":{
-    "name":"trackRoomStuff",
-    "path":"folders/trackRoomStuff.yy",
+    "name":"trackRoom",
+    "path":"folders/trackRoom.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

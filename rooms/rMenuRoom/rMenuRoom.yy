@@ -61,8 +61,8 @@
   ],
   "name":"rMenuRoom",
   "parent":{
-    "name":"menuRoomStuff",
-    "path":"folders/menuRoomStuff.yy",
+    "name":"menuRoom",
+    "path":"folders/menuRoom.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

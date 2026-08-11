@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"roomSprites",
-    "path":"folders/trackRoomStuff/assets/roomSprites.yy",
+    "path":"folders/trackRoom/assets/roomSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

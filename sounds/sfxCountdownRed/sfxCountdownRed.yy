@@ -15,7 +15,7 @@
   "name":"sfxCountdownRed",
   "parent":{
     "name":"componentAudio",
-    "path":"folders/gameRoomStuff/assets/componentAudio.yy",
+    "path":"folders/gameRoom/assets/componentAudio.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

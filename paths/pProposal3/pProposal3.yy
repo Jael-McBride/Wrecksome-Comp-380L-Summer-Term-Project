@@ -6,7 +6,7 @@
   "name":"pProposal3",
   "parent":{
     "name":"proposalTrack",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths/proposalTrack.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths/proposalTrack.yy",
   },
   "points":[
     {"speed":100.0,"x":2432.0,"y":864.0,},

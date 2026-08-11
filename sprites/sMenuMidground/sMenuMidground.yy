@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"images",
-    "path":"folders/menuRoomStuff/assets/images.yy",
+    "path":"folders/menuRoom/assets/images.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

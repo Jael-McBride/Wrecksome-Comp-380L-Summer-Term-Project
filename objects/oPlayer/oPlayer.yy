@@ -16,7 +16,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"ParentAndStats",
-    "path":"folders/gameRoomStuff/carObjects/ParentAndStats.yy",
+    "path":"folders/gameRoom/carObjects/ParentAndStats.yy",
   },
   "parentObjectId":null,
   "persistent":false,

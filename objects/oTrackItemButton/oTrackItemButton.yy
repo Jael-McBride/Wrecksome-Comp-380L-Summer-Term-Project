@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"componentObjects",
-    "path":"folders/trackRoomStuff/assets/componentObjects.yy",
+    "path":"folders/trackRoom/assets/componentObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

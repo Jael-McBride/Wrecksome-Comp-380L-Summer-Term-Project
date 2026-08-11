@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"componentSprites",
-    "path":"folders/trackRoomStuff/assets/componentSprites.yy",
+    "path":"folders/trackRoom/assets/componentSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

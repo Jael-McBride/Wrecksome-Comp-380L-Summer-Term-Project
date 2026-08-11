@@ -146,7 +146,7 @@
   "name":"rPresentGameRoom",
   "parent":{
     "name":"Tracks",
-    "path":"folders/gameRoomStuff/Tracks.yy",
+    "path":"folders/gameRoom/Tracks.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

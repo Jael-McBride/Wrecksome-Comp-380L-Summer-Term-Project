@@ -6,7 +6,7 @@
   "name":"pDirt3",
   "parent":{
     "name":"dirtTrack",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths/dirtTrack.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths/dirtTrack.yy",
   },
   "points":[
     {"speed":100.0,"x":2124.2815,"y":534.3676,},

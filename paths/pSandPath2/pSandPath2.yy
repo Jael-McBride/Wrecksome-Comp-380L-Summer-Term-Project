@@ -6,7 +6,7 @@
   "name":"pSandPath2",
   "parent":{
     "name":"sandTrack",
-    "path":"folders/gameRoomStuff/Tracks/TrackPaths/sandTrack.yy",
+    "path":"folders/gameRoom/Tracks/TrackPaths/sandTrack.yy",
   },
   "points":[
     {"speed":100.0,"x":2016.0,"y":1216.0,},

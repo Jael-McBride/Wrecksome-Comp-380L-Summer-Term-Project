@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"carSprites",
-    "path":"folders/gameRoomStuff/carSprites.yy",
+    "path":"folders/gameRoom/carSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

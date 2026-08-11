@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"OpponentSpawners",
-    "path":"folders/gameRoomStuff/Tracks/OpponentSpawners.yy",
+    "path":"folders/gameRoom/Tracks/OpponentSpawners.yy",
   },
   "parentObjectId":null,
   "persistent":false,

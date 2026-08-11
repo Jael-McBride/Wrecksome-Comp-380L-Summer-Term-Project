@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PowerUps",
-    "path":"folders/gameRoomStuff/carObjects/PowerUps.yy",
+    "path":"folders/gameRoom/carObjects/PowerUps.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"componentSprites",
-    "path":"folders/gameRoomStuff/assets/componentSprites.yy",
+    "path":"folders/gameRoom/assets/componentSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
