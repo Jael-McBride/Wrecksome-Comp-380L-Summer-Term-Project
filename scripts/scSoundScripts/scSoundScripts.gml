@@ -26,14 +26,59 @@ function getCarSounds(instanceID){
 	var spriteOfCar = instanceID
 	
 	switch(spriteOfCar){
+		case sVeneno:
+			engineIdle = F40IdleNew
+			engineRising = F40Rising
+			engineConstant = F40Constant
+			engineFalling = F40Falling
+		
+			break;			
+		case sPinkPhantom:
+			engineIdle = ChargerIdle
+			engineRising = ChargerRisingNew
+			engineConstant = ChargerConstant
+			engineFalling = ChargerFalling
+		
+			break;
+		
+		case sCharger:
+			engineIdle = ChargerIdle
+			engineRising = ChargerRisingNew
+			engineConstant = ChargerConstant
+			engineFalling = ChargerFalling
+		
+			break;
+		case sAE86:
+			engineIdle = AE86Idle
+			engineRising = AE86Rising
+			engineConstant = AE86ConstantNew
+			engineFalling = AE86Falling
+			
+			break;
+		
+		case sF40:
+			engineIdle = F40IdleNew
+			engineRising = F40Rising
+			engineConstant = F40Constant
+			engineFalling  = F40Falling
+			
+			break;
+		
+		case sGT40:
+			engineIdle = GT40Idle
+			engineRising = GT40Rising2
+			engineConstant = GT40Constant
+			engineFalling = GT40Falling
+			
+			break;
 		
 		case sOshKosh: 
-			engineIdle = TruckIdleGeneric
+			engineIdle = TruckIdleNew
 			engineRising = TruckDriveSteady
 			engineConstant = truckDriveConstant
 			engineFalling = truckDriveFalling
 			
-		break;
+			break;
 		
 		default:
 			engineIdle = EngineIdleGeneric
@@ -46,7 +91,7 @@ function getCarSounds(instanceID){
 
 function fadeOutSound(currentSound, ms){
 	audio_sound_gain(currentSound, 0, ms)
-	if(audio_sound_get_gain(currentSound) <= 0){
-		audio_stop_sound(currentSound)
-	}
+	//if(audio_sound_get_gain(currentSound) <= 0){
+	//	audio_stop_sound(currentSound)
+	//}
 }

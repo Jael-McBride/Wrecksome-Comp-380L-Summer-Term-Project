@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"truckDriveRising",
+  "%Name":"ChargerRisingNew",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.3848753,
+  "duration":2.4088888,
   "exportDir":"",
-  "name":"truckDriveRising",
+  "name":"ChargerRisingNew",
   "parent":{
-    "name":"EngineSoundDump",
-    "path":"folders/soundDump/EngineSoundDump.yy",
+    "name":"Charger",
+    "path":"folders/soundDump/EngineSoundDump/Charger.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"truckDriveRising.mp3",
-  "volume":0.74,
+  "soundFile":"ChargerRisingNew.mp3",
+  "volume":0.8,
 }

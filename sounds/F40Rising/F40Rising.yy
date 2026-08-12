@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"truckDriveRising",
+  "%Name":"F40Rising",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.3848753,
+  "duration":4.25805,
   "exportDir":"",
-  "name":"truckDriveRising",
+  "name":"F40Rising",
   "parent":{
-    "name":"EngineSoundDump",
-    "path":"folders/soundDump/EngineSoundDump.yy",
+    "name":"F40",
+    "path":"folders/soundDump/EngineSoundDump/F40.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"truckDriveRising.mp3",
-  "volume":0.74,
+  "soundFile":"F40Rising.mp3",
+  "volume":1.0,
 }

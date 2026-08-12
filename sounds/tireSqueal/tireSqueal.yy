@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":7.1397505,
+  "duration":7.1629934,
   "exportDir":"",
   "name":"tireSqueal",
   "parent":{

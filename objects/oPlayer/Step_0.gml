@@ -378,8 +378,10 @@ if(drive == 1 && (engineState == 0 || engineState == 3)){
 
 }
 if (drive == 1 && engineState == 1 && (topSpeed - speed) < 1) {
-	fadeOutSound(currentEngineSound, 100)
+	fadeOutSound(currentEngineSound, 500)
 	currentEngineSound = audio_play_sound(engineConstant, 9, true)
+	audio_sound_gain(currentEngineSound, 0.2, 0)
+	audio_sound_gain(currentEngineSound, 1, 500)
 	engineState = 2
 }
 
@@ -394,9 +396,11 @@ if(drive == 0 && (engineState == 1 || engineState == 2)) {
 	//fadeOutSound(currentEngineSound, 1000)
 	//currentEngineSound = audio_play_sound(engineFalling, 10, false)
 	//engineState = 3
-} else if (engineState == 3 && !audio_is_playing(currentEngineSound)){
-	//currentEngineSound = audio_play_sound(engineIdle, 10, true)
-	engineState = 0
+} else if (engineState == 3){
+	if(alarm[6] == -1){
+	alarm[6] = 0.8*game_get_speed(gamespeed_fps)
+	}
+	
 }
 
 
@@ -405,13 +409,13 @@ if(drive == 0 && (engineState == 1 || engineState == 2)) {
 if(abs(driftAngle) > 3 && (audio_sound_get_gain(squealTires) < 1 || !audio_is_playing(squealTires) )&& carHealth > 0){
 	squealTires = audio_play_sound(tireSqueal, 11, true)
 } else if (abs(driftAngle) <= 3 && audio_is_playing(squealTires)){
-	fadeOutSound(squealTires, 50)
+	fadeOutSound(squealTires, 20)
 }
 
 if(reverse == 1 && spd > 4 && (audio_sound_get_gain(brakingTires) < 1 || !audio_is_playing(brakingTires) )) {
 	brakingTires = audio_play_sound(tireSqueal, 11, true)
 } else if (drive == 1 || spd < 4) {
-	fadeOutSound(brakingTires, 50)
+	fadeOutSound(brakingTires, 20)
 }
 
 if(boost == 1 && (audio_sound_get_gain(SoundNitro) < 1 || !audio_is_playing(SoundNitro)) && boostGauge > 0)

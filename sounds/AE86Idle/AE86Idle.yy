@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"truckDriveRising",
+  "%Name":"AE86Idle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.3848753,
+  "duration":2.108821,
   "exportDir":"",
-  "name":"truckDriveRising",
+  "name":"AE86Idle",
   "parent":{
-    "name":"EngineSoundDump",
-    "path":"folders/soundDump/EngineSoundDump.yy",
+    "name":"AE86",
+    "path":"folders/soundDump/EngineSoundDump/AE86.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"truckDriveRising.mp3",
-  "volume":0.74,
+  "soundFile":"AE86Idle.mp3",
+  "volume":0.75,
 }
