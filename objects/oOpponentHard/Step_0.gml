@@ -224,7 +224,7 @@ if(gun > 0 && collision_line(x, y, x + hspd, y + vspd, [oOpponentParent, oPlayer
 	with(theRocket){
 		image_angle = other.image_angle
 		direction = other.image_angle
-		speed = other.spd + 20} 
+		speed = other.spd + 35} 
 	gunCooldown = 1
 	if (alarm[7] == -1){
 		alarm[7] = 1*game_get_speed(gamespeed_fps)
@@ -234,7 +234,7 @@ if(gun > 0 && collision_line(x, y, x + hspd, y + vspd, [oOpponentParent, oPlayer
 //getting hit by powerups
 
 if (place_meeting(x,y,oMine) && damageCooldown == 0 && shieldState == 0){
-	carHealth -= 90
+	carHealth -= 60
 	damageCooldown = 1
 	var mineID = instance_place(x,y,oMine)
 	instance_create_layer(x,y,"Instances", oPlosion)
@@ -246,7 +246,7 @@ if (place_meeting(x,y,oMine) && damageCooldown == 0 && shieldState == 0){
 }
 
 if (place_meeting(x,y,oRocket) && damageCooldown == 0 && shieldState == 0){
-	carHealth -= 90
+	carHealth -= 60
 	damageCooldown = 1
 	var rocketID = instance_place(x,y,oRocket)
 	instance_create_layer(x,y,"Instances", oPlosion)
