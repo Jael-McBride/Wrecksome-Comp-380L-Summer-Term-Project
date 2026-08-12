@@ -15,7 +15,7 @@ var extraR = 0
 
 
 if(!audio_is_playing(currentEngineSound) && drive == 0 && engineState == 0){
-	currentEngineSound = audio_play_sound(engineIdle, 10, true)
+	currentEngineSound = audio_play_sound(engineIdle, 10, true, -3)
 }
 
 speed = spd
@@ -372,14 +372,14 @@ if (place_meeting(x,y,oTrainKill) && shieldState == 0){
 if(drive == 1 && (engineState == 0 || engineState == 3)){
 	//audio_stop_sound(currentEngineSound)
 	fadeOutSound(currentEngineSound, 500)
-	currentEngineSound = audio_play_sound(engineRising, 10, false)
+	currentEngineSound = audio_play_sound(engineRising, 10, false, -3)
 
 	engineState = 1
 
 }
 if (drive == 1 && engineState == 1 && (topSpeed - speed) < 1) {
 	fadeOutSound(currentEngineSound, 500)
-	currentEngineSound = audio_play_sound(engineConstant, 9, true)
+	currentEngineSound = audio_play_sound(engineConstant, 9, true, -3)
 	audio_sound_gain(currentEngineSound, 0.2, 0)
 	audio_sound_gain(currentEngineSound, 1, 500)
 	engineState = 2
@@ -407,7 +407,7 @@ if(drive == 0 && (engineState == 1 || engineState == 2)) {
 //drifting and nitro
 
 if(abs(driftAngle) > 3 && (audio_sound_get_gain(squealTires) < 1 || !audio_is_playing(squealTires) )&& carHealth > 0){
-	squealTires = audio_play_sound(tireSqueal, 11, true)
+	squealTires = audio_play_sound(tireSqueal, 11, true, 3)
 } else if (abs(driftAngle) <= 3 && audio_is_playing(squealTires)){
 	fadeOutSound(squealTires, 20)
 }

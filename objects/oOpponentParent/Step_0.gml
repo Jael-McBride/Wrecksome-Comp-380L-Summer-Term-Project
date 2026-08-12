@@ -19,8 +19,8 @@ var _dy = y
 	
 var soundDistance = 200/point_distance(_vx,_vy,_dx,_dy)
 soundDistance = clamp(soundDistance, 0, 1)
-if (soundDistance > 1){
-	soundDistance = 1
+if (soundDistance > 0.5){
+	soundDistance = 0.5
 }
 	
 audio_sound_gain(currentEngine,soundDistance,0)
