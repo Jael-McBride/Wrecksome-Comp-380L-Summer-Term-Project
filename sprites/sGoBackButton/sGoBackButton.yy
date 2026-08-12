@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
-  "%Name":"sSelectYourCarTitle",
+  "%Name":"sGoBackButton",
   "bboxMode":0,
   "bbox_bottom":141,
   "bbox_left":0,
-  "bbox_right":955,
+  "bbox_right":251,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,28 +12,28 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"e97c8b43-bb3a-4d04-962c-493477eef625","name":"e97c8b43-bb3a-4d04-962c-493477eef625","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"276832b7-71df-4967-a15b-46cda37bdd0b","name":"276832b7-71df-4967-a15b-46cda37bdd0b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":142,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d9cdfe3f-d405-4c75-927e-6d518b7941fa","blendMode":0,"displayName":"default","isLocked":false,"name":"d9cdfe3f-d405-4c75-927e-6d518b7941fa","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1b28f8ce-6d56-49f8-b480-ff1f96998c4f","blendMode":0,"displayName":"default","isLocked":false,"name":"1b28f8ce-6d56-49f8-b480-ff1f96998c4f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sSelectYourCarTitle",
+  "name":"sGoBackButton",
   "nineSlice":null,
   "origin":0,
   "parent":{
     "name":"componentSprites",
-    "path":"folders/playerSelectionRoom/assets/componentSprites.yy",
+    "path":"folders/globalAssets/componentSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sSelectYourCarTitle",
+    "%Name":"sGoBackButton",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sSelectYourCarTitle",
+    "name":"sGoBackButton",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e97c8b43-bb3a-4d04-962c-493477eef625","path":"sprites/sSelectYourCarTitle/sSelectYourCarTitle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d3019570-2f42-4179-8fbb-911ec47deb48","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"276832b7-71df-4967-a15b-46cda37bdd0b","path":"sprites/sGoBackButton/sGoBackButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e3cba172-fdb5-4426-b389-9a57a4db213c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":956,
+  "width":252,
 }
