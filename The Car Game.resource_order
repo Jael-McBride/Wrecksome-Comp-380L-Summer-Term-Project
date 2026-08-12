@@ -205,6 +205,7 @@
     {"name":"hpRepair","order":9,"path":"sounds/hpRepair/hpRepair.yy",},
     {"name":"MiataConstant","order":2,"path":"sounds/MiataConstant/MiataConstant.yy",},
     {"name":"MiataFalling","order":1,"path":"sounds/MiataFalling/MiataFalling.yy",},
+    {"name":"MiataIdle","order":3,"path":"sounds/MiataIdle/MiataIdle.yy",},
     {"name":"NitroBurstSound","order":17,"path":"sounds/NitroBurstSound/NitroBurstSound.yy",},
     {"name":"NitroSound","order":16,"path":"sounds/NitroSound/NitroSound.yy",},
     {"name":"nitrousPickup","order":15,"path":"sounds/nitrousPickup/nitrousPickup.yy",},

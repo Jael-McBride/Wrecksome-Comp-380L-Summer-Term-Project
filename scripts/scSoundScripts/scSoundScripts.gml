@@ -27,7 +27,7 @@ function getCarSounds(instanceID){
 	
 	switch(spriteOfCar){
 		case sMiata:
-			engineIdle = GT40Idle
+			engineIdle = MiataIdle
 			engineRising = MiataRising
 			engineConstant = MiataConstant
 			engineFalling = MiataFalling

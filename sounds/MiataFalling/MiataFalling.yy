@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.012449,
+  "duration":1.9388435,
   "exportDir":"",
   "name":"MiataFalling",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"MiataFalling.mp3",
-  "volume":0.85,
+  "volume":1.0,
 }

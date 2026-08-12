@@ -10,7 +10,7 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.7190022,
+  "duration":2.6322222,
   "exportDir":"",
   "name":"MiataRising",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"MiataRising.mp3",
-  "volume":0.85,
+  "volume":1.0,
 }

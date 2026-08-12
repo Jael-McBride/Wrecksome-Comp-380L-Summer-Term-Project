@@ -289,6 +289,7 @@
     {"id":{"name":"hpRepair","path":"sounds/hpRepair/hpRepair.yy",},},
     {"id":{"name":"MiataConstant","path":"sounds/MiataConstant/MiataConstant.yy",},},
     {"id":{"name":"MiataFalling","path":"sounds/MiataFalling/MiataFalling.yy",},},
+    {"id":{"name":"MiataIdle","path":"sounds/MiataIdle/MiataIdle.yy",},},
     {"id":{"name":"MiataRising","path":"sounds/MiataRising/MiataRising.yy",},},
     {"id":{"name":"NitroBurstSound","path":"sounds/NitroBurstSound/NitroBurstSound.yy",},},
     {"id":{"name":"NitroSound","path":"sounds/NitroSound/NitroSound.yy",},},
