@@ -4,4 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(rTrackRoom);
+layer_set_visible("TrackSelectLayer", false);
+
+room_goto(rTestingRoom);

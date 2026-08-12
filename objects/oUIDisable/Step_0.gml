@@ -12,8 +12,3 @@ layer_set_visible(layer_name, false);
 
 layer_set_visible("LoseScreenLayer", false);
 
-if(instance_exists(oPlayer)){
-	layer_set_visible("WIPGameHUD", true);
-}else{
-	layer_set_visible("WIPGameHUD", false);
-}

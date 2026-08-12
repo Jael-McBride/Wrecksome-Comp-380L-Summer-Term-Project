@@ -26,6 +26,28 @@ function getCarSounds(instanceID){
 	var spriteOfCar = instanceID
 	
 	switch(spriteOfCar){
+		case sMiata:
+			engineIdle = GT40Idle
+			engineRising = MiataRising
+			engineConstant = MiataConstant
+			engineFalling = MiataFalling
+			
+			break;
+		case sFormula1:
+			engineIdle = GT40Idle
+			engineRising = FormulaRising
+			engineConstant = FormulaConstant
+			engineFalling = FormulaFalling
+			
+			break;
+			
+		case sSupra:
+			engineIdle = SupraIdle
+			engineRising = SupraRising
+			engineConstant = SupraConstant
+			engineFalling = SupraFalling
+		
+			break;
 		case sVeneno:
 			engineIdle = F40IdleNew
 			engineRising = F40Rising

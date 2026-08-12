@@ -7,7 +7,7 @@
   "managed":true,
   "name":"oTrack",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Select Track",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTheParentButton","path":"objects/oTheParentButton/oTheParentButton.yy",},"propertyId":{"name":"button_text","path":"objects/oTheParentButton/oTheParentButton.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DELETE AFTER USE",},
   ],
   "parent":{
     "name":"menuRoom",
