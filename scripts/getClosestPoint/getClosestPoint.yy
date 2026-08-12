@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"getClosestPoint",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"getClosestPoint",
+  "parent":{
+    "name":"opponentCars",
+    "path":"folders/gameRoom/carObjects/opponentCars.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

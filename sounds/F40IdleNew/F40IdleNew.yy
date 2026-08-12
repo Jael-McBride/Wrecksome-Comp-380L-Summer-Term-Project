@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"F40IdleNew",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.0641496,
+  "exportDir":"",
+  "name":"F40IdleNew",
+  "parent":{
+    "name":"F40",
+    "path":"folders/soundDump/EngineSoundDump/F40.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"F40IdleNew.mp3",
+  "volume":1.0,
+}

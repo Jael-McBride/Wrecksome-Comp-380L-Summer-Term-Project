@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ChargerRisingNew",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.4088888,
+  "exportDir":"",
+  "name":"ChargerRisingNew",
+  "parent":{
+    "name":"Charger",
+    "path":"folders/soundDump/EngineSoundDump/Charger.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ChargerRisingNew.mp3",
+  "volume":0.8,
+}

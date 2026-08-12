@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"AE86Idle",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.108821,
+  "exportDir":"",
+  "name":"AE86Idle",
+  "parent":{
+    "name":"AE86",
+    "path":"folders/soundDump/EngineSoundDump/AE86.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"AE86Idle.mp3",
+  "volume":0.75,
+}

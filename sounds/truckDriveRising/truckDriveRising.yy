@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"truckDriveRising",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.3848753,
+  "exportDir":"",
+  "name":"truckDriveRising",
+  "parent":{
+    "name":"EngineSoundDump",
+    "path":"folders/soundDump/EngineSoundDump.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"truckDriveRising.mp3",
+  "volume":0.74,
+}

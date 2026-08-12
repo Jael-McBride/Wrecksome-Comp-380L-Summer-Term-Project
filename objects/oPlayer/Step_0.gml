@@ -1,51 +1,68 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-var right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+left = keyboard_check(vk_left) || keyboard_check(ord("A"))
+right = keyboard_check(vk_right) || keyboard_check(ord("D"))
 
-var drive = keyboard_check(vk_up) || keyboard_check(ord("W"));
-var reverse = keyboard_check(vk_down) || keyboard_check(ord("S"));
+drive = keyboard_check(vk_up) || keyboard_check(ord("W"))
+reverse = keyboard_check(vk_down) || keyboard_check(ord("S")) || keyboard_check(vk_space)
 
 //driftR is there to add or subtract from the turn radius upon drifting, if needed
 
-//enable or disable drift angle check for a different drifting experience
+//hspeed = hspd
+//vspeed = vspd
+var extraR = 0
 
 
-if (left == 1 && abs(speed) > 0.05 /*&& driftAngle >= 0*/ ) { direction += (turnR + driftR); } 
-if (right == 1 && abs(speed) > 0.05 /*&& driftAngle <= 0*/ ) { direction -= (turnR + driftR); }
+if(!audio_is_playing(currentEngineSound) && drive == 0 && engineState == 0){
+	currentEngineSound = audio_play_sound(engineIdle, 10, true, -3)
+}
 
-if (drive == 1 && speed <= topSpeed && abs(driftAngle) < 1) {
-	speed += accel;
-	}
-if (drive == 1 && speed <= (topSpeed - Slowdown) && abs(driftAngle) > 1) {
-	speed += (accel - (/*(Slowdown/10)*/ + 0.1)); //experimenting with natural drift slowdowns
-	}
+speed = spd
+var lastdir = direction
 
-else if (speed > 0) {speed -= 0.1}
-
+//if any problems occur with the handling, this might be the reason why
 image_angle = direction + driftAngle
 
+if(!variable_global_exists("race_started") || !global.race_started) exit;
+
+if (left == 1 && abs(spd) > 0.05 && (driftAngle >= 0 || driftCorrCheck == 1) ) { direction += (turnR + extraR); } 
+if (right == 1 && abs(spd) > 0.05 && (driftAngle <= 0 || driftCorrCheck == 1) ) { direction -= (turnR + extraR); }
+
+if (drive == 1 && spd <= realSpeed && abs(driftAngle) < 1) {
+	spd += realAccel;
+	}
+if (drive == 1 && spd <= (realSpeed - Slowdown) && abs(driftAngle) > 1) {
+	spd += (realAccel - (/*(Slowdown/10)*/ + 0.1)); //experimenting with natural drift slowdowns
+	}
+
+else if (spd > 0) {spd -= 0.1}
+
+image_angle = direction + driftAngle
 //tiresmoke
 
-if (speed > 1){
-	var smoke = instance_create_layer(x, y, "Instances", oSmokeTest);
+if (spd > 1){
+	var smoke = instance_create_layer(x, y, "Instances", oSmokeTest)
+	with(smoke){
+		image_angle = other.image_angle
+	}
 }
 
 //ability to start the drift. 
-if (speed > driftStart){
+if (spd > driftStart){
 	if (right == 1 && reverse == 1 && driftAngle == 0) {
 		driftAngle = -entryAngle //entry angle and speed upon entry
-		speed += entrySpeed
+		spd += entrySpeed
 	}
 	if (left == 1 && reverse == 1 && driftAngle == 0) {
 		driftAngle = entryAngle
-		speed += entrySpeed
+		spd += entrySpeed
 	}
 } 
 //ability to recover and maintain the drift
 
-if (abs(driftAngle) > 3 && speed > 2) {
+if (abs(driftAngle) > 3 && spd > 2) {
+	extraR = driftR
 	if(right == 1 && driftAngle > -maxAngle){
 		driftAngle -= driftRecovery
 	}
@@ -57,15 +74,15 @@ Slowdown = driftSlowdown //how much the drift slows down the car
 else
 {
 	direction = image_angle
-	driftR = 0
+	extraR = 0
 	driftAngle = 0
 	Slowdown = 0
 }
 
-if (drive == 1 && speed < 6 && abs(driftAngle) > 0)
+if (drive == 1 && spd < 4 && abs(driftAngle) > 0)
 {
 	direction = image_angle
-	driftR = 0
+	extraR = 0
 	driftAngle = 0
 	Slowdown = 0
 }
@@ -78,16 +95,77 @@ else if (drive == 1 && right == 0 && left == 0 && driftAngle > 0){
 	driftAngle -= autoRecovery
 }
 
+angle = image_angle - driftAngle
 
 //going in reverse
 	
-if (reverse == 1 && drive == 0 && speed > -4.5) {speed -= brakes}
-else if (speed < 0) {speed += 0.1}
+if (reverse == 1 && drive == 0 && spd > -4.5) {spd -= brakes}
+else if (spd < 0) {spd += 0.1}
 
 //currently set to collide with only the test wall, change this once more walls are added
-if (place_meeting(x,y, oTestWall)){
-speed = -speed
+
+/*
+ * 1. x += sign(hspd) and y += sign(vspd): moves one pixel in the direction you're moving without caring about magnitude
+ * 2. if (place_meeting(x + sign(hspd), y, oTestWall)) break: look one pixel ahead of player direction. If that pixel is 
+ *    inside the wall, you're flushed against it; break.                
+ */
+ hspd = lengthdir_x(spd, angle);
+ vspd = lengthdir_y(spd, angle);
+            
+if (place_meeting(x + hspd, y, oTestWall)) {
+	if (damageTaken == 1 || shieldState == 1){
+		
+	} else {
+		carHealth -= 2
+		
+	}
+	damageTaken = 1
+    for (var _s = 0; _s < abs(hspd) + 1; _s++) {
+        if (place_meeting(x + sign(hspd), y, oTestWall)) break;
+        x += sign(hspd);
+    }
+    hspd = 0;
+    spd *= 0.001;
 }
+
+if (place_meeting(x, y + vspd, oTestWall)) {
+	if (damageTaken == 1 || shieldState == 1){
+		
+	}else {
+		carHealth -= 2
+		
+	}
+	damageTaken = 1
+    for (var _s = 0; _s < abs(vspd) + 1; _s++) {
+        if (place_meeting(x, y + sign(vspd), oTestWall)) break;
+        y += sign(vspd);
+    }
+    vspd = 0;
+    spd *= 0.001;
+}
+
+
+if(place_meeting(x-(7+speed),y,[/*oOpponentParent,*/oTestWall])){
+	x+=(7+speed)
+}
+if(place_meeting(x+(7+speed),y,[/*oOpponentParent,*/oTestWall])){
+	x-=(7+speed)
+}
+if(place_meeting(x,y-(7+speed),[/*oOpponentParent,*/oTestWall])){
+	y+=(7+speed)
+}
+if(place_meeting(x,y+(7+speed),[/*oOpponentParent,*/oTestWall])){
+	y-=(7+speed)
+}
+
+//if (place_meeting(x,y,oTestWall)){
+//speed = -speed*0.8}
+
+if(!place_meeting(x,y,oTestWall)){
+	damageTaken = 0
+}
+
+
 
 // Prevent leaving the left and right room boundaries
 x = clamp(x, 0, room_width);
@@ -96,17 +174,255 @@ x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height);
 
 
+//boost gauge implementation
+var boost =  keyboard_check(vk_lshift) || keyboard_check(vk_rshift)
+var extraBoost = keyboard_check_pressed(vk_lcontrol) || keyboard_check_pressed(vk_rcontrol)
 
-//powerUps?
-if (place_meeting(x,y, oPowerUpSpeed)) {
-speed += 15
-image_index = 1
-alarm[0] = 2*game_get_speed(gamespeed_fps)
+if (boost == 1 && boostGauge > 0 && spd > 1) {
+	realSpeed = topSpeed + boostTopSpeed
+	realAccel = accel + boostAccel
+	boostGauge -= boostUsage
+	boostGauge = clamp(boostGauge, 0, 100)
+		
+	var afterImageBoost = instance_create_layer(x, y, "Instances", oAfterImage)
+	with(afterImageBoost){
+		sprite_index = other.sprite_index
+		image_angle = other.image_angle
+	}
+		
+	
+} else {
+	realSpeed = topSpeed
+	realAccel = accel
 }
+
+//extra boost implementation. Just an idea I thought up of
+
+if (extraBoost == 1 && boostGauge >= 25 && extraBoostInterval == 1 && spd > 1){
+	fastState = 1
+	spd += extraBoostSpeed
+	direction = image_angle
+	extraR = 0
+	driftAngle = 0
+	Slowdown = 0
+	boostGauge -= 25
+	audio_play_sound(NitroSound, 11, false)
+
+	extraBoostInterval = 0
+	alarm[0] = 2.5*game_get_speed(gamespeed_fps)
+}
+
+if (fastState == 1){
+	var afterImageBoost = instance_create_layer(x, y, "Instances", oAfterImage)
+	with(afterImageBoost){
+		sprite_index = other.sprite_index
+		image_angle = other.image_angle
+	}
+		
+	if (alarm[2] == -1) {
+	alarm[2] = 1.5*game_get_speed(gamespeed_fps)
+	}
+}
+
+
+//gain boost through drifting
+if (abs(driftAngle) > 3 && boost == 0 && extraBoost == 0 && boostGauge < 100){
+	boostGauge += 0.1
+	boostGauge = clamp(boostGauge, 0, 100)
+	
+} 
+
+//power ups WIP
+var usePower = keyboard_check_pressed(ord("E"))
+
+//the big Switch Statement for powers
+
+if (usePower) {
+	
+	switch(currentPower)
+	{
+	case "shield":
+	var shield = instance_create_layer(x, y, "PowerUpEffects", oShield)
+	with(shield){
+		followInstance = other.id
+	}
+	currentPower = "none"
+	shieldState = 1
+	alarm[4] = 6*game_get_speed(gamespeed_fps)
+	break;
+	
+	case "oil":
+
+	var _distanceOil = 150; 
+	var _spawn_angleOil = image_angle - 180;
+	var _spawn_xOil = x + lengthdir_x(_distanceOil, _spawn_angleOil);
+	var _spawn_yOil = y + lengthdir_y(_distanceOil, _spawn_angleOil);
+
+	instance_create_layer(_spawn_xOil, _spawn_yOil, "Instances", oOilSpill);
+	currentPower = "none"
+	break;
+	
+	case "mine":
+
+	var _distanceMine = 150; 
+	var _spawn_angleMine = image_angle - 180;
+	var _spawn_xMine = x + lengthdir_x(_distanceMine, _spawn_angleMine);
+	var _spawn_yMine = y + lengthdir_y(_distanceMine, _spawn_angleMine);
+
+	instance_create_layer(_spawn_xMine, _spawn_yMine, "Instances", oMine);
+	currentPower = "none"
+	break;
+	
+	case "gun":
+	
+	if (rockets > 1) {
+	var _distanceGun = 150; 
+	var _spawn_angleGun = image_angle;
+	var _spawn_xGun = x + lengthdir_x(_distanceGun, _spawn_angleGun);
+	var _spawn_yGun = y + lengthdir_y(_distanceGun, _spawn_angleGun);
+	rockets -= 1
+
+	var theRocket = instance_create_layer(_spawn_xGun, _spawn_yGun, "Instances", oRocket)
+	with(theRocket){
+		image_angle = other.image_angle
+		direction = other.image_angle
+		speed = other.spd + 20} 
+	}
+	else 	
+	{
+	var _distanceGun = 150; 
+	var _spawn_angleGun = image_angle;
+	var _spawn_xGun = x + lengthdir_x(_distanceGun, _spawn_angleGun);
+	var _spawn_yGun = y + lengthdir_y(_distanceGun, _spawn_angleGun);
+
+	var theRocket = instance_create_layer(_spawn_xGun, _spawn_yGun, "Instances", oRocket)
+	with(theRocket){
+		image_angle = other.image_angle
+		direction = other.image_angle
+		speed = other.spd + 20}
+	currentPower = "none"
+	}
+	break;
+	
+	default:
+	show_debug_message("you aint got nothin, fool!");
+	break;
+	}
+}
+
+//interacting with oil spills
+if (turnR > 1) {
+	oldTurnR = turnR
+}
+
+if (place_meeting(x,y,oOilSpill) && shieldState == 0){
+	turnR = 0.2
+	if (alarm[3] == -1){
+		alarm[3] = 1.5*game_get_speed(gamespeed_fps)
+	}
+	
+}
+
+//interaction with mines
+if (place_meeting(x,y,oMine)){
+	var mineID = instance_place(x,y,oMine)
+	if (shieldState == 0){
+	carHealth -= 30
+	}
+	instance_create_layer(x,y,"Instances", oPlosion)
+	instance_destroy(mineID)
+}
+
+if (place_meeting(x,y,oRocket)){
+	var rocketID = instance_place(x,y,oRocket)
+	if (shieldState == 0){
+	carHealth -= 25
+	}
+	instance_create_layer(x,y,"Instances", oPlosion)
+	instance_destroy(rocketID)
+}
+
+//health??????
+if (carHealth <= 0) {
+	fadeOutSound(squealTires, 100)
+	fadeOutSound(brakingTires, 100)
+	fadeOutSound(SoundNitro, 60)
+	fadeOutSound(currentEngineSound, 100)
+	instance_create_layer(x,y,"Instances", oPlosion)
+	instance_destroy()
+}
+
+//legacy code for abandoned power up. I'll leave it be in case anyone still wanted to use said power up
 
 if (place_meeting(x,y, oSmallPowerUp)) {
 image_xscale = 0.5
 image_yscale = 0.5
 alarm[1] = 5*game_get_speed(gamespeed_fps)
 }
+
+//train
+if (place_meeting(x,y,oTrainKill) && shieldState == 0){
+	carHealth -= 99999
+}
+
+//everything down HERE will be all about SOUNNNDDDDD baby
+
+//the all important engine
+
+if(drive == 1 && (engineState == 0 || engineState == 3)){
+	//audio_stop_sound(currentEngineSound)
+	fadeOutSound(currentEngineSound, 500)
+	currentEngineSound = audio_play_sound(engineRising, 10, false, -3)
+
+	engineState = 1
+
+}
+if (drive == 1 && engineState == 1 && (topSpeed - speed) < 1) {
+	fadeOutSound(currentEngineSound, 500)
+	currentEngineSound = audio_play_sound(engineConstant, 9, true, -3)
+	audio_sound_gain(currentEngineSound, 0.2, 0)
+	audio_sound_gain(currentEngineSound, 1, 500)
+	engineState = 2
+}
+
+show_debug_message(engineState)
+
+
+if(drive == 0 && (engineState == 1 || engineState == 2)) {
+	//audio_stop_sound(currentEngineSound)
+	if(alarm[5] == -1){
+	alarm[5] = 0.5*game_get_speed(gamespeed_fps)
+	}
+	//fadeOutSound(currentEngineSound, 1000)
+	//currentEngineSound = audio_play_sound(engineFalling, 10, false)
+	//engineState = 3
+} else if (engineState == 3){
+	if(alarm[6] == -1){
+	alarm[6] = 0.8*game_get_speed(gamespeed_fps)
+	}
+	
+}
+
+
+//drifting and nitro
+
+if(abs(driftAngle) > 3 && (audio_sound_get_gain(squealTires) < 1 || !audio_is_playing(squealTires) )&& carHealth > 0){
+	squealTires = audio_play_sound(tireSqueal, 11, true, 3)
+} else if (abs(driftAngle) <= 3 && audio_is_playing(squealTires)){
+	fadeOutSound(squealTires, 20)
+}
+
+if(reverse == 1 && spd > 4 && (audio_sound_get_gain(brakingTires) < 1 || !audio_is_playing(brakingTires) )) {
+	brakingTires = audio_play_sound(tireSqueal, 11, true)
+} else if (drive == 1 || spd < 4) {
+	fadeOutSound(brakingTires, 20)
+}
+
+if(boost == 1 && (audio_sound_get_gain(SoundNitro) < 1 || !audio_is_playing(SoundNitro)) && boostGauge > 0)
+{
+	SoundNitro = audio_play_sound(NitroSound, 11, true)
+} else if(boost == 0 || boostGauge <= 0){
+	fadeOutSound(SoundNitro, 60)
+}
+
 

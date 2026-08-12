@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"RocketRace",
+  "audioGroupId":{
+    "name":"currentSongPlaying",
+    "path":"audiogroups/currentSongPlaying",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":240.11757,
+  "exportDir":"",
+  "name":"RocketRace",
+  "parent":{
+    "name":"soundDump",
+    "path":"folders/soundDump.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"RocketRace.mp3",
+  "volume":0.88,
+}

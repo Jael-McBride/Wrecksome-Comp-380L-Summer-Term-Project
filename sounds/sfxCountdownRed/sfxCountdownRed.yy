@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sfxCountdownRed",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.0449166,
+  "exportDir":"",
+  "name":"sfxCountdownRed",
+  "parent":{
+    "name":"componentAudio",
+    "path":"folders/gameRoom/assets/componentAudio.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"sfxCountdownRed.mp3",
+  "volume":0.5,
+}

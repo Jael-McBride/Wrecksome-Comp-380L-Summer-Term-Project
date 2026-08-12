@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"GT40Idle",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.83267576,
+  "exportDir":"",
+  "name":"GT40Idle",
+  "parent":{
+    "name":"GT40",
+    "path":"folders/soundDump/EngineSoundDump/GT40.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"GT40Idle.mp3",
+  "volume":0.8,
+}

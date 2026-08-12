@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"GT40Constant",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.5362358,
+  "exportDir":"",
+  "name":"GT40Constant",
+  "parent":{
+    "name":"GT40",
+    "path":"folders/soundDump/EngineSoundDump/GT40.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"GT40Constant.mp3",
+  "volume":0.72,
+}

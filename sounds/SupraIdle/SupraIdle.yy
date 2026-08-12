@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SupraIdle",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.0559638,
+  "exportDir":"",
+  "name":"SupraIdle",
+  "parent":{
+    "name":"Supra",
+    "path":"folders/soundDump/EngineSoundDump/Supra.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SupraIdle.mp3",
+  "volume":0.84,
+}

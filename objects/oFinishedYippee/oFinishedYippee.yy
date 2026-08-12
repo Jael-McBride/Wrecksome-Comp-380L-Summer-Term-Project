@@ -6,8 +6,8 @@
   "name":"oFinishedYippee",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"gameRoom",
+    "path":"folders/gameRoom.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sYoureWinner",
-    "path":"sprites/sYoureWinner/sYoureWinner.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

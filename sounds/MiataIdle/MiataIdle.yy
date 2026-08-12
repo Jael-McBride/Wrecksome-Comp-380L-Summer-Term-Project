@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"MiataIdle",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.8346032,
+  "exportDir":"",
+  "name":"MiataIdle",
+  "parent":{
+    "name":"SuperMiata",
+    "path":"folders/soundDump/EngineSoundDump/SuperMiata.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"MiataIdle.mp3",
+  "volume":0.85,
+}

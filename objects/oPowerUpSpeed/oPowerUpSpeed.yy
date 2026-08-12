@@ -3,14 +3,13 @@
   "%Name":"oPowerUpSpeed",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oPowerUpSpeed",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"PowerUps",
+    "path":"folders/gameRoom/carObjects/PowerUps.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNitro",
-    "path":"sprites/sNitro/sNitro.yy",
+    "name":"sNitroPickup",
+    "path":"sprites/sNitroPickup/sNitroPickup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

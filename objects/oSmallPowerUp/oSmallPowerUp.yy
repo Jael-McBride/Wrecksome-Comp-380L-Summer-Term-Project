@@ -9,8 +9,8 @@
   "name":"oSmallPowerUp",
   "overriddenProperties":[],
   "parent":{
-    "name":"gameRoomStuff",
-    "path":"folders/gameRoomStuff.yy",
+    "name":"gameRoom",
+    "path":"folders/gameRoom.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sSmallGuy",
-    "path":"sprites/sSmallGuy/sSmallGuy.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

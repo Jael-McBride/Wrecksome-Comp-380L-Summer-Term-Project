@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scPlayerSelect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scPlayerSelect",
+  "parent":{
+    "name":"gameRoom",
+    "path":"folders/gameRoom.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
