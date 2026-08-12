@@ -1,3 +1,4 @@
+
 function playIngame(objectID,soundAsset,priority,loop){
 	var _vx = camera_get_view_x(view_camera[0]) + 800
 	var _vy = camera_get_view_y(view_camera[0]) + 450
