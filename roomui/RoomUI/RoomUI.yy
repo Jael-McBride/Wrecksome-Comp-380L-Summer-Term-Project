@@ -2,6 +2,7 @@
   "$GMRoomUI":"",
   "%Name":"RoomUI",
   "children":[
+    {"$GMRUILayer":"v1","%Name":"SettingsLayer","alignItems":2,"children":[],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"SettingsLayer","nodeColour":4294068313,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"MenuLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"MenuPanel","alignItems":1,"children":[
             {"$GMRFlexPanel":"","%Name":"WrecksomeTitle","alignItems":2,"children":[
