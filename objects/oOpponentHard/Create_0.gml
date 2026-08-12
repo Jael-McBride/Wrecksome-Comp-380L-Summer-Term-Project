@@ -34,7 +34,7 @@ shieldState = 0
 gunCooldown = 0
 gun = 0
 
-carHealth = 90
+carHealth = 180
 
 oilSpillR = 0
 regularR = 2
@@ -46,12 +46,12 @@ vspd = 0
 spd = 0
 
 storedSpeed = 0
-maxSpeed = 11 + irandom(3)
+maxSpeed = 14
 oldSpeed = maxSpeed
 storedSpeed = oldSpeed
 rubberBandSpeed = maxSpeed + 2
 boostedSpeed = maxSpeed + 8
-accel = 0.3
+accel = 0.35
 
 pointX = 0
 pointY = 0

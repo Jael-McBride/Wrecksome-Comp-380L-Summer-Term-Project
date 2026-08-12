@@ -98,7 +98,7 @@ pointY = path_get_y(pathUsed, bestPos)
 //move_towards_point(pointX, pointY, spd)
 if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	{
-		maxSpeed = oldSpeed - 2
+		maxSpeed = oldSpeed - 1
 		rotate = driftR
 		if(abs(driftAngle) < maxDriftAngle){
 		driftAngle -= 2
@@ -107,7 +107,7 @@ if(angle_difference(point_direction(x,y,pointX,pointY), direction) < -10)
 	
 else if(angle_difference(point_direction(x,y,pointX,pointY), direction) > 10)
 	{
-		maxSpeed = oldSpeed - 2
+		maxSpeed = oldSpeed - 1
 		rotate = driftR
 		if(abs(driftAngle) < maxDriftAngle){
 		driftAngle += 2
@@ -280,7 +280,7 @@ if(spd < 1 && alarm[3] == -1){
 
 
 if (alarm[8] == -1){
-	alarm[8] = (4 + irandom(5))*game_get_speed(gamespeed_fps)
+	alarm[8] = (4 + irandom(4))*game_get_speed(gamespeed_fps)
 }
 
 //the afterImage

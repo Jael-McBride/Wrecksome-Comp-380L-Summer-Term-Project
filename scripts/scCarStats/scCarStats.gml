@@ -37,7 +37,7 @@ function setCar(carName){
 	carHealth = 90
 	accel = 0.35;
 	turnR = 2.8;
-	topSpeed = 13;
+	topSpeed = 15;
 	brakes = 0.3;
 	
 	driftCorrCheck = 1
@@ -72,10 +72,10 @@ function setCar(carName){
 	entryAngle = 4;
 	maxAngle = 60; 
 	entrySpeed = 5;
-	driftSlowdown = -3;
+	driftSlowdown = 0;
 	driftStart = 5;
 	
-	boostAccel = 1
+	boostAccel = 0.6
 	boostTopSpeed = 10
 	boostUsage = 0.7
 	extraBoostSpeed = 19
@@ -97,12 +97,12 @@ function setCar(carName){
 	entryAngle = 4;
 	maxAngle = 60; 
 	entrySpeed = 5;
-	driftSlowdown = -2;
+	driftSlowdown = 0;
 	driftStart = 5;
 	
-	boostAccel = 1
+	boostAccel = 0.6
 	boostTopSpeed = 10
-	boostUsage = 0.7
+	boostUsage = 0.8
 	extraBoostSpeed = 19
 	
 	break;
@@ -135,7 +135,7 @@ function setCar(carName){
 	case "silverado":
 	carHealth = 150
 	
-	accel = 0.22;
+	accel = 0.25;
 	turnR = 1.8;
 	topSpeed = 14;
 	brakes = 0.2;
@@ -210,7 +210,7 @@ function setCar(carName){
 	
 	
 	case "veneno":
-	carHealth = 85
+	carHealth = 80
 	
 	accel = 0.3;
 	turnR = 2;
@@ -228,7 +228,7 @@ function setCar(carName){
 	driftStart = 12;
 	
 	boostAccel = 1
-	boostTopSpeed = 6
+	boostTopSpeed = 8
 	boostUsage = 1.5
 	extraBoostSpeed = 13
 	
@@ -239,7 +239,7 @@ function setCar(carName){
 	
 	accel = 0.3;
 	turnR = 2.2;
-	topSpeed = 15;
+	topSpeed = 15.5;
 	brakes = 0.3;
 	
 	driftCorrCheck = 1
@@ -249,11 +249,11 @@ function setCar(carName){
 	entryAngle = 10;
 	maxAngle = 50; 
 	entrySpeed = 2;
-	driftSlowdown = 3;
+	driftSlowdown = 2.5;
 	driftStart = 12;
 	
 	boostAccel = 1
-	boostTopSpeed = 6
+	boostTopSpeed = 8
 	boostUsage = 1.5
 	extraBoostSpeed = 13
 	
