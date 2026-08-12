@@ -1,8 +1,31 @@
 //freeze
 image_angle = direction + driftAngle
+
+var _vx = camera_get_view_x(view_camera[0]) + 800
+var _vy = camera_get_view_y(view_camera[0]) + 450
+	
+var _dx = x
+var _dy = y
+	
+var soundDistance = 200/point_distance(_vx,_vy,_dx,_dy)
+soundDistance = clamp(soundDistance, 0, 1)
+if (soundDistance > 1){
+	soundDistance = 1
+}
+	
+audio_sound_gain(currentEngine,soundDistance,0)
+
 if(!variable_global_exists("race_started") || !global.race_started) exit;
 
 //pathing
+if(engineOn == 0){
+	currentEngine = audio_play_sound(engineRising, 9, false)
+	engineOn = 1
+}
+if(engineOn == 1 && !audio_is_playing(currentEngine)){
+	currentEngine = audio_play_sound(engineConstant, 9, true)
+	engineOn = 2
+}
 
 
 //bestPos += 0.2
@@ -246,6 +269,7 @@ if (place_meeting(x,y,oTrainKill) && shieldState == 0){
 }
 
 if (carHealth <= 0){
+	audio_stop_sound(currentEngine)
 	instance_create_layer(x,y, "Instances", oPlosion)
 	instance_destroy()
 }

@@ -4,9 +4,20 @@
 
 image_angle = direction
 
+engineIdle = 0
+engineRising = 0
+engineConstant = 0
+engineFalling = 0
+
 theSprite = randomizeSprite()
 
 sprite_index = theSprite
+
+getCarSounds(sprite_index)
+
+currentEngine = audio_play_sound(engineIdle, 0, true)
+
+engineOn = 0
 
 checkContact = 0
 lapDone = 0
