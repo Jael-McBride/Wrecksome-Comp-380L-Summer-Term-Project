@@ -4,6 +4,7 @@ switch(button_id) {
     case 0: // Singleplayer
         layer_set_visible("MenuLayer", false);
         layer_set_visible("CarSelectLayer", true);
+        layer_set_visible("TrackSelectLayer", false);
         room_goto(rPlayerSelect);
         break;
     case 1: // How to Play
@@ -23,6 +24,7 @@ switch(button_id) {
         layer_set_visible("TutorialLayer", false);
         layer_set_visible("GameHUDLayer", false);
         layer_set_visible("CreditsLayer", false);
+        layer_set_visible("CarSelectLayer", false);
         global.lap = 1;
 		audio_stop_all()
         room_goto(rMenuRoom);

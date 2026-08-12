@@ -3,19 +3,16 @@ switch(car_id) {
         global.playerCar = oF40;
         break;
     case 1: // Pink Phantom
+        if (global.pinkUnlocked == 0) return;
         global.playerCar = oPinkPhantom;
-		if(global.pinkUnlocked == 0)
-			return;
         break;
     case 2: // Oshkosh
+        if (global.oshkoshUnlocked == 0) return;
         global.playerCar = oOshKosh;
-		if(global.oshkoshUnlocked == 0)
-			return;
         break;
     case 3: // Hypercar
-		global.playerCar = oVeneno;
-		if(global.venenoUnlocked == 0)
-			return;
+        if (global.venenoUnlocked == 0) return;
+        global.playerCar = oVeneno;
         break;
     case 4: // Miata
         global.playerCar = oMiata;
@@ -24,22 +21,19 @@ switch(car_id) {
         global.playerCar = oCharger;
         break;
     case 6: // Formula 1
+        if (global.formula1Unlocked == 0) return;
         global.playerCar = oFormula1;
-		if(global.formula1Unlocked == 0)
-			return;
         break;
     case 7: // Ford GT40
+        if (global.gt40Unlocked == 0) return;
         global.playerCar = oGT40;
-		if(global.gt40Unlocked == 0)
-			return;
         break;
     case 8: // Hummer
         global.playerCar = oHummer;
         break;
     case 9: // Supra
+        if (global.supraUnlocked == 0) return;
         global.playerCar = oSupra;
-		if(global.supraUnlocked == 0)
-			return;
         break;
     case 10: // Silverado
         global.playerCar = oSilverado;
@@ -51,6 +45,5 @@ switch(car_id) {
 
 room_goto(rTrackRoom);
 layer_set_visible("CarSelectLayer", false);
-layer_set_visible("TrackSelectLayer", true)
-
+layer_set_visible("TrackSelectLayer", true);
 audio_play_sound(sfxButtonClick_1, 1, false);
