@@ -83,6 +83,7 @@
     {"name":"oOpponentSpawn45","order":2,"path":"objects/oOpponentSpawn45/oOpponentSpawn45.yy",},
     {"name":"oOpponentSpawnStraight","order":1,"path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},
     {"name":"oOshKosh","order":1,"path":"objects/oOshKosh/oOshKosh.yy",},
+    {"name":"oOverlayLock","order":1,"path":"objects/oOverlayLock/oOverlayLock.yy",},
     {"name":"oPickUpPowerUps","order":6,"path":"objects/oPickUpPowerUps/oPickUpPowerUps.yy",},
     {"name":"oPinkPhantom","order":4,"path":"objects/oPinkPhantom/oPinkPhantom.yy",},
     {"name":"oPlosion","order":14,"path":"objects/oPlosion/oPlosion.yy",},

@@ -131,6 +131,7 @@
     {"id":{"name":"oOpponentSpawnStraight","path":"objects/oOpponentSpawnStraight/oOpponentSpawnStraight.yy",},},
     {"id":{"name":"oOpponentSpawnUp","path":"objects/oOpponentSpawnUp/oOpponentSpawnUp.yy",},},
     {"id":{"name":"oOshKosh","path":"objects/oOshKosh/oOshKosh.yy",},},
+    {"id":{"name":"oOverlayLock","path":"objects/oOverlayLock/oOverlayLock.yy",},},
     {"id":{"name":"oPausable","path":"objects/oPausable/oPausable.yy",},},
     {"id":{"name":"oPauseManager","path":"objects/oPauseManager/oPauseManager.yy",},},
     {"id":{"name":"oPickUpPowerUps","path":"objects/oPickUpPowerUps/oPickUpPowerUps.yy",},},
