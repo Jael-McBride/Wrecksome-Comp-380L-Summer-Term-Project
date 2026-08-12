@@ -13,6 +13,9 @@ switch(button_id) {
         room_goto(rTutorialRoom);
         break;
     case 2: // Settings
+        layer_set_visible("SettingsLayer", true);
+        layer_set_visible("MenuLayer", false);
+        room_goto(rSettingsRoom);
         break;
     case 3: // Quit
         game_end();
@@ -25,6 +28,7 @@ switch(button_id) {
         layer_set_visible("GameHUDLayer", false);
         layer_set_visible("CreditsLayer", false);
         layer_set_visible("CarSelectLayer", false);
+        layer_set_visible("SettingsLayer", false);
         global.lap = 1;
 		audio_stop_all()
         room_goto(rMenuRoom);
