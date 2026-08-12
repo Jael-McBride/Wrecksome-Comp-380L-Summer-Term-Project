@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_B7290FC","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_1B344644","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_74D80842","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_67861C42","path":"roomui/RoomUI/RoomUI.yy",},

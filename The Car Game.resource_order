@@ -116,7 +116,6 @@
     {"name":"oSpawnerTestTrack","order":4,"path":"objects/oSpawnerTestTrack/oSpawnerTestTrack.yy",},
     {"name":"oSupra","order":9,"path":"objects/oSupra/oSupra.yy",},
     {"name":"oSupraCiv","order":23,"path":"objects/oSupraCiv/oSupraCiv.yy",},
-    {"name":"oTemporaryButton","order":3,"path":"objects/oTemporaryButton/oTemporaryButton.yy",},
     {"name":"oTestMove","order":2,"path":"objects/oTestMove/oTestMove.yy",},
     {"name":"oTestMove2","order":1,"path":"objects/oTestMove2/oTestMove2.yy",},
     {"name":"oTires","order":5,"path":"objects/oTires/oTires.yy",},
