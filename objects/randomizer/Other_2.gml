@@ -1,2 +1,2 @@
 randomise()
-audio_group_load(currentSong)
+audio_group_load(currentSongPlaying)

@@ -1,5 +1,20 @@
 switch (setting_id) {
-    case 0: global.musicOn = !global.musicOn; break;
-    case 1: global.sfxOn = !global.sfxOn; break;
-    case 2: global.hard = !global.hard; break;    
+    case 0: global.musicOn = !global.musicOn; 
+	if(global.musicOn == 1){
+		audio_group_set_gain(currentSongPlaying, 1, 0)
+	} else { 
+		audio_group_set_gain(currentSongPlaying, 0, 0)
+	}
+	
+	break;
+    case 1: global.sfxOn = !global.sfxOn; 
+	if(global.sfxOn == 1){
+		audio_group_set_gain(audiogroup_default, 1, 0)
+	} else {
+		audio_group_set_gain(audiogroup_default, 0, 0)
+	}
+	
+	break;
+    case 2: global.hard = !global.hard; 
+	break;    
 }

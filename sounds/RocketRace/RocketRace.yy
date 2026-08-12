@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"RocketRace",
   "audioGroupId":{
-    "name":"currentSong",
-    "path":"audiogroups/currentSong",
+    "name":"currentSongPlaying",
+    "path":"audiogroups/currentSongPlaying",
   },
   "bitDepth":1,
   "channelFormat":1,
