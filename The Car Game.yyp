@@ -93,6 +93,7 @@
   "resources":[
     {"id":{"name":"fGeneralFont","path":"fonts/fGeneralFont/fGeneralFont.yy",},},
     {"id":{"name":"fSelectionFont","path":"fonts/fSelectionFont/fSelectionFont.yy",},},
+    {"id":{"name":"Upheaval_TT_Heavy","path":"fonts/Upheaval_TT_Heavy/Upheaval_TT_Heavy.yy",},},
     {"id":{"name":"Upheaval_TT_Main","path":"fonts/Upheaval_TT_Main/Upheaval_TT_Main.yy",},},
     {"id":{"name":"Upheaval_TT_Misc","path":"fonts/Upheaval_TT_Misc/Upheaval_TT_Misc.yy",},},
     {"id":{"name":"Upheaval_TT_Secondary","path":"fonts/Upheaval_TT_Secondary/Upheaval_TT_Secondary.yy",},},
@@ -111,6 +112,7 @@
     {"id":{"name":"oCivMoveParent","path":"objects/oCivMoveParent/oCivMoveParent.yy",},},
     {"id":{"name":"oCountdownManager","path":"objects/oCountdownManager/oCountdownManager.yy",},},
     {"id":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},},
+    {"id":{"name":"oEraseSaveData","path":"objects/oEraseSaveData/oEraseSaveData.yy",},},
     {"id":{"name":"oF40","path":"objects/oF40/oF40.yy",},},
     {"id":{"name":"oF40Civ","path":"objects/oF40Civ/oF40Civ.yy",},},
     {"id":{"name":"oFence","path":"objects/oFence/oFence.yy",},},

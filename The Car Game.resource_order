@@ -58,6 +58,7 @@
     {"name":"images","order":1,"path":"folders/tutorialRoom/assets/images.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Upheaval_TT_Heavy","order":3,"path":"fonts/Upheaval_TT_Heavy/Upheaval_TT_Heavy.yy",},
     {"name":"Upheaval_TT_Misc","order":2,"path":"fonts/Upheaval_TT_Misc/Upheaval_TT_Misc.yy",},
     {"name":"Upheaval_TT_Secondary","order":1,"path":"fonts/Upheaval_TT_Secondary/Upheaval_TT_Secondary.yy",},
     {"name":"oAfterImage","order":1,"path":"objects/oAfterImage/oAfterImage.yy",},
@@ -71,6 +72,7 @@
     {"name":"oCivMoveParent","order":33,"path":"objects/oCivMoveParent/oCivMoveParent.yy",},
     {"name":"oCountdownManager","order":1,"path":"objects/oCountdownManager/oCountdownManager.yy",},
     {"name":"oCrate","order":17,"path":"objects/oCrate/oCrate.yy",},
+    {"name":"oEraseSaveData","order":1,"path":"objects/oEraseSaveData/oEraseSaveData.yy",},
     {"name":"oF40","order":5,"path":"objects/oF40/oF40.yy",},
     {"name":"oF40Civ","order":22,"path":"objects/oF40Civ/oF40Civ.yy",},
     {"name":"oFence","order":31,"path":"objects/oFence/oFence.yy",},
